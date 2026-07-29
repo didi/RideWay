@@ -1,0 +1,938 @@
+[
+  {
+    "pair_id": "iaac_000",
+    "tid": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
+    "A": {
+      "key": "opus46_t2",
+      "model": "opus46",
+      "trial": 2,
+      "tool": 7,
+      "turn": 22,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t1",
+      "model": "sonnet5",
+      "trial": 1,
+      "tool": 11,
+      "turn": 19,
+      "etool": 3.0,
+      "eturn": 0
+    },
+    "d_etool": -3.0,
+    "d_eturn": 0,
+    "orig_pid": "c14test_062",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_001",
+    "tid": "custom_029_chongqing_family_tour_plan",
+    "A": {
+      "key": "qw36p_t1",
+      "model": "qw36p",
+      "trial": 1,
+      "tool": 16,
+      "turn": 9,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "qw37plus_t2",
+      "model": "qw37plus",
+      "trial": 2,
+      "tool": 25,
+      "turn": 8,
+      "etool": 3,
+      "eturn": 0
+    },
+    "d_etool": -3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_053",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_002",
+    "tid": "custom_028_shanghai_station_sightseeing_tour_reminder",
+    "A": {
+      "key": "opus46_t1",
+      "model": "opus46",
+      "trial": 1,
+      "tool": 21,
+      "turn": 5,
+      "etool": 6,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gemini35flash_t1",
+      "model": "gemini35flash",
+      "trial": 1,
+      "tool": 18,
+      "turn": 4,
+      "etool": 3,
+      "eturn": 0
+    },
+    "d_etool": 3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_066",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_003",
+    "tid": "custom_027_beijing_shuangqing_military_museum_chitchat",
+    "A": {
+      "key": "gemini35flash_t0",
+      "model": "gemini35flash",
+      "trial": 0,
+      "tool": 10,
+      "turn": 12,
+      "etool": 3,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t2",
+      "model": "sonnet5",
+      "trial": 2,
+      "tool": 4,
+      "turn": 12,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_051",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_004",
+    "tid": "custom_027_beijing_shuangqing_military_museum_chitchat",
+    "A": {
+      "key": "opus46_t0",
+      "model": "opus46",
+      "trial": 0,
+      "tool": 5,
+      "turn": 13,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gemini35flash_t2",
+      "model": "gemini35flash",
+      "trial": 2,
+      "tool": 12,
+      "turn": 13,
+      "etool": 5,
+      "eturn": 0
+    },
+    "d_etool": -5,
+    "d_eturn": 0,
+    "orig_pid": "c14test_065",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_005",
+    "tid": "custom_026_guangzhou_huangpu_home_south_station_family_trip",
+    "A": {
+      "key": "ministral3b_t1",
+      "model": "ministral3b",
+      "trial": 1,
+      "tool": 6,
+      "turn": 17,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "ministral8b_t0",
+      "model": "ministral8b",
+      "trial": 0,
+      "tool": 14,
+      "turn": 17,
+      "etool": 7,
+      "eturn": 0
+    },
+    "d_etool": -7,
+    "d_eturn": 0,
+    "orig_pid": "c14test_008",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_007",
+    "tid": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat",
+    "A": {
+      "key": "gpt55nothink_t2",
+      "model": "gpt55nothink",
+      "trial": 2,
+      "tool": 8,
+      "turn": 12,
+      "etool": 1,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gemini35flash_t0",
+      "model": "gemini35flash",
+      "trial": 0,
+      "tool": 15,
+      "turn": 11,
+      "etool": 8,
+      "eturn": 0
+    },
+    "d_etool": -7,
+    "d_eturn": 0,
+    "orig_pid": "c14test_063",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_009",
+    "tid": "custom_031_guangzhou_tourist_sightseeing_cantonese",
+    "A": {
+      "key": "gpt55nothink_t0",
+      "model": "gpt55nothink",
+      "trial": 0,
+      "tool": 28,
+      "turn": 7,
+      "etool": 7,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t0",
+      "model": "sonnet5",
+      "trial": 0,
+      "tool": 20,
+      "turn": 8,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 7,
+    "d_eturn": 0,
+    "orig_pid": "c14test_041",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_010",
+    "tid": "custom_015_shanghai_mcdonalds_rain_nosmoking",
+    "A": {
+      "key": "qw36p_t1",
+      "model": "qw36p",
+      "trial": 1,
+      "tool": 7,
+      "turn": 12,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t2",
+      "model": "sonnet5",
+      "trial": 2,
+      "tool": 10,
+      "turn": 13,
+      "etool": 3,
+      "eturn": 0
+    },
+    "d_etool": -3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_014",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_011",
+    "tid": "custom_016_beijing_tourist_shisanling_preference",
+    "A": {
+      "key": "gemma431b_t0",
+      "model": "gemma431b",
+      "trial": 0,
+      "tool": 5,
+      "turn": 17,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "ministral14b_t1",
+      "model": "ministral14b",
+      "trial": 1,
+      "tool": 11,
+      "turn": 18,
+      "etool": 6,
+      "eturn": 0
+    },
+    "d_etool": -6,
+    "d_eturn": 0,
+    "orig_pid": "c14test_057",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_012",
+    "tid": "custom_029_chongqing_family_tour_plan",
+    "A": {
+      "key": "qw37plus_t0",
+      "model": "qw37plus",
+      "trial": 0,
+      "tool": 15,
+      "turn": 8,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "qw37plus_t2",
+      "model": "qw37plus",
+      "trial": 2,
+      "tool": 25,
+      "turn": 8,
+      "etool": 3,
+      "eturn": 0
+    },
+    "d_etool": -3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_067",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_013",
+    "tid": "custom_027_beijing_shuangqing_military_museum_chitchat",
+    "A": {
+      "key": "gemini35flash_t0",
+      "model": "gemini35flash",
+      "trial": 0,
+      "tool": 10,
+      "turn": 12,
+      "etool": 3,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t0",
+      "model": "sonnet5",
+      "trial": 0,
+      "tool": 4,
+      "turn": 13,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_009",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_014",
+    "tid": "custom_022_guangzhou_home_baitiange_long_chitchat",
+    "A": {
+      "key": "gemini35flash_t0",
+      "model": "gemini35flash",
+      "trial": 0,
+      "tool": 12,
+      "turn": 18,
+      "etool": 5,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t0",
+      "model": "sonnet5",
+      "trial": 0,
+      "tool": 3,
+      "turn": 17,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 5,
+    "d_eturn": 0,
+    "orig_pid": "c14test_004",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_015",
+    "tid": "custom_017_beijing_tourist_yiheyuan_female_driver",
+    "A": {
+      "key": "gemini35flash_t2",
+      "model": "gemini35flash",
+      "trial": 2,
+      "tool": 15,
+      "turn": 22,
+      "etool": 10,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t2",
+      "model": "sonnet5",
+      "trial": 2,
+      "tool": 5,
+      "turn": 24,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 10,
+    "d_eturn": 0,
+    "orig_pid": "c14test_058",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_017",
+    "tid": "custom_031_guangzhou_tourist_sightseeing_cantonese",
+    "A": {
+      "key": "gemma431b_t0",
+      "model": "gemma431b",
+      "trial": 0,
+      "tool": 20,
+      "turn": 7,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "qw35ba3b_t2",
+      "model": "qw35ba3b",
+      "trial": 2,
+      "tool": 26,
+      "turn": 7,
+      "etool": 5,
+      "eturn": 0
+    },
+    "d_etool": -5,
+    "d_eturn": 0,
+    "orig_pid": "c14test_082",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_019",
+    "tid": "custom_017_beijing_tourist_yiheyuan_female_driver",
+    "A": {
+      "key": "ministral3b_t2",
+      "model": "ministral3b",
+      "trial": 2,
+      "tool": 8,
+      "turn": 23,
+      "etool": 3,
+      "eturn": 0
+    },
+    "B": {
+      "key": "qw359b_t0",
+      "model": "qw359b",
+      "trial": 0,
+      "tool": 4,
+      "turn": 20,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_072",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_021",
+    "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+    "A": {
+      "key": "ministral14b_t1",
+      "model": "ministral14b",
+      "trial": 1,
+      "tool": 3,
+      "turn": 3,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "qw359b_t2",
+      "model": "qw359b",
+      "trial": 2,
+      "tool": 10,
+      "turn": 9,
+      "etool": 4,
+      "eturn": 0
+    },
+    "d_etool": -4,
+    "d_eturn": 0,
+    "orig_pid": "c14test_068",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_022",
+    "tid": "custom_018_guangzhou_student_shangjiu_preference",
+    "A": {
+      "key": "dsv4pro_t2",
+      "model": "dsv4pro",
+      "trial": 2,
+      "tool": 9,
+      "turn": 13,
+      "etool": 3.5,
+      "eturn": 0
+    },
+    "B": {
+      "key": "opus46_t2",
+      "model": "opus46",
+      "trial": 2,
+      "tool": 6,
+      "turn": 13,
+      "etool": 0.5,
+      "eturn": 0
+    },
+    "d_etool": 3.0,
+    "d_eturn": 0,
+    "orig_pid": "c14test_003",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_023",
+    "tid": "custom_028_shanghai_station_sightseeing_tour_reminder",
+    "A": {
+      "key": "qw37max_t0",
+      "model": "qw37max",
+      "trial": 0,
+      "tool": 14,
+      "turn": 6,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gpt55nothink_t1",
+      "model": "gpt55nothink",
+      "trial": 1,
+      "tool": 20,
+      "turn": 5,
+      "etool": 5,
+      "eturn": 0
+    },
+    "d_etool": -5,
+    "d_eturn": 0,
+    "orig_pid": "c14test_010",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_024",
+    "tid": "custom_031_guangzhou_tourist_sightseeing_cantonese",
+    "A": {
+      "key": "qw37max_t2",
+      "model": "qw37max",
+      "trial": 2,
+      "tool": 18,
+      "turn": 8,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gpt55nothink_t0",
+      "model": "gpt55nothink",
+      "trial": 0,
+      "tool": 28,
+      "turn": 7,
+      "etool": 7,
+      "eturn": 0
+    },
+    "d_etool": -7,
+    "d_eturn": 0,
+    "orig_pid": "c14test_013",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_025",
+    "tid": "custom_023_shanghai_tangchenyipin_disney_long_chitchat",
+    "A": {
+      "key": "ministral3b_t2",
+      "model": "ministral3b",
+      "trial": 2,
+      "tool": 12,
+      "turn": 19,
+      "etool": 4.5,
+      "eturn": 0
+    },
+    "B": {
+      "key": "qw359b_t0",
+      "model": "qw359b",
+      "trial": 0,
+      "tool": 9,
+      "turn": 20,
+      "etool": 1.5,
+      "eturn": 0
+    },
+    "d_etool": 3.0,
+    "d_eturn": 0,
+    "orig_pid": "c14test_075",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_026",
+    "tid": "custom_031_guangzhou_tourist_sightseeing_cantonese",
+    "A": {
+      "key": "sonnet5_t0",
+      "model": "sonnet5",
+      "trial": 0,
+      "tool": 20,
+      "turn": 8,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t2",
+      "model": "sonnet5",
+      "trial": 2,
+      "tool": 24,
+      "turn": 8,
+      "etool": 3,
+      "eturn": 0
+    },
+    "d_etool": -3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_069",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_027",
+    "tid": "custom_029_chongqing_family_tour_plan",
+    "A": {
+      "key": "qw37plus_t2",
+      "model": "qw37plus",
+      "trial": 2,
+      "tool": 25,
+      "turn": 8,
+      "etool": 3,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gpt55nothink_t0",
+      "model": "gpt55nothink",
+      "trial": 0,
+      "tool": 21,
+      "turn": 9,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_011",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_028",
+    "tid": "custom_026_guangzhou_huangpu_home_south_station_family_trip",
+    "A": {
+      "key": "ministral3b_t2",
+      "model": "ministral3b",
+      "trial": 2,
+      "tool": 7,
+      "turn": 13,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "ministral8b_t0",
+      "model": "ministral8b",
+      "trial": 0,
+      "tool": 14,
+      "turn": 17,
+      "etool": 7,
+      "eturn": 0
+    },
+    "d_etool": -7,
+    "d_eturn": 0,
+    "orig_pid": "c14test_064",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_029",
+    "tid": "custom_015_shanghai_mcdonalds_rain_nosmoking",
+    "A": {
+      "key": "gpt55nothink_t2",
+      "model": "gpt55nothink",
+      "trial": 2,
+      "tool": 7,
+      "turn": 13,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "opus46_t2",
+      "model": "opus46",
+      "trial": 2,
+      "tool": 13,
+      "turn": 13,
+      "etool": 6,
+      "eturn": 0
+    },
+    "d_etool": -6,
+    "d_eturn": 0,
+    "orig_pid": "c14test_028",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_030",
+    "tid": "custom_016_beijing_tourist_shisanling_preference",
+    "A": {
+      "key": "qw36p_t2",
+      "model": "qw36p",
+      "trial": 2,
+      "tool": 4,
+      "turn": 17,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "sonnet5_t0",
+      "model": "sonnet5",
+      "trial": 0,
+      "tool": 9,
+      "turn": 17,
+      "etool": 4,
+      "eturn": 0
+    },
+    "d_etool": -4,
+    "d_eturn": 0,
+    "orig_pid": "c14test_029",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_031",
+    "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+    "A": {
+      "key": "qw37max_t1",
+      "model": "qw37max",
+      "trial": 1,
+      "tool": 5,
+      "turn": 6,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gemini35flash_t1",
+      "model": "gemini35flash",
+      "trial": 1,
+      "tool": 10,
+      "turn": 6,
+      "etool": 4,
+      "eturn": 0
+    },
+    "d_etool": -4,
+    "d_eturn": 0,
+    "orig_pid": "c14test_026",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_032",
+    "tid": "custom_028_shanghai_station_sightseeing_tour_reminder",
+    "A": {
+      "key": "gemini35flash_t1",
+      "model": "gemini35flash",
+      "trial": 1,
+      "tool": 18,
+      "turn": 4,
+      "etool": 3,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gemini35flash_t2",
+      "model": "gemini35flash",
+      "trial": 2,
+      "tool": 14,
+      "turn": 5,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 3,
+    "d_eturn": 0,
+    "orig_pid": "c14test_052",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_033",
+    "tid": "custom_028_shanghai_station_sightseeing_tour_reminder",
+    "A": {
+      "key": "dsv4pro_t0",
+      "model": "dsv4pro",
+      "trial": 0,
+      "tool": 20,
+      "turn": 4,
+      "etool": 5,
+      "eturn": 0
+    },
+    "B": {
+      "key": "mimo_t1",
+      "model": "mimo",
+      "trial": 1,
+      "tool": 15,
+      "turn": 5,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 5,
+    "d_eturn": 0,
+    "orig_pid": "c14test_079",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_034",
+    "tid": "custom_016_beijing_tourist_shisanling_preference",
+    "A": {
+      "key": "glm52_t2",
+      "model": "glm52",
+      "trial": 2,
+      "tool": 14,
+      "turn": 17,
+      "etool": 9,
+      "eturn": 0
+    },
+    "B": {
+      "key": "gpt55nothink_t2",
+      "model": "gpt55nothink",
+      "trial": 2,
+      "tool": 5,
+      "turn": 17,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 9,
+    "d_eturn": 0,
+    "orig_pid": "c14test_043",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_035",
+    "tid": "custom_023_shanghai_tangchenyipin_disney_long_chitchat",
+    "A": {
+      "key": "gpt55nothink_t1",
+      "model": "gpt55nothink",
+      "trial": 1,
+      "tool": 11,
+      "turn": 20,
+      "etool": 3.5,
+      "eturn": 0
+    },
+    "B": {
+      "key": "opus46_t1",
+      "model": "opus46",
+      "trial": 1,
+      "tool": 3,
+      "turn": 21,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 3.5,
+    "d_eturn": 0,
+    "orig_pid": "c14test_005",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "iaac_036",
+    "tid": "custom_015_shanghai_mcdonalds_rain_nosmoking",
+    "A": {
+      "key": "ministral8b_t2",
+      "model": "ministral8b",
+      "trial": 2,
+      "tool": 13,
+      "turn": 13,
+      "etool": 6,
+      "eturn": 0
+    },
+    "B": {
+      "key": "qw3627b_t0",
+      "model": "qw3627b",
+      "trial": 0,
+      "tool": 7,
+      "turn": 11,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 6,
+    "d_eturn": 0,
+    "orig_pid": "c14test_000",
+    "src": "custom14"
+  },
+  {
+    "pair_id": "hsgiaa_000",
+    "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+    "A": {
+      "model": "dsv4pro",
+      "trial": 0,
+      "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+      "tool": 10,
+      "turn": 8,
+      "etool": 4,
+      "eturn": 0
+    },
+    "B": {
+      "model": "dsv4pro",
+      "trial": 2,
+      "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+      "tool": 7,
+      "turn": 9,
+      "etool": 1,
+      "eturn": 0
+    },
+    "d_etool": 3,
+    "d_eturn": 0,
+    "orig_pid": "iaac_006",
+    "src": "hsg_backfill"
+  },
+  {
+    "pair_id": "hsgiaa_001",
+    "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+    "A": {
+      "model": "dsv4pro",
+      "trial": 0,
+      "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+      "tool": 10,
+      "turn": 8,
+      "etool": 4,
+      "eturn": 0
+    },
+    "B": {
+      "model": "gemma426b",
+      "trial": 0,
+      "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+      "tool": 5,
+      "turn": 7,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 4,
+    "d_eturn": 0,
+    "orig_pid": "iaac_008",
+    "src": "hsg_backfill"
+  },
+  {
+    "pair_id": "hsgiaa_002",
+    "tid": "custom_022_guangzhou_home_baitiange_long_chitchat",
+    "A": {
+      "model": "dsv4pro",
+      "trial": 0,
+      "tid": "custom_022_guangzhou_home_baitiange_long_chitchat",
+      "tool": 5,
+      "turn": 18,
+      "etool": 0,
+      "eturn": 0
+    },
+    "B": {
+      "model": "llama3370b",
+      "trial": 0,
+      "tid": "custom_022_guangzhou_home_baitiange_long_chitchat",
+      "tool": 14,
+      "turn": 19,
+      "etool": 7,
+      "eturn": 0
+    },
+    "d_etool": -7,
+    "d_eturn": 0,
+    "orig_pid": "iaac_016",
+    "src": "hsg_backfill"
+  },
+  {
+    "pair_id": "hsgiaa_003",
+    "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+    "A": {
+      "model": "dsv4pro",
+      "trial": 0,
+      "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+      "tool": 10,
+      "turn": 8,
+      "etool": 4,
+      "eturn": 0
+    },
+    "B": {
+      "model": "gemma426b",
+      "trial": 1,
+      "tid": "custom_030_beijing_programmer_recurring_wednesday_ride",
+      "tool": 5,
+      "turn": 7,
+      "etool": 0,
+      "eturn": 0
+    },
+    "d_etool": 4,
+    "d_eturn": 0,
+    "orig_pid": "iaac_018",
+    "src": "hsg_backfill"
+  }
+]

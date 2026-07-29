@@ -1,0 +1,169 @@
+name: full_trajectory_no_rubrics_eval_template
+chinese: |-
+  # 系统信息
+  {env_info}
+
+  # 用户完整指令
+  {user_instruction}
+
+  # 价格语义（涉及预算 / 价格判定时必读）
+  - `estimate_fee` = 预估原价；`discount_fee` = 实际优惠；`surge_multiplier` = 动态加价倍率（默认 1.0）
+  - **实付价格 = (estimate_fee − discount_fee) × surge_multiplier**
+  - 涉及"预算 X 内 / 最便宜 / 不超 Y 元"等判定，按**实付价格**比对，禁止用预估原价
+
+  # 任务
+  基于 <trajectory_content>，判断 **user 在对话中实际表达过的所有子需求** 是否被全部完成。
+  - `true`：assistant 完整满足了 user 对话中表达过的所有子需求
+  - `false`：user 在对话中提出但 assistant 未正确处理（或承诺未执行 / 流程残缺 / 工具失败）
+
+  # ⚠ 四条硬约束
+
+  ## 硬约束 0: 仿真边界（最优先 — 防 user simulator 漏传误伤 agent）
+  评估范围 = **user 在对话中显性或隐性表达过**的需求；task.instructions 仅是仿真前的设计意图，
+  user simulator 仿真时**未触达**的子需求 → 按 N/A 处理，不参与判分。
+  - ❌ 不要因"task.instructions 写了 X 但 user 在对话中从未提及"判 false
+  - ❌ 不要因"task 设计是 5 阶段但 user 仿真到第 3 阶段就结束"对剩余阶段判 false
+  - ✓ user 用代词/省略隐性表达的（"老样子"/"还是按上次"/"那就这样吧"）仍要 agent 推理；未推 → false
+  - ✓ user 显性表达的需求（车型/预算/地址/时间）必须满足，缺一即 false
+
+  自检：判 false 前确认该子需求"在 trajectory 的 user 消息中**真的出现过**"，
+  仅 instructions 描述但 user 未说 → 改判 N/A 不扣分。
+
+  ## 硬约束 1: 用户决策兜底（不算 agent 失败）
+  以下情形 assistant 行为合规，应判 **true**（前提是其他子需求都满足）：
+  - 用户全程取消未要求重建 → assistant 取消是合理终态，不因"未下单"判 false
+  - 用户主动放弃下单（"算了/那就不叫了/取消"）→ assistant 配合取消是合理
+  - 用户接受 agent 给出的量化结论（ETA/价格/可达性）后径直下单 → assistant 已完成量化告知职责
+  - 用户接受 agent 提出的妥协方案（"那就快车吧"/"行/可以接受"）→ 被妥协的偏好不再扣分
+  - 客观无解 + agent 已主动告知冲突 + 量化代价 + 用户接受替代 → assistant 已尽力，应判 true
+
+  写完 justification 后**自检**：含"用户接受/同意/那就这样/算了/取消/agent 已尽力告知/客观无解+已告知"任一 → meetExpectation 应为 **true**。
+
+  ## 硬约束 2: 偏好满足以订单字段为准（防 agent 口头幻觉）
+  涉及车型/品牌/标签等偏好时，以**最终订单字段**（`car_type` / `driver_tags` / `notes`）或工具返回客观数据为准。
+  - assistant 口头声称（"这是 SUV"/"车龄新"/"已加备注"）**不算证据**
+  - 品牌世界知识推断（"GL8 是 MPV"）**不算证据**
+  - 自报偏好未落到订单字段或与工具数据矛盾 → 判 false
+
+  ## 硬约束 3: 流程闭环判定
+  涉及订单创建的指令必须确认 tool_call 真实成功：
+  - assistant 误以为完成下单但 tool_call 失败 → false
+  - 用户表示"我自己下单"等让 assistant 跳过下单 → false
+  - 创建订单未收尾 / 承诺 X 但 tool_call 未执行 → false
+
+  # STRICT 默认判定（用于硬约束未触发场景）
+
+  1. **默认 false**。对 user 在对话中表达过的需求，模糊/部分/近似满足按 false。
+  2. user 对话中含多个子需求时，必须**全部**满足才 true；缺一即 false（仅指 user 实际提过的子需求，硬约束 0 已豁免未提部分）。
+  3. 商品数量、送达时间类指令**严格**按要求，用户妥协（"少点也行"/"晚点也行"）不豁免。
+  4. 地址、备注类指令采用**功能等效**原则：内容能实现相同功能即视为满足，措辞不必完全一致。
+  5. **倾向原则**：true/false 犹豫时选 false（除非命中硬约束 0/1）。
+
+  # 注意事项
+  - 评估边界 = **user 在对话中实际表达过的需求**；task.instructions 仅是仿真前的设计意图，user 仿真未触达的子需求按硬约束 0 处理（N/A 不扣分）
+  - tool 返回只对 assistant 可见，须看 assistant 对用户的实际回复；assistant 不得编造 tool 返回
+  - 打车·预约单终态：`create_scheduled_ride` 成功即终态 `scheduled`，无需 `confirm_ride`
+  - 打车·取消重建以最终意图为准：以最新一次主动创建的订单状态为准；过程中 cancelled 订单不扣分；从未成功创建则按硬约束 1 处理
+  - 个性化偏好类（"平稳/安静"等）：用户**首次提出**时的订单已满足即视为满足；后续行程变更未重提偏好不应判失败
+  - justification 简练记录关键证据及对应轮次 [x]
+
+  # 格式要求
+  回复为 JSON 对象：
+  - `justification`：评估结果的简要解释
+  - `meetExpectation`：true 或 false
+
+  # 示例输入结构：
+  <trajectory_content>xxx</trajectory_content>
+
+  # 示例回复结构：
+  ```json
+  {{
+      "justification": "<对评估结果的简要解释>",
+      "meetExpectation": <true or false>
+  }}
+  ```
+
+english: |-
+  # System Information
+  {env_info}
+
+  # User Complete Instruction
+  {user_instruction}
+
+  # Price Semantics (required for budget / price-cap judgments)
+  - `estimate_fee` = base price; `discount_fee` = actual discount; `surge_multiplier` = surge multiplier (default 1.0)
+  - **Actual paid = (estimate_fee − discount_fee) × surge_multiplier**
+  - For "within budget X / cheapest / not over Y" judgments, compare against **actual paid**, NOT base price
+
+  # Task
+  Based on <trajectory_content>, determine whether **all sub-requirements actually expressed by the user in the conversation** have been fully completed.
+  - `true`: assistant fully satisfied all sub-requirements the user expressed in conversation
+  - `false`: user raised it in conversation but assistant didn't handle correctly (promised but never executed / incomplete flow / tool call failed)
+
+  # ⚠ Four Hard Constraints
+
+  ## Hard Constraint 0: Simulation boundary (HIGHEST PRIORITY — protects against user-simulator omission)
+  Evaluation scope = sub-requirements **explicitly or implicitly expressed by user in conversation**;
+  task.instructions is only the design intent before simulation. Sub-requirements NOT reached
+  by user simulator during simulation → treat as N/A, do NOT count toward judgment.
+  - ❌ Do NOT fail because "task.instructions wrote X but user never mentioned it in conversation"
+  - ❌ Do NOT fail remaining stages because "task design has 5 stages but user simulated only 3 stages"
+  - ✓ User-implicit expressions (deictic "last time / regular / forget it") still require agent inference; missing inference → false
+  - ✓ User-explicit needs (car type / budget / address / time) must be satisfied; missing any → false
+
+  Self-check: before judging false, confirm the sub-requirement **actually appeared in user messages within the trajectory**.
+  Mentioned only in instructions but not by user in conversation → judge as N/A, do not deduct.
+
+  ## Hard Constraint 1: User-decision fallback (NOT agent failure)
+  In the following situations, assistant behavior is compliant and should be judged **true** (assuming other sub-requirements satisfied):
+  - User cancelled all rides and never asked to rebook → cancellation is a reasonable terminal state, do NOT fail for "no order placed"
+  - User voluntarily gave up ordering ("forget it / just don't book / cancel") → assistant compliance is reasonable
+  - User accepted assistant's quantified conclusion (ETA/price/feasibility) and proceeded to order → quantification duty fulfilled
+  - User accepted assistant's compromise proposal ("ok let's go with X" / "fine / acceptable") → compromised preference no longer penalized
+  - Objectively unsolvable + assistant proactively informed conflict + quantified cost + user accepted alternative → assistant has done their best, judge true
+
+  After writing justification, **self-check**: if it contains "user accepted/agreed/forget it/cancel/assistant has done their best informing/objectively unsolvable + informed", meetExpectation should be **true**.
+
+  ## Hard Constraint 2: Preference satisfaction must reference order fields (anti-hallucination)
+  For preferences involving car type/brand/tags, judge based on **final order fields** (`car_type` / `driver_tags` / `notes`) or tool-returned objective data.
+  - Assistant verbal claims ("this is an SUV" / "this car is new" / "note added") **do NOT count as evidence**
+  - Brand world-knowledge inference ("GL8 is an MPV") **does NOT count as evidence**
+  - If self-claimed preference is not in order fields or contradicts tool data → judge false
+
+  ## Hard Constraint 3: Workflow closure check
+  Instructions involving order creation must confirm tool_call actually succeeded:
+  - Assistant mistakenly believed ordering completed but tool_call failed → false
+  - User said "I'll place it myself" letting assistant skip ordering → false
+  - Order created but not finalized / promised X but tool_call never executed → false
+
+  # STRICT Default Judgment (when hard constraints don't trigger)
+
+  1. **Default false**. For requirements user expressed in conversation, vague/partial/approximate satisfaction → false.
+  2. When user expressed multiple sub-requirements in conversation, **all** must be satisfied to judge true; missing any → false (only counts user's actually-expressed sub-requirements; Constraint 0 already exempts unmentioned ones).
+  3. Product quantity, delivery time instructions are strictly enforced; user compromise ("fewer items is okay" / "later delivery is fine") does NOT exempt.
+  4. Address, notes-type instructions apply **functional equivalence**: content achieving the same function is considered satisfied, wording need not be identical.
+  5. **Tie-break**: when unsure between true/false, choose false (unless Hard Constraint 0/1 applies).
+
+  # Important Notes
+  - Evaluation scope = **sub-requirements actually expressed by user in conversation**; task.instructions is only design intent before simulation; sub-requirements not reached by user simulation → handle per Hard Constraint 0 (N/A, no deduction)
+  - Tool returns are only visible to assistant; must see assistant's actual reply to user; assistant cannot fabricate tool returns
+  - Ride-hailing · Scheduled terminal state: After `create_scheduled_ride` succeeds, status is `scheduled`, no `confirm_ride` needed
+  - Ride-hailing · Cancel-rebook with final intent: based on the latest order proactively created by the user; cancelled orders in between do not deduct points; if no order was ever successfully created, follow Hard Constraint 1
+  - Personalized preferences ("smooth driving" / "quiet ride"): if the order created when user first stated the preference satisfied it, considered satisfied; subsequent trip changes without restating the preference should not fail
+  - In justification, record key evidence and corresponding rounds [x] concisely
+
+  # Format Requirements
+  Reply as a JSON object:
+  - `justification`: Brief explanation of evaluation result
+  - `meetExpectation`: true or false
+
+  # Example Input Structure:
+  <trajectory_content>xxx</trajectory_content>
+
+  # Example Response Structure:
+  ```json
+  {{
+      "justification": "<brief explanation of evaluation result>",
+      "meetExpectation": <true or false>
+  }}
+  ```

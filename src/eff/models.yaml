@@ -1,0 +1,63 @@
+# LLM Model Configuration
+#
+# Define the models available to the CLI flags --agent-llm / --user-llm / --evaluator-llm.
+# Each entry needs:
+#   name:      identifier used on the command line
+#   base_url:  full endpoint URL
+#   headers:   HTTP headers (auth, content-type)
+#   backend:   optional — `azure`, `gemini`, or `claude` for non-OpenAI APIs
+#              (default is OpenAI-compatible chat completions)
+#   model_id:  optional — overrides `name` in the request body
+#
+# The `default:` section is merged into every model entry.
+#
+# Local overrides: if a `models.local.yaml` file exists next to this file it is
+# loaded instead (keep your real API keys there — it is gitignored). You can
+# also point to any config file via the EFF_MODEL_CONFIG_PATH env var.
+#
+# Think / reasoning mode: add `enable_think: true` to a model entry, or pass
+# --enable-think on the CLI. The mechanism is auto-detected per model family
+# (see llm_utils._detect_think_family()).
+
+default:
+  temperature: 0.0
+
+models:
+  # ── OpenAI-compatible endpoint (default backend) ──
+  - name: deepseek-chat
+    model_id: deepseek-chat
+    base_url: https://api.deepseek.com/chat/completions
+    headers:
+      Authorization: "Bearer YOUR_API_KEY"
+      Content-Type: "application/json"
+
+  - name: qwen-max
+    model_id: qwen-max
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+    headers:
+      Authorization: "Bearer YOUR_API_KEY"
+      Content-Type: "application/json"
+
+  # ── Azure OpenAI ──
+  - name: gpt-5.2
+    backend: azure
+    azure_endpoint: "https://YOUR_RESOURCE.openai.azure.com"
+    api_key: "YOUR_API_KEY"
+    api_version: "2025-01-01-preview"
+
+  # ── Google Gemini (generateContent API) ──
+  - name: gemini-2.5-flash
+    backend: gemini
+    base_url: https://generativelanguage.googleapis.com/v1beta/models
+    headers:
+      x-goog-api-key: "YOUR_API_KEY"
+      Content-Type: "application/json"
+
+  # ── Anthropic Claude (Messages API) ──
+  - name: claude-sonnet-4-5
+    backend: claude
+    base_url: https://api.anthropic.com/v1/messages
+    headers:
+      x-api-key: "YOUR_API_KEY"
+      anthropic-version: "2023-06-01"
+      Content-Type: "application/json"

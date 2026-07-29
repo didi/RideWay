@@ -1,0 +1,237 @@
+name: full_trajectory_eval_template
+chinese: |-
+  # 系统信息
+  {env_info}
+
+  # 用户完整指令
+  {user_instruction}
+
+  # 价格语义（涉及预算 / 价格上限的 rubric 必读）
+  - `estimate_fee` = 预估原价；`discount_fee` = 实际优惠；`surge_multiplier` = 动态加价倍率（默认 1.0）
+  - **实付价格 = (estimate_fee − discount_fee) × surge_multiplier**
+  - 涉及"预算 X 内 / 最便宜 / 不超 Y 元"等判定，按**实付价格**比对，禁止用预估原价
+
+  # 推荐司机原则（涉及 [C6] 司机推荐 rubric 必读）
+  优先级：**本次表达 > 历史行为偏好 > 通用默认**。判定按短路顺序，**不算分、不用百分比**：
+  1. **本次表达**：agent 推荐的司机违反用户本次明确表达（车型/品牌/预算上限/接驾时限/赶时间等）→ **false**
+  2. **历史偏好**（仅当本次无明确表达时启用）：`environment` 中历史订单/用户画像存在强信号（如总选最便宜、油/电偏好、高峰怕等），agent 完全无视 → **false**
+  3. **ETA**：①②都不违反时，推荐司机的接驾 ETA 显著劣于候选列表中其他可选司机（差 ≥ 3 min 或 ≥ 30%）且 agent 无解释（如"评分高/便宜/品牌符合"）→ **false**
+  4. **价格**：①②③都不违反时，推荐司机的**实付价**显著贵于同车型其他司机（差 ≥ 30% 或 ≥ 10 元）且 agent 无解释 → **false**
+  5. ①②③④都通过 → **true**
+  6. 整段对话 agent **无司机推荐/选择行为**（如用户直接指定司机、直接下单）→ **N/A**
+  注：①违反 = false 是硬规则；②③④"显著背离 + 无解释"才扣分，避免吹毛求疵。
+
+  # 任务
+  基于 <trajectory_content>，对 <current_rubrics> 中每条得分点输出 `meetExpectation`：
+  - `true`：assistant 明确且完整满足 rubric 全部子条件
+  - `false`：用户提出该需求但 assistant 未正确处理（默认值）
+  - `"not_applicable"`：用户从未提出该需求 / 前提从未成立
+
+  # ⚠ 三条硬约束（违反 = 格式错误，自动 fallback）
+
+  ## 硬约束 1: NA-自洽（justification 与 meetExpectation 必须一致）
+  若 justification 含以下任一类表述，meetExpectation **必须** 为 `"not_applicable"`，禁止 `false`：
+  - **显式 N/A**：应标 N/A / 应豁免 / 本条 N/A / 应判 N/A / 应不适用 / 实际不适用 / 暂不适用 / 此处应豁免 / 此条不适用 / 此 rubric 不适用 / 暂不评估 / 不构成失败 / 不应判 false / 不应扣分
+  - **前提未触达**：用户尚未 / 用户未提（到/及）/ 用户未表达 / 暂未涉及 / 暂未触发 / 未发生 / 该 rubric 前提未成立 / 触发条件未满足
+  - **等效语义**：功能等效 / 语义等价 / 实质满足 / 实质等同
+  - **用户接受**：用户接受 / 同意 / 认可 / 那就这样 / 行吧 / OK / 接受 agent 的量化/估算 / 按 agent 建议推进
+  - **用户放弃**：算了 / 取消 / 不要了 / 放弃
+  - **客观无解**：agent 已尽力 +（告知 / 量化 / 推荐替代）/ 客观无解 + agent 已告知
+
+  写完 justification 后**自检**：扫描上述短语，命中即改 met=N/A。
+
+  ## 硬约束 2: 前提消解优先（rubric 前提被用户行为消解 → N/A）
+  - 用户全程取消未要求重建 → A1 / A2 / A3 / B3 全部 N/A
+  - 用户未表达任何显性偏好 → A3 N/A
+  - 用户未表达需推断的弱信号 → C4 N/A
+  - **用户接受 agent 给出的量化结论（ETA/价格/可达性）后径直下单 → C2 "量化告知"要求 N/A**
+  - **用户接受 agent 估算后未追问差额/选项 → B4 "建议选项+等用户表态"中已给的选项部分按用户已选处理，不判 false**
+  - 动态事件未触发即结束对话 → B4 N/A
+  - 用户未发生中途改意 → B2 N/A
+  - 对话中未发生取消重下 → B3 N/A
+  - rubric 写明前提（"若...则"）时，判 false 前先核查前提；不成立则改 N/A
+
+  ## 硬约束 3: 口头不算（仅 [A3]/[C4] 偏好类）
+  偏好满足**仅基于最终订单字段**（`car_type` / `driver_tags` / `notes`）或工具返回的客观数据。
+  - assistant 口头声称（"这是 SUV"/"车龄新"/"已加备注"）**不算证据**
+  - 品牌世界知识推断（"GL8 是 MPV"）**不算证据**
+  - 自报偏好未落到订单字段或与工具数据矛盾 → 仍判 false
+
+  ## 硬约束 4: 价格判定按实付（涉及预算/价格上限的 rubric）
+  - `estimate_fee` 是预估**原价**，不含优惠；`discount_fee` 是实际优惠；`surge_multiplier` 是动态加价倍率（默认 1.0）
+  - **实付价格 = (estimate_fee − discount_fee) × surge_multiplier**
+  - rubric 涉及"预算 X 内 / 最便宜 / 不超 Y 元"等判定时，**必须按实付价格比对**，禁止按预估原价
+  - 若 agent 用原价告知"超预算"但减优惠后未超 → agent 行为不当；rubric 仍按实付判 met
+
+  # STRICT 默认判定（用于硬约束未触发场景）
+
+  1. **默认 false**。模糊/部分/近似满足按 false。
+  2. **多子条件全满足**：仅当 rubric 文本本身用 ①②③ / "+" 显式列举多个动作（典型见 B4/C2 三段式）时，全列举项必须满足才 true；其他单点 rubric 直接判主条件。
+  3. rubric 用"主动告知/主动提醒"等质量词时（典型见 B4），须有清晰独立表达，敷衍带过判 false。
+  4. **流程残缺判 false**：创建订单未收尾、承诺 X 但 tool_call 未执行、agent 误以为下单成功但工具失败、让用户自己下单。
+  5. **倾向原则**：true/false 犹豫选 false；false/N/A 犹豫先核查前提（按硬约束 2）。
+
+  # 妥协识别（仅 [A3]/[C4] 多约束冲突场景）
+  rubric 涉及妥协兜底时，若 justification 同时含三要素：
+  - (a) 工具数据**客观存在**冲突（"无可选/不可用/超预算"，可在 tool 历史查到）
+  - (b) assistant **主动告知** + **量化代价**（差额/缺失项/最近替代）
+  - (c) 用户**明确表态**：接受 / 拒绝 / 取消
+
+  → 被妥协的偏好 = N/A（多偏好场景自动降级"≥2/3 满足即可"，含 multi-stakeholder 场景的另一方）；用户拒绝/放弃下单 → A1/A2/状态字段 N/A；三要素缺一 → 按原 rubric 判。
+
+  # 形式等效豁免（仅 [C2]/[C3]）
+  用户**明确接受** assistant 提出的等效替代后，"形式约束"（如"列 N 候选让用户选"/"文本明示总耗时"）降级 N/A，仅核查"实质约束"（时间推理结果正确等）。
+  注：A1（含 via/拆单等效）/ A3 已在 rubric 文本内显式等效（如 via_addresses 一单/分单均可），本规则不再叠加。
+  **不适用**于订单基本要素（起终点正确 / 是否成功创建 / 商品数量 / 送达时间）。
+
+  # 注意事项
+  - 一切以 rubric 字段为准；user 对话仅作上下文；tool 返回只对 assistant 可见，须看 assistant 对用户的实际回复；assistant 不得编造 tool 返回
+  - 商品数量/送达时间类 rubric 严格按要求，用户妥协（"少点也行"/"晚点也行"）不豁免
+  - 地址/备注类采用功能等效原则：能实现相同功能即满足
+  - 打车·预约单终态：`create_scheduled_ride` 成功即终态 `scheduled`，无需 `confirm_ride`
+  - 打车·取消重建以最终意图为准：以最新一次主动创建的订单状态为准；过程中 cancelled 订单不扣分；从未成功创建则"无可取消订单"分支视为满足
+  - 重复播报豁免：仅约束 assistant 对**已确认信息**的主动冗余复述；以下不算重复：tool 失败重试、订单创建/取消/确认后**首次**汇总回执、系统事件简要复述
+  - 个性化偏好类（"平稳/安静"等）：用户**首次提出**时的订单已满足即视为满足；后续行程变更未重提偏好不应翻 false
+  - justification 简练记录关键信息及对应轮次 [x]
+
+  # 格式要求
+  - 回复为 JSON 数组，每项含 `rubric_idx` / `rubric` / `justification` / `meetExpectation`（true / false / "not_applicable"）
+
+  # 示例输入结构：
+  <trajectory_content>xxx</trajectory_content>
+  <current_rubrics>xxx</current_rubrics>
+
+  # 示例回复结构：
+  ```json
+  [
+    {{
+        "rubric_idx": "rubric_0",
+        "rubric": "<复述规则>",
+        "justification": "<状态变化的简要解释>",
+        "meetExpectation": <true or false or "not_applicable">
+    }},
+    ...
+  ]
+  ```
+
+english: |-
+  # System Information
+  {env_info}
+
+  # User Complete Instruction
+  {user_instruction}
+
+  # Price Semantics (required for budget / price-cap rubrics)
+  - `estimate_fee` = base price; `discount_fee` = actual discount; `surge_multiplier` = surge multiplier (default 1.0)
+  - **Actual paid = (estimate_fee − discount_fee) × surge_multiplier**
+  - For "within budget X / cheapest / not over Y" rubrics, compare against **actual paid**, NOT base price
+
+  # Driver Recommendation Principle (required for [C6] driver-recommendation rubric)
+  Priority: **current-turn expression > historical preference > generic default**. Judge by short-circuit order; **no scoring, no percentages**:
+  1. **Current-turn expression**: agent's recommendation violates the user's explicit current-turn statement (car type / brand / budget cap / pickup-time limit / time-critical, etc.) → **false**
+  2. **Historical preference** (activates only when current-turn has no explicit signal): `environment` past orders / user profile has strong signals (always-pick-cheapest, EV/ICE preference, peak-hour wait tolerance), and agent fully ignores them → **false**
+  3. **ETA**: if ①② not violated, recommended driver's pickup ETA is significantly worse than other candidates in the list (≥ 3 min or ≥ 30% gap) with no agent explanation (e.g. "higher rating / cheaper / matches brand") → **false**
+  4. **Price**: if ①②③ not violated, recommended driver's **actual paid** is significantly more expensive than other drivers of the same car type (≥ 30% or ≥ 10 CNY gap) with no agent explanation → **false**
+  5. ①②③④ all pass → **true**
+  6. Agent made **no driver recommendation / selection** across the entire dialogue (e.g. user specified driver directly, or placed order directly) → **N/A**
+  Note: ① violation = false is a hard rule; ②③④ require both "significant deviation" + "no explanation" to deduct points — don't nitpick.
+
+  # Background
+  - This is a conversation scenario between a user and an assistant, where the assistant can call tools to retrieve information and complete operations. Tool return results will start with "tool"
+  - You need to evaluate whether the user instruction has been completed. The user's complete instruction has been broken down into several scoring points (rubrics), and you only need to judge whether each scoring point is satisfied
+  - <trajectory_content> contains the complete conversation content between the user and assistant
+  - <current_rubrics> contains the current status of all scoring points (true means satisfied, false means not satisfied, all scoring points have an initial status of false)
+
+  # Task
+  - Based on the conversation content, update the scoring point rubric status
+  - You can update the status from false to true, if and only if the assistant completed the goal in the conversation
+  - You can set the status to "not_applicable", if and only if: the user never raised the need or scenario covered by this rubric throughout the entire conversation, so the assistant had no opportunity to fulfill this goal. Note: this judgment should be used very cautiously; if the user raised the need but the assistant failed to handle it correctly, mark it as false, not not_applicable
+
+  # Strict Judgment Principles (STRICT)
+  - **Default to false. Only mark true when the assistant clearly and completely satisfies all sub-conditions of the rubric.** Vague, partial, or approximate satisfaction counts as false.
+  - If the rubric contains multiple sub-conditions (e.g. A + B + C), **all** must be met to mark true; satisfying A but missing B → false.
+  - When the rubric uses quality qualifiers like "proactive / timely / complete / explicit", the assistant's behavior must objectively demonstrate that quality. Perfunctory mentions, only-after-user-prompt responses, or one-line references → false.
+  - When the rubric requires "based on data / cited from tool return", the assistant must actually cite specific numbers or key fields in its reply; vague expressions like "estimated" or "roughly" → false.
+  - When the rubric requires "recommend the optimal plan / best value", you must check the tool-returned data to verify the recommendation truly is optimal; recommending a reasonable but suboptimal plan → false.
+  - When the rubric requires "warn of risk / explicitly inform X", there must be a clear standalone statement, not a one-liner buried in a long paragraph.
+  - If the agent's workflow is incomplete (e.g. created order but never finalized, promised X but never executed the tool_call), mark false.
+  - **Tie-break principle**: when unsure between true / false → choose false; when unsure between false / not_applicable → verify the precondition first.
+
+  # Anti-misjudgment Rules (override STRICT, descending priority)
+  These rules take priority over STRICT and are designed to eliminate common false-positive/false-negative patterns:
+
+  - **G14 self-consistency hard constraint (highest priority)**: If your justification text contains any of the following key phrases, meetExpectation **must be "not_applicable"**, NOT false:
+    - Explicit N/A: "should mark N/A" / "should be exempted" / "this rubric is N/A" / "not applicable" / "currently not applicable" / "temporarily not applicable" / "rubric does not apply"
+    - Premise-not-reached: "user has not yet (raised/expressed/mentioned)" / "premise not yet met" / "trigger condition not satisfied" / "scenario has not occurred"
+    - Equivalent: "functionally equivalent" / "semantically equivalent" / "substantively satisfied"
+    - User-accepts/abandons: "user has compromised" / "user has accepted" / "user has given up" / "user voluntarily abandoned"
+    - Objectively-unsolvable: "objectively unsolvable + agent has informed" / "agent has done their best + (informed / quantified / recommended alternative)"
+    Justification contradicting meetExpectation is treated as a format error; auto-fallback to "not_applicable".
+
+  - **G13 equivalent-substitute exemption** (applies only to [A1]/[A3]/[C2]/[C3] preference/form-type rubrics; A1 now covers multi-stop form-type — via_addresses vs split-order): After the user **explicitly accepts** an equivalent substitute proposed by the assistant, "form constraints" in the rubric downgrade to "not_applicable"; only check "substance constraints".
+    - Form constraints (e.g. "via X channel/method/tool" semantics): create one order with via_addresses / list N candidates / explicitly state total trip time in text
+    - Substance constraints (e.g. "satisfy Y field value/requirement" semantics): each segment's start/end is correct / time reasoning result is correct
+    - Example: rubric requires "one order with via_addresses" but user accepts "split into two orders" → form N/A, evaluate by substance (each segment correct)
+    - Note: this rule does **NOT** apply to basic order elements (correct start/end, order successfully created, product quantity, delivery time) — those are substance constraints; user compromise does NOT exempt them
+
+  - **G8 three-step compromise identification** (applies only to [A3]/[C4] preference rubrics, multi-constraint conflict scenarios):
+    1. Tool data **objectively shows** conflict (not assistant-fabricated; must be verifiable in tool-call history)
+    2. Assistant **proactively informs** of conflict + **quantifies the cost** (specific difference / missing item / nearest alternative)
+    3. User **explicitly states**: "accept/okay/that's fine" or "reject/cancel/don't want"
+    - Three steps passed + user accepts → compromised preference becomes "not_applicable" (do NOT judge false); in multi-preference scenarios, strict-check auto-downgrades to "≥2/3 preferences satisfied"
+    - Three steps passed + user rejects/abandons → A1/A2/status fields become "not_applicable" ("not ordered" ≠ A1 failure)
+    - Any step missing → judge per original rubric
+
+  - **G12 preference satisfaction must reference order fields** (applies only to [A3]/[C4]; anti-hallucination for assistant claims): judgment is based **only on final order fields** (car_type / driver_tags / notes) or tool-returned objective vehicle/driver data.
+    - Assistant verbal claims ("this is an SUV"/"this car is new"/"this driver is steady"/"note added") **do NOT count as evidence**
+    - Brand world-knowledge inference ("GL8 is an MPV"/"Odyssey is an MPV") **does NOT count as evidence**
+    - If assistant-claimed preference is not reflected in order fields or contradicts tool data, still judge false
+
+  - **G15 price comparisons use actual paid** (applies to all rubrics involving budget / price cap):
+    - `estimate_fee` is **base price** (no discount, no surge); `discount_fee` is per-order discount; `surge_multiplier` is dynamic surge (default 1.0)
+    - **actual_paid = (estimate_fee − discount_fee) × surge_multiplier**
+    - For rubrics with "within budget X / cheapest / under Y CNY" criteria, **always compare against actual_paid**, never base price
+    - If assistant cites base price to say "over budget" but discount-applied amount fits → assistant behavior is suboptimal; rubric still judges met based on actual_paid
+
+  - **G9 user-decision fallback** (preconditions dissolved by user behavior in dialogue):
+    - User cancelled all rides, never asked to rebook → A1/A2/A3 all "not_applicable"
+    - User expressed no explicit preferences → A3 "not_applicable"
+    - Dialogue ended before dynamic event triggered → B4 "not_applicable"
+    - No mid-change occurred → B2 "not_applicable"
+
+  # Important Notes
+  - Important: All evaluations are based on whether the assistant's responses and tool call requests complete the goals in the rubrics. User expressions in the conversation are only considered as guidance for the assistant and do not directly affect evaluation standards. Everything is based on the rubric fields!
+  - Important: Query tool return results are only visible to the assistant and do not represent content recommended by the assistant to users, so they do not directly affect evaluation results either. Everything must be based on the assistant's responses to users after obtaining information! Also note that the Assistant cannot fabricate Tool return results!
+  - Important: For order-related rubrics (involving order details that must generate orders), you must confirm whether the assistant actually completed the ordering operation. The assistant may mistakenly believe they completed the ordering operation when in fact the tool call failed; or situations where the user states they "can place the order themselves," etc., should all be considered as not meeting the requirements
+  - For rubrics involving order details such as product quantity or delivery time, the original rubric requirements must be strictly met (no deviation in product quantities, delivery must not be later than the expected time). User compromise behavior does not affect evaluation results (for example, when a user states "fewer items is okay", "I have no objections to the order content" or "later delivery is fine" etc.). These situations should still be considered as not meeting the requirements
+  - For rubrics involving text content matching of addresses or order notes, apply the functional equivalence principle: as long as the actual content can achieve the same function (such as roughly locating the delivery location or conveying the customer's main needs), it is considered to meet the requirements even if the expression is not completely consistent or lacks some details
+  - Ride-hailing domain · Scheduled terminal state: After `create_scheduled_ride` succeeds, the order status is `scheduled`, which is the terminal state of the scheduled-booking flow; no subsequent `confirm_ride` is required. If a rubric requires status `scheduled`, reaching that status satisfies the rubric — do NOT judge false on the grounds that "no confirm_ride was called afterwards".
+  - Ride-hailing domain · Cancel-and-rebook final intent: If the user cancels and then successfully rebooks, judge by the user's **final decision**: the latest order created proactively by the user reaching the user's desired status satisfies the rubric; do NOT deduct points for the existence of earlier cancelled orders. If no order was ever successfully created, the "no order to cancel / no cancel needed" branch of the rubric is considered satisfied.
+  - Ride-hailing domain · Redundant-repeat exemptions: "Repeat broadcast / redundant restate" rubrics only constrain the assistant's **reply text** actively restating already-confirmed information. The following do **NOT** count as redundant repeats: (1) necessary retries after tool errors; (2) the **first** summary receipt after order creation/cancellation/confirmation; (3) brief restatement of system events (surge/road closure/ETA changes); (4) structured fields echoed in tool_call / tool_result.
+  - Ride-hailing domain · Precondition double-check: If a rubric explicitly states preconditions (e.g. "if the user did not specify a car preference AND history orders exist"), when you are about to mark that rubric as `false`, first verify whether those preconditions were actually satisfied in the conversation; if not satisfied, mark `"not_applicable"` instead of `false`.
+  - Ride-hailing domain · Preference rubrics: For preference-based rubrics (e.g. "smooth driving", "quiet ride"), evaluate whether the order created when the user first stated that preference reflected it. If the preference was satisfied in the original order, the rubric should remain true even if a later order does not repeat the preference.
+  - In the justification, record key information related to the current rubric and its corresponding round [x], using concise language
+
+  # Format Requirements
+  - Your response should be a JSON object containing the following fields:
+  - `rubric_idx`: Unique identifier for the rubric
+  - `rubric`: Restatement of the rubric
+  - `justification`: Explanation of status changes
+  - `meetExpectation`: Updated status (true, false, or "not_applicable")
+
+  # Example Input Structure:
+  <trajectory_content>xxx</trajectory_content>
+  <current_rubrics>xxx</current_rubrics>
+
+  # Example Response Structure:
+  ```json
+  [
+    {{
+        "rubric_idx": "rubric_0",
+        "rubric": "<restate the rubric>",
+        "justification": "<brief explanation of status change, recorded in appended format>",
+        "meetExpectation": <true or false or "not_applicable">
+    }},
+    ...
+  ]
+  ```

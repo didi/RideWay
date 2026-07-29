@@ -1,0 +1,217 @@
+name: full_trajectory_12dim_eval_template
+chinese: |-
+  # 系统信息
+  {env_info}
+
+  # 用户完整指令
+  {user_instruction}
+
+  # 价格语义（A3 偏好涉及预算时必读）
+  - `estimate_fee` = 预估原价；`discount_fee` = 实际优惠；`surge_multiplier` = 动态加价倍率（默认 1.0）
+  - **实付价格 = (estimate_fee − discount_fee) × surge_multiplier**
+  - 涉及"预算 X 内 / 最便宜 / 不超 Y 元"等判定，按**实付价格**比对，禁止用预估原价
+
+  # 任务
+  基于 <trajectory_content>，按 12 维 capability 框架评估 assistant 表现。
+  ⚠ 不要参考任何外部 rubric 文本，只看用户对话和 assistant 行为。
+
+  ## 三步评估流程
+  - **Step 1（识别激活）**：从 12 维中选出本场景**实际激活**的（用户对话有触发条件）；其它维度标 `activated=false`
+  - **Step 2（逐维判分）**：对每个 `activated=true` 的维度，按下方维度标准判 `met=true` 或 `met=false`
+  - **Step 3（justification）**：每维度记录关键证据（轮次 [x] + 客观字段）
+
+  ## 12 维激活条件 + 判分标准
+
+  - **[A1] 地址与行程结构识别**（含起点 / 终点 / 途经点 / 多段拆单）
+    - 触发：用户在对话中给出地址（具体地名 / "从家/公司" / "当前位置"）；或提到途经点/中转（"先去 A 再去 B"）
+    - 判 true：order 字段（start_poi / end_poi / via_addresses）与用户原文/工具返回一致：
+      • 起点：用户指定即按指定；说"从家/公司"则 agent 调 get_home_address/get_company_address；未给则调 get_current_location
+      • 终点：用户的最终目的地正确（如"上班"→公司、"赶飞机"→机场，不能误把途经当终点）
+      • 途经：用户提到的中间 stop 都用 via_addresses 覆盖 OR 拆单合规（用户接受拆单方案则按"分单"评估）
+    - 判 false：起/终点字段错误 OR 工具调用错误 OR 缺中转 stop OR 顺序错
+
+  - **[A2] 订单类型识别**
+    - 触发：用户表达出行意图（实时/未来/赶航班/约车）
+    - 判 true：基于 system_time vs 最终下单的出发时间——>5 分钟用 create_scheduled_ride / ≤5 分钟或"立刻"用 create_ride_order
+    - 判 false：订单类型错误（如应预约用了实时单）；航班时间 ≠ 出发时间，agent 应推理出发时间
+
+  - **[A3] 显性偏好**
+    - 触发：用户**直接说出**偏好（车型/品牌/标签/预算/无烟/平稳/不电车 等）
+    - 判 true：最终订单字段（car_type/driver_tags/notes）含偏好满足证据，三渠道任一即可
+    - 判 false：偏好未在订单字段体现且 agent 未告知客观无解
+    - **口头不算**：assistant 声称"这是 SUV"但 car_type=轿车 → false
+
+  - **[B1] 跨轮状态**
+    - 触发：用户分多轮陆续提 ≥3 个独立需求
+    - 判 true：最终订单不遗漏任一轮提出的需求
+    - 判 false：遗漏某项需求
+
+  - **[B2] 中途改意**
+    - 触发：用户中途改地址/车型/时间/需求
+    - 判 true：新订单除被改字段外保留原始需求
+    - 判 false：未跟随改意，或丢失原始需求
+
+  - **[B3] 取消重下**
+    - 触发：用户**主动**取消旧单后重新下单
+    - 判 true：先 cancel_ride 再 create_ride_order，新单含累积需求
+    - 判 false：未先取消就重下，或重下时丢失需求
+
+  - **[动态事件][B4] 动态事件追踪**
+    - 触发：env 含 ride_events 或 task 声明 dynamic_events 且仿真中实际触发
+    - 判 true 三要素全：①量化告知影响（多 X 元/晚 Y 分钟/ETA A→B）②给出具体建议选项 ③等用户表态后推进
+    - 判 false：只复述事件名 / 未给选项 / 单方面替用户决定
+    - **特殊**：若用户接受 agent 估算后未追问差额/选项，视为已选不判 false
+
+  - **[C1] 模糊地点消歧**
+    - 触发：用户给真歧义（通用品类"咖啡店"/连锁多店"麦当劳"/多航站楼/多入口/同名 POI）
+    - 判 true：agent 调 search_pois 列候选并反问确认
+    - 判 false：未消歧直接下单或乱猜
+    - **C1 vs C3**：含指代词（"老地方/上次那家"）+ 通用品类时优先 C3 不挂 C1
+
+  - **[C2] 时间推理**
+    - 触发：用户提到非显而易见的时间约束（反向推算/ETA/时间窗）
+    - 判 true：agent 调路程工具反推 + 量化告知（具体数字合理即可）
+    - 判 false：未反推或未量化
+    - **特殊**：若用户接受 agent 量化结论后径直下单 → "量化告知"已完成，判 true
+
+  - **[C3] 历史订单推理**
+    - 触发：用户用指代性表述（"老样子/上次那家/常去"）+ env 有 history_orders
+    - 判 true：agent 主动调 get_history_orders；可取最近一项确认或列 2-3 候选让用户选
+    - 判 false：未调 get_history_orders 凭空猜
+
+  - **[C4] 弱信号推断**
+    - 触发：用户表达需 agent 推断的弱信号（"3 件行李"/"晕车"/"高端"）
+    - 判 true：推断映射到车型/标签/备注任一渠道
+    - 判 false：忽略弱信号
+
+  - **[C5] 工具使用/推理**
+    - 触发：用户在对话中提到位置/名称（如"西贝莜面村国贸店"/"望京 SOHO"）且 agent 调用了 search_pois 查询
+    - 判 true：search_pois 召回中存在**明显包含用户原文**的候选时，agent 直接采用该候选下单或继续流程
+    - 判 false：召回有明显匹配的候选，agent 仍让用户从多个里挑选/反复追问"选哪一个"
+    - **C1 vs C5**：真歧义（通用品类/连锁多店/同名 POI 无明显匹配）→ C1（要消歧反问）；召回里有明显包含原文的候选 → C5（应直接采用），二者互斥
+
+  # ⚠ 三条硬约束（覆盖单维判分）
+
+  ## 硬约束 1: 用户决策兜底（不算 agent 失败）
+  以下情形 assistant 行为合规，被涉及的维度应判 **N/A**（即 met=true 不计入扣分）：
+  - 用户全程取消未要求重建 → A1/A2/A3/B3 全部 met=true（视为合理终态）
+  - 用户主动放弃下单（"算了/取消/不要了"）→ assistant 配合，A1/A2 met=true
+  - 用户接受 agent 量化结论后径直下单 → C2 量化要求 met=true
+  - 用户接受 agent 妥协方案 → 被妥协的偏好 met=true（不再扣分）
+
+  写完每条 justification 后**自检**：含"用户接受 / 同意 / 那就这样 / 算了 / 取消 / agent 已尽力告知"任一 → met 应为 **true**。
+
+  ## 硬约束 2: 偏好满足以订单字段为准
+  涉及偏好（A3/C4）时，判定**仅基于最终订单字段**或工具返回客观数据。
+  - assistant 口头声称（"这是 SUV"/"已加备注"）**不算证据**
+  - 品牌世界知识推断（"GL8 是 MPV"）**不算证据**
+
+  ## 硬约束 3: 流程闭环
+  涉及订单创建的维度（A1/A2）必须确认 tool_call 真实成功：
+  - assistant 误以为下单成功但 tool_call 失败 → false
+  - 用户表示"我自己下"让 assistant 跳过 → false
+
+  # 注意事项
+  - 一切以**对话实际**为准；assistant 不得编造 tool 返回
+  - 打车·预约单终态：`create_scheduled_ride` 成功即 scheduled，无需 confirm_ride
+  - 取消重下以**最终意图**为准；过程中 cancelled 订单不扣分
+  - 个性化偏好类（"平稳/安静"等）：用户**首次提出**时的订单已满足即视为满足
+
+  # 格式要求
+  回复为 JSON 数组，**12 个维度全部输出**，每项含：
+  - `capability_tag`: A1-origin-destination / A2-order-type / A3-explicit-preference / B1-context-carryover / B2-mid-change / B3-cancel-rebook / B4-dynamic-event-tracking / C1-ambiguous-location / C2-time-reasoning / C3-history-recall / C4-weak-signal / C5-tool-use-inference
+  - `activated`: true（场景中触发）或 false（未触发，下方 met 字段不参与 reward）
+  - `met`: true（满足）或 false（未满足）；activated=false 时填 true（占位）
+  - `justification`: 关键证据 + 轮次 [x]
+
+  # 示例输入结构：
+  <trajectory_content>xxx</trajectory_content>
+
+  # 示例回复结构：
+  ```json
+  [
+    {{
+      "capability_tag": "A1-origin-destination",
+      "activated": true,
+      "met": true,
+      "justification": "用户在[2]给出起点「望京东园四区」+终点「中关村软件园」；assistant 在[13]按原文创建订单。"
+    }},
+    {{
+      "capability_tag": "A2-order-type",
+      "activated": true,
+      "met": false,
+      "justification": "system_time 09:00:00；用户[5]说'明早 8 点航班'但 agent 用 create_ride_order 错判为实时单。"
+    }},
+    {{
+      "capability_tag": "C5-tool-use-inference",
+      "activated": true,
+      "met": false,
+      "justification": "用户[3]说去「西贝莜面村国贸店」；assistant 调 search_pois 召回[1]即为「西贝莜面村·国贸店」，明显匹配；assistant 仍在[5]让用户从 3 项里挑选。"
+    }}
+    // ... 12 维全部输出
+  ]
+  ```
+
+  # 评分逻辑（脚本端，无需你计算）
+  reward = sum(met == true 且 activated == true) / sum(activated == true)
+  即：仅在 activated 维度上算正确率；activated=false 不影响 reward。
+
+english: |-
+  # System Information
+  {env_info}
+
+  # User Complete Instruction
+  {user_instruction}
+
+  # Price Semantics (required when A3 preferences involve budget)
+  - `estimate_fee` = base price; `discount_fee` = actual discount; `surge_multiplier` = surge multiplier (default 1.0)
+  - **Actual paid = (estimate_fee − discount_fee) × surge_multiplier**
+  - For "within budget X / cheapest / not over Y" judgments, compare against **actual paid**, NOT base price
+
+  # Task
+  Based on <trajectory_content>, evaluate the assistant by the 12-dimension capability framework. Do NOT consult any external rubric — only the conversation and assistant behavior.
+
+  ## Three-step evaluation
+  - Step 1 (identify activation): from the 12 dims, select those activated by the conversation; mark inactive ones with `activated=false`
+  - Step 2 (judge each): for each `activated=true` dim, judge `met=true/false` per the dim standard
+  - Step 3 (justification): record key evidence (turn [x] + objective fields)
+
+  ## 12 dimension activation conditions + judgment
+
+  - [A1] Trip-addresses (origin/destination/waypoints) — Trigger: user gives any address ("from home/company"/current) OR mentions waypoints. Judge true: order fields (start_poi / end_poi / via_addresses) match user's wording or tool return. Final destination must be correct (e.g. "go to work" → company, not the intermediate stop). Waypoints covered by via_addresses OR split-order is acceptable.
+  - [A2] Order type — Trigger: user expresses ride intent. Judge true: based on system_time vs final departure time, >5min → create_scheduled_ride / ≤5min or "now" → create_ride_order. Flight time ≠ departure time.
+  - [A3] Explicit preference — Trigger: user directly states preference. Judge true: final order field (car_type/driver_tags/notes) shows evidence (any channel suffices). Verbal claim NOT evidence.
+  - [B1] Context-carryover — Trigger: ≥3 needs across ≥2 turns. Judge true: final order doesn't drop any.
+  - [B2] Mid-change — Trigger: user changes a field mid-way. Judge true: new order keeps unchanged fields.
+  - [B3] Cancel-rebook — Trigger: user proactively cancels then rebooks. Judge true: cancel_ride first, then create new order with carried needs.
+  - [Dynamic event][B4] — Trigger: env has ride_events. Judge true: ① quantified impact ② provide concrete option suggestions ③ wait for user decision.
+  - [C1] Ambiguous location — Trigger: real ambiguity (category / multi-store / multi-terminal / multi-entrance). Judge true: search_pois + clarify.
+  - [C2] Time reasoning — Trigger: non-trivial time calc. Judge true: trip_duration tool + quantified inform.
+  - [C3] History recall — Trigger: deictic "last time / regular spot" + history_orders exists. Judge true: get_history_orders + confirm.
+  - [C4] Weak signal — Trigger: user states a weak signal needing inference. Judge true: mapped to car_type/tag/note.
+  - [C5] Tool-use inference — Trigger: user mentions a location/name AND agent calls search_pois. Judge true: when search_pois returns a candidate that **clearly contains** the user's wording, agent adopts it directly. Judge false: clear match exists but agent still asks user to pick from multiple. C1 vs C5: true ambiguity (category/multi-store/no clear match) → C1 (must clarify); clear match exists → C5 (must adopt). Mutually exclusive.
+
+  # ⚠ Three Hard Constraints (override per-dim judgment)
+
+  ## H1: User-decision fallback (NOT agent failure)
+  - User cancelled all rides without rebooking → A1/A2/A3/B3 all met=true
+  - User accepted assistant's quantification and ordered directly → C2 met=true
+  - User accepted compromise → compromised preferences met=true
+
+  ## H2: Preference based on order fields (anti-hallucination)
+  - Assistant's verbal claims do NOT count
+  - Brand-knowledge inference does NOT count
+
+  ## H3: Workflow closure
+  - tool_call must actually succeed
+  - "I'll order it myself" → false
+
+  # Format
+  Reply as JSON array; output ALL 12 dims. Each item:
+  - `capability_tag`: full tag name (A1-origin-destination, A2-order-type, A3-explicit-preference, B1-context-carryover, B2-mid-change, B3-cancel-rebook, B4-dynamic-event-tracking, C1-ambiguous-location, C2-time-reasoning, C3-history-recall, C4-weak-signal, C5-tool-use-inference)
+  - `activated`: true or false
+  - `met`: true or false (filler when activated=false)
+  - `justification`
+
+  # Scoring (computed by script, not you)
+  reward = sum(met=true AND activated=true) / sum(activated=true)
