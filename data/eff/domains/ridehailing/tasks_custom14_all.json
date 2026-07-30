@@ -201,8 +201,8 @@
       "is_baseline": false,
       "empirical_avg_pass": null
     },
-    "turn_min": 18,
-    "tool_min": 7
+    "turn_human": 18,
+    "tool_human": 7
   },
   {
     "id": "custom_016_beijing_tourist_shisanling_preference",
@@ -585,8 +585,8 @@
         "scheduled"
       ]
     },
-    "turn_min": 20,
-    "tool_min": 5
+    "turn_human": 20,
+    "tool_human": 5
   },
   {
     "id": "custom_017_beijing_tourist_yiheyuan_female_driver",
@@ -856,8 +856,8 @@
         "preference-handling"
       ]
     },
-    "turn_min": 28,
-    "tool_min": 5
+    "turn_human": 28,
+    "tool_human": 5
   },
   {
     "id": "custom_018_guangzhou_student_shangjiu_preference",
@@ -1262,8 +1262,8 @@
         "scheduled"
       ]
     },
-    "turn_min": 16.0,
-    "tool_min": 5.5
+    "turn_human": 16.0,
+    "tool_human": 5.5
   },
   {
     "id": "custom_022_guangzhou_home_baitiange_long_chitchat",
@@ -1914,8 +1914,8 @@
         "no-unsolicited-order"
       ]
     },
-    "turn_min": 23,
-    "tool_min": 7
+    "turn_human": 23,
+    "tool_human": 7
   },
   {
     "id": "custom_023_shanghai_tangchenyipin_disney_long_chitchat",
@@ -2521,8 +2521,8 @@
         "no-unsolicited-order"
       ]
     },
-    "turn_min": 28.0,
-    "tool_min": 7.5
+    "turn_human": 28.0,
+    "tool_human": 7.5
   },
   {
     "id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
@@ -3146,8 +3146,8 @@
         "complaint-handling"
       ]
     },
-    "turn_min": 29.0,
-    "tool_min": 8.0
+    "turn_human": 29.0,
+    "tool_human": 8.0
   },
   {
     "id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat",
@@ -3740,8 +3740,8 @@
         "time-change"
       ]
     },
-    "turn_min": 17,
-    "tool_min": 7
+    "turn_human": 17,
+    "tool_human": 7
   },
   {
     "id": "custom_026_guangzhou_huangpu_home_south_station_family_trip",
@@ -4327,8 +4327,8 @@
         "destination-update"
       ]
     },
-    "turn_min": 25,
-    "tool_min": 7
+    "turn_human": 25,
+    "tool_human": 7
   },
   {
     "id": "custom_027_beijing_shuangqing_military_museum_chitchat",
@@ -4936,8 +4936,8 @@
         "time-change"
       ]
     },
-    "turn_min": 19,
-    "tool_min": 7
+    "turn_human": 19,
+    "tool_human": 7
   },
   {
     "id": "custom_028_shanghai_station_sightseeing_tour_reminder",
@@ -5573,8 +5573,8 @@
         "scheduled-ride"
       ]
     },
-    "turn_min": 20,
-    "tool_min": 15
+    "turn_human": 20,
+    "tool_human": 15
   },
   {
     "id": "custom_029_chongqing_family_tour_plan",
@@ -5806,8 +5806,8 @@
         "family-travel"
       ]
     },
-    "turn_min": 32,
-    "tool_min": 22
+    "turn_human": 32,
+    "tool_human": 22
   },
   {
     "id": "custom_030_beijing_programmer_recurring_wednesday_ride",
@@ -6188,8 +6188,8 @@
         "scheduled-ride"
       ]
     },
-    "turn_min": 14,
-    "tool_min": 6
+    "turn_human": 14,
+    "tool_human": 6
   },
   {
     "id": "custom_031_guangzhou_tourist_sightseeing_cantonese",
@@ -6691,7 +6691,7 @@
         "circular-route"
       ]
     },
-    "turn_min": 8,
-    "tool_min": 21
+    "turn_human": 8,
+    "tool_human": 21
   }
 ]
