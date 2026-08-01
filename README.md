@@ -9,7 +9,7 @@
 
 The benchmark contains **58 Chinese ride-hailing tasks**:
 
-- **44 scenario-derived tasks** (`tasks_rh44_v3_all.json`) — constructed from abstracted ride-hailing interaction patterns, covering immediate/scheduled rides, airport pickups with flight constraints, multi-stop trips, order modifications, and compound temporal constraints. Rubrics are calibrated against human pairwise judgments.
+- **44 scenario-derived tasks** (`tasks_rh44_all.json`) — constructed from abstracted ride-hailing interaction patterns, covering immediate/scheduled rides, airport pickups with flight constraints, multi-stop trips, order modifications, and compound temporal constraints. Rubrics are calibrated against human pairwise judgments.
 - **14 custom long-horizon tasks** (`tasks_custom14_all.json`) — long-context tasks with personas, shifting intent, chit-chat distractors, and preference constraints.
 
 Tasks require agents to reason over temporal and spatial constraints, proactively clarify ambiguous instructions, track shifting user intent, and use tools efficiently across long conversations.

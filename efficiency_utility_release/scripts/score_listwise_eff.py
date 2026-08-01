@@ -11,7 +11,7 @@ We map to an efficiency score where HIGHER = more efficient, so it lines up with
 U (higher U = more efficient):  1->4, 2->3, 3->2, 4->1.
 
 Usage:
-    python3 score_listwise_eff.py --votes listwise_eff_votes.json
+    python3 score_listwise_eff.py --votes ../data/listwise_eff_votes.json
 """
 import argparse, json, math, random
 from collections import defaultdict
@@ -45,11 +45,13 @@ def kendall_tau_b(xs, ys):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--manifest', default='listwise_eff_manifest.json')
-    ap.add_argument('--votes', required=True)
-    ap.add_argument('--lambda-turn', type=float, default=0.6594)
-    ap.add_argument('--lambda-tool', type=float, default=0.8948)
+    ap.add_argument('--manifest', default='../data/listwise_eff_manifest.json')
+    ap.add_argument('--votes', default='../data/listwise_eff_votes.json')
+    ap.add_argument('--lambda-turn', type=float, default=0.7829)
+    ap.add_argument('--lambda-tool', type=float, default=0.8838)
+    ap.add_argument('--ci', type=float, default=90.0, help='CI level as a percentage, e.g. 90 or 95')
     args = ap.parse_args()
+    lo_p, hi_p = (100 - args.ci) / 2, 100 - (100 - args.ci) / 2
 
     manifest = json.load(open(args.manifest))
     votes = json.load(open(args.votes))
@@ -91,12 +93,12 @@ def main():
             samp = [random.choice(taus) for _ in taus]
             boots.append(sum(samp) / len(samp))
         boots.sort()
-        lo_ci = boots[int(0.05 * len(boots))]
-        hi_ci = boots[int(0.95 * len(boots))]
+        lo_ci = boots[int(lo_p / 100 * len(boots))]
+        hi_ci = boots[int(hi_p / 100 * len(boots))]
         frac_pos = sum(1 for t in taus if t > 0) / len(taus) if taus else float('nan')
         print(f"=== {label} ===")
         print(f"  per-task tau_b: mean={mean:+.3f}  median={med:+.3f}  "
-              f"90% CI [{lo_ci:+.3f}, {hi_ci:+.3f}]  ({sum(1 for t in taus if t>0)}/{len(taus)} tasks positive)")
+              f"{args.ci:.0f}% CI [{lo_ci:+.3f}, {hi_ci:+.3f}]  ({sum(1 for t in taus if t>0)}/{len(taus)} tasks positive)")
         for tid, n, tau in rows:
             print(f"    {tid[:44]:46s} n={n} tau_b={tau:+.3f}")
         print()

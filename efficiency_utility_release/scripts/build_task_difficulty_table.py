@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Task difficulty reference: SR, pass@3, pass^3 for all 58 benchmark tasks
-(44 rh44v2 + 14 custom14), pooled across all 24 tier-pool models.
+(44 rh44 + 14 custom14), pooled across all 24 tier-pool models.
 
 Success is decided by the finalized 3-LLM judge panel (hy3-preview + Seed 2.0
 Lite + Grok 4.3): each judge's verdict is a 3-pass majority over its base/_e2/_e3
@@ -15,13 +15,24 @@ are computed per model (n=3 trials each) then averaged across the 24 models.
 Outputs RESULTS_task_difficulty.md (markdown table, sorted hardest->easiest)
 and prints the same table to stdout.
 
-Usage: python3 build_task_difficulty_table.py
-"""
-import json, os, math
-from collections import defaultdict
-from add_mixed_pairs import TIERS
+Needs the full RideWay simulation corpus (same tier-2 dependency as
+build_model_leaderboard.py) -- not self-contained in this bundle.
 
-SIM_DIR = "../data/simulations"
+Usage:
+    python3 build_task_difficulty_table.py --sim-dir /path/to/data/simulations \
+        --tasks-dir /path/to/data/eff/domains/ridehailing
+    (defaults point at the full RideWay checkout's standard locations; see --help)
+"""
+import argparse, json, os, math
+from collections import defaultdict
+
+TIERS = {
+    'opus46': 'A', 'gemini35flash': 'A', 'sonnet5': 'A', 'gpt55nothink': 'A',
+    'dsv4pro': 'B', 'qw37max': 'B', 'qw37plus': 'B', 'glm52': 'B', 'kimik26': 'B', 'qw36p': 'B', 'mimo': 'B',
+    'qw35ba3b': 'C', 'qw3627b': 'C', 'mistralsmall': 'C', 'llama3370b': 'C', 'gemma431b': 'C', 'gemma426b': 'C', 'nemotron3nano30b': 'C',
+    'qw359b': 'D', 'granite418b': 'D', 'ministral14b': 'D', 'ministral8b': 'D', 'ministral3b': 'D', 'llama318b': 'D',
+}
+
 MODELS = sorted(TIERS.keys())
 JUDGES = ['hyeval', 'seed2liteeval', 'grok43eval']   # hy3-preview, Seed 2.0 Lite, Grok 4.3
 
@@ -38,7 +49,7 @@ def pass_at_k(n, c, k):
     return 1 - math.comb(n - c, k) / math.comb(n, k)
 
 
-def judge_verdicts(judge, prefix, model):
+def judge_verdicts(sim_dir, judge, prefix, model):
     """3-pass majority verdict per (task, trial) for one judge.
 
     Reads the judge's base/_e2/_e3 re-evaluation files and returns
@@ -48,7 +59,7 @@ def judge_verdicts(judge, prefix, model):
     passes = []
     for suffix in ['', '_e2', '_e3']:
         rm = {}
-        p = f"{SIM_DIR}/{judge}_{prefix}_{model}{suffix}"
+        p = f"{sim_dir}/{judge}_{prefix}_{model}{suffix}"
         if os.path.exists(p):
             for s in json.load(open(p))['simulations']:
                 rm[(s['task_id'], s.get('trial'))] = s['reward_info']['reward']
@@ -62,12 +73,12 @@ def judge_verdicts(judge, prefix, model):
     return verdict
 
 
-def compute_rows():
+def compute_rows(sim_dir):
     results = {}
     for prefix in ['rh44v2', 'c14v6b']:
         for m in MODELS:
-            jv = {j: judge_verdicts(j, prefix, m) for j in JUDGES}
-            p = f"{SIM_DIR}/{prefix}_{m}"
+            jv = {j: judge_verdicts(sim_dir, j, prefix, m) for j in JUDGES}
+            p = f"{sim_dir}/{prefix}_{m}"
             if not os.path.exists(p):
                 continue
             sims = json.load(open(p))['simulations']
@@ -97,12 +108,17 @@ def compute_rows():
 
 
 def main():
-    rows = compute_rows()
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--sim-dir', default='../../data/simulations')
+    ap.add_argument('--tasks-dir', default='../../data/eff/domains/ridehailing')
+    args = ap.parse_args()
 
-    c14_tasks = {t['id'] for t in json.load(open('../data/vita/domains/ridehailing/tasks_custom14_all.json'))}
+    rows = compute_rows(args.sim_dir)
+
+    c14_tasks = {t['id'] for t in json.load(open(os.path.join(args.tasks_dir, 'tasks_custom14_all.json')))}
 
     def domain(tid):
-        return 'custom14' if tid in c14_tasks else 'rh44v2'
+        return 'custom14' if tid in c14_tasks else 'rh44'
 
     lines = [
         "# Task difficulty reference — all 58 benchmark tasks",
@@ -117,9 +133,8 @@ def main():
         "`pass^3` = P(all 3 trials succeed, per model, averaged across models).",
         "",
         "Reproduce: `python3 build_task_difficulty_table.py`.",
-        "Artifact: https://claude.ai/code/artifact/c235569a-cf41-41d2-940b-7cb89630bfc1",
         "",
-        f"44 rh44v2 tasks + 14 custom14 tasks = {len(rows)} total, all with full 72-trial coverage.",
+        f"44 rh44 tasks + 14 custom14 tasks = {len(rows)} total, all with full 72-trial coverage.",
         "",
         "| Task | Domain | n | SR% | pass@3 | pass^3 |",
         "|---|---|---|---|---|---|",

@@ -1,0 +1,1202 @@
+[
+ {
+  "annotation_id": "item_000",
+  "task_id": "mt_07b_gz_pickup_classmate_dinner_scheduled",
+  "domain": "rh44",
+  "model": "llama3370b",
+  "tier": "C",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_001",
+  "task_id": "lc_11_hz_after_work_via_supermarket",
+  "domain": "rh44",
+  "model": "qw37plus",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": false
+  },
+  "panel_votes": 2,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_002",
+  "task_id": "custom_031_guangzhou_tourist_sightseeing_cantonese",
+  "domain": "c14v6b",
+  "model": "qw35ba3b",
+  "tier": "C",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": false
+  },
+  "panel_votes": 2,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_003",
+  "task_id": "mt_01_sh_kid_school_commute",
+  "domain": "rh44",
+  "model": "gpt55nothink",
+  "tier": "A",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_004",
+  "task_id": "custom_023_shanghai_tangchenyipin_disney_long_chitchat",
+  "domain": "c14v6b",
+  "model": "llama318b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_005",
+  "task_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat",
+  "domain": "c14v6b",
+  "model": "ministral8b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_006",
+  "task_id": "mt_05_sz_morning_coffee_client",
+  "domain": "rh44",
+  "model": "gemini35flash",
+  "tier": "A",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_007",
+  "task_id": "rp_07_su_cake_loop",
+  "domain": "rh44",
+  "model": "dsv4pro",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_008",
+  "task_id": "rp_04_tj_four_stops_errands",
+  "domain": "rh44",
+  "model": "qw3627b",
+  "tier": "C",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 1,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_009",
+  "task_id": "rp_01_sh_kid_clinic_class",
+  "domain": "rh44",
+  "model": "qw3627b",
+  "tier": "C",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_010",
+  "task_id": "lc_03_sh_business_flight_luggage",
+  "domain": "rh44",
+  "model": "llama3370b",
+  "tier": "C",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_011",
+  "task_id": "lc_06_gz_morning_rush_immediate",
+  "domain": "rh44",
+  "model": "gpt55nothink",
+  "tier": "A",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_012",
+  "task_id": "mt_01_sh_kid_school_commute",
+  "domain": "rh44",
+  "model": "opus46",
+  "tier": "A",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_013",
+  "task_id": "mt_09_nj_business_three_stop",
+  "domain": "rh44",
+  "model": "qw35ba3b",
+  "tier": "C",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_014",
+  "task_id": "custom_026_guangzhou_huangpu_home_south_station_family_trip",
+  "domain": "c14v6b",
+  "model": "mistralsmall",
+  "tier": "C",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_015",
+  "task_id": "custom_018_guangzhou_student_shangjiu_preference",
+  "domain": "c14v6b",
+  "model": "gemini35flash",
+  "tier": "A",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_016",
+  "task_id": "mt_03_sh_pickup_two_friends",
+  "domain": "rh44",
+  "model": "gemma431b",
+  "tier": "C",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_017",
+  "task_id": "custom_030_beijing_programmer_recurring_wednesday_ride",
+  "domain": "c14v6b",
+  "model": "llama318b",
+  "tier": "D",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_018",
+  "task_id": "mt_18_bj_short_stop_waiting",
+  "domain": "rh44",
+  "model": "gemma426b",
+  "tier": "C",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_019",
+  "task_id": "ft_014_counterintuitive_ambiguous_time",
+  "domain": "rh44",
+  "model": "sonnet5",
+  "tier": "A",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": false,
+   "grok43eval": true
+  },
+  "panel_votes": 2,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_020",
+  "task_id": "airport_new_01_bj_home_flight",
+  "domain": "rh44",
+  "model": "qw37max",
+  "tier": "B",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_021",
+  "task_id": "supp_c1_002_8acf69",
+  "domain": "rh44",
+  "model": "qw359b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_022",
+  "task_id": "rp_05_hz_elder_checkup_nohist",
+  "domain": "rh44",
+  "model": "kimik26",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_023",
+  "task_id": "rp_06_sz_bank_loop_quiet",
+  "domain": "rh44",
+  "model": "kimik26",
+  "tier": "B",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": true,
+   "grok43eval": false
+  },
+  "panel_votes": 1,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_024",
+  "task_id": "custom_028_shanghai_station_sightseeing_tour_reminder",
+  "domain": "c14v6b",
+  "model": "granite418b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_025",
+  "task_id": "custom_026_guangzhou_huangpu_home_south_station_family_trip",
+  "domain": "c14v6b",
+  "model": "sonnet5",
+  "tier": "A",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_026",
+  "task_id": "lc_09_nj_business_hotel_client",
+  "domain": "rh44",
+  "model": "opus46",
+  "tier": "A",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_027",
+  "task_id": "rp_04_tj_four_stops_errands",
+  "domain": "rh44",
+  "model": "kimik26",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_028",
+  "task_id": "mt_18_bj_short_stop_waiting",
+  "domain": "rh44",
+  "model": "llama3370b",
+  "tier": "C",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_029",
+  "task_id": "rp_10_xa_pickup_friends_dropoff",
+  "domain": "rh44",
+  "model": "llama3370b",
+  "tier": "C",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_030",
+  "task_id": "mt_06_cd_elder_pharmacy_hospital",
+  "domain": "rh44",
+  "model": "qw359b",
+  "tier": "D",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_031",
+  "task_id": "mt_08_bj_pet_supermarket_weekend",
+  "domain": "rh44",
+  "model": "gpt55nothink",
+  "tier": "A",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_032",
+  "task_id": "lc_05_hz_elder_hospital_smooth",
+  "domain": "rh44",
+  "model": "gemini35flash",
+  "tier": "A",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_033",
+  "task_id": "rp_11_wh_pickup_parents_friend_dropoff",
+  "domain": "rh44",
+  "model": "dsv4pro",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_034",
+  "task_id": "exp_090_extreme_temporal_backward",
+  "domain": "rh44",
+  "model": "ministral14b",
+  "tier": "D",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_035",
+  "task_id": "rp_06_sz_bank_loop_quiet",
+  "domain": "rh44",
+  "model": "ministral8b",
+  "tier": "D",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_036",
+  "task_id": "rp_03_cd_furniture_moving",
+  "domain": "rh44",
+  "model": "llama318b",
+  "tier": "D",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_037",
+  "task_id": "rp_09_cq_pickup_parents_hotpot",
+  "domain": "rh44",
+  "model": "ministral3b",
+  "tier": "D",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_038",
+  "task_id": "mt_04_hz_flower_after_work",
+  "domain": "rh44",
+  "model": "nemotron3nano30b",
+  "tier": "C",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_039",
+  "task_id": "custom_015_shanghai_mcdonalds_rain_nosmoking",
+  "domain": "c14v6b",
+  "model": "ministral3b",
+  "tier": "D",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_040",
+  "task_id": "airport_new_01_bj_home_flight",
+  "domain": "rh44",
+  "model": "glm52",
+  "tier": "B",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_041",
+  "task_id": "custom_028_shanghai_station_sightseeing_tour_reminder",
+  "domain": "c14v6b",
+  "model": "gemini35flash",
+  "tier": "A",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_042",
+  "task_id": "ft_021_time_contradict_current",
+  "domain": "rh44",
+  "model": "llama318b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_043",
+  "task_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat",
+  "domain": "c14v6b",
+  "model": "granite418b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_044",
+  "task_id": "lc_03_sh_business_flight_luggage",
+  "domain": "rh44",
+  "model": "qw359b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": true,
+   "grok43eval": false
+  },
+  "panel_votes": 1,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_045",
+  "task_id": "exp_090_extreme_temporal_backward",
+  "domain": "rh44",
+  "model": "mistralsmall",
+  "tier": "C",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_046",
+  "task_id": "custom_028_shanghai_station_sightseeing_tour_reminder",
+  "domain": "c14v6b",
+  "model": "llama318b",
+  "tier": "D",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_047",
+  "task_id": "mt_06_cd_elder_pharmacy_hospital",
+  "domain": "rh44",
+  "model": "glm52",
+  "tier": "B",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_048",
+  "task_id": "lc_09_nj_business_hotel_client",
+  "domain": "rh44",
+  "model": "gemini35flash",
+  "tier": "A",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_049",
+  "task_id": "ft_021_time_contradict_current",
+  "domain": "rh44",
+  "model": "llama318b",
+  "tier": "D",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_050",
+  "task_id": "rp_10_xa_pickup_friends_dropoff",
+  "domain": "rh44",
+  "model": "granite418b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": true
+  },
+  "panel_votes": 1,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_051",
+  "task_id": "mt_02_bj_hotel_pickup_friend",
+  "domain": "rh44",
+  "model": "nemotron3nano30b",
+  "tier": "C",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_052",
+  "task_id": "custom_017_beijing_tourist_yiheyuan_female_driver",
+  "domain": "c14v6b",
+  "model": "llama3370b",
+  "tier": "C",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_053",
+  "task_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat",
+  "domain": "c14v6b",
+  "model": "nemotron3nano30b",
+  "tier": "C",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_054",
+  "task_id": "rp_10_xa_pickup_friends_dropoff",
+  "domain": "rh44",
+  "model": "llama3370b",
+  "tier": "C",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_055",
+  "task_id": "exp_090_extreme_temporal_backward",
+  "domain": "rh44",
+  "model": "llama318b",
+  "tier": "D",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_056",
+  "task_id": "custom_016_beijing_tourist_shisanling_preference",
+  "domain": "c14v6b",
+  "model": "gemma431b",
+  "tier": "C",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_057",
+  "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
+  "domain": "c14v6b",
+  "model": "gemma426b",
+  "tier": "C",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_058",
+  "task_id": "custom_015_shanghai_mcdonalds_rain_nosmoking",
+  "domain": "c14v6b",
+  "model": "glm52",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_059",
+  "task_id": "rp_05_hz_elder_checkup_nohist",
+  "domain": "rh44",
+  "model": "llama318b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_060",
+  "task_id": "custom_026_guangzhou_huangpu_home_south_station_family_trip",
+  "domain": "c14v6b",
+  "model": "glm52",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_061",
+  "task_id": "lc_09_nj_business_hotel_client",
+  "domain": "rh44",
+  "model": "qw37max",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_062",
+  "task_id": "custom_022_guangzhou_home_baitiange_long_chitchat",
+  "domain": "c14v6b",
+  "model": "qw35ba3b",
+  "tier": "C",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_063",
+  "task_id": "rp_01_sh_kid_clinic_class",
+  "domain": "rh44",
+  "model": "kimik26",
+  "tier": "B",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_064",
+  "task_id": "rp_03_cd_furniture_moving",
+  "domain": "rh44",
+  "model": "llama3370b",
+  "tier": "C",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 1,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_065",
+  "task_id": "custom_017_beijing_tourist_yiheyuan_female_driver",
+  "domain": "c14v6b",
+  "model": "glm52",
+  "tier": "B",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_066",
+  "task_id": "rp_01_sh_kid_clinic_class",
+  "domain": "rh44",
+  "model": "ministral14b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_067",
+  "task_id": "rp_05_hz_elder_checkup_nohist",
+  "domain": "rh44",
+  "model": "sonnet5",
+  "tier": "A",
+  "trial": 1,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_068",
+  "task_id": "custom_022_guangzhou_home_baitiange_long_chitchat",
+  "domain": "c14v6b",
+  "model": "llama3370b",
+  "tier": "C",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_069",
+  "task_id": "lc_03_sh_business_flight_luggage",
+  "domain": "rh44",
+  "model": "ministral14b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_070",
+  "task_id": "custom_031_guangzhou_tourist_sightseeing_cantonese",
+  "domain": "c14v6b",
+  "model": "qw37plus",
+  "tier": "B",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": true,
+   "grok43eval": false
+  },
+  "panel_votes": 1,
+  "borderline": true
+ },
+ {
+  "annotation_id": "item_071",
+  "task_id": "lc_01_sz_dismiss_home_no_ev",
+  "domain": "rh44",
+  "model": "ministral14b",
+  "tier": "D",
+  "trial": 2,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_072",
+  "task_id": "custom_015_shanghai_mcdonalds_rain_nosmoking",
+  "domain": "c14v6b",
+  "model": "dsv4pro",
+  "tier": "B",
+  "trial": 0,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_073",
+  "task_id": "mt_05_sz_morning_coffee_client",
+  "domain": "rh44",
+  "model": "ministral14b",
+  "tier": "D",
+  "trial": 0,
+  "panel_success": false,
+  "per_judge": {
+   "hyeval": false,
+   "seed2liteeval": false,
+   "grok43eval": false
+  },
+  "panel_votes": 0,
+  "borderline": false
+ },
+ {
+  "annotation_id": "item_074",
+  "task_id": "airport_new_03_gz_quick_t2_pm3",
+  "domain": "rh44",
+  "model": "kimik26",
+  "tier": "B",
+  "trial": 1,
+  "panel_success": true,
+  "per_judge": {
+   "hyeval": true,
+   "seed2liteeval": true,
+   "grok43eval": true
+  },
+  "panel_votes": 3,
+  "borderline": false
+ }
+]

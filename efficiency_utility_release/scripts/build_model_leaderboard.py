@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Per-model leaderboard for all 24 pool models: SR / pass@3 / pass^3 on the
-44-task rh44v2 calibration split, on the pooled 58-task suite (44 rh44v2 + 14
+44-task rh44 calibration split, on the pooled 58-task suite (44 rh44 + 14
 custom14), and on the 14-task custom14 held-out split -- plus mean Efficiency
 Utility U, reported on the custom14 held-out split only (U's validity as a
 calibrated preference-generalization score rests on the held-out evidence; see
@@ -13,7 +13,7 @@ majority across the three judges. This is the same panel that gates every
 BT/IAA/listwise pair (see RESULTS_ablation.md in the parent bt_calibration dir).
 
 U(tau) = success(tau) * lambda_tool^etool(tau) * lambda_turn^eturn(tau), with the
-final calibrated fit lambda_tool=0.8978, lambda_turn=0.6320 (a=0.1078, b=0.4588;
+final calibrated fit lambda_tool=0.8838, lambda_turn=0.7829 (a=0.1235, b=0.2448;
 see fit_bt.py run on bt_pairs_train.json / bt_votes_train.json in this bundle).
 etool/eturn are excess tool calls / excess turns over each task's human-annotated
 reference floor (median of 3 annotators), floored at 0.
@@ -25,8 +25,8 @@ of U(tau) over that scope's 42 trials (0 for failed trials).
 
 Usage:
     python3 build_model_leaderboard.py --sim-dir /path/to/data/simulations \
-        --tasks-dir /path/to/data/vita/domains/ridehailing
-    (defaults point at the full research checkout's standard locations; see --help)
+        --tasks-dir /path/to/data/eff/domains/ridehailing
+    (defaults point at the full RideWay checkout's standard locations; see --help)
 """
 import argparse, json, math, os
 from collections import defaultdict
@@ -36,8 +36,8 @@ MODELS = ['dsv4pro', 'gemma426b', 'gemma431b', 'glm52', 'granite418b', 'kimik26'
           'mistralsmall', 'nemotron3nano30b', 'qw359b', 'qw35ba3b', 'qw3627b', 'qw36p', 'qw37max',
           'qw37plus', 'gpt55nothink', 'opus46', 'gemini35flash', 'sonnet5']
 JUDGES = ['hyeval', 'seed2liteeval', 'grok43eval']   # hy3-preview, Seed 2.0 Lite, Grok 4.3
-LAMBDA_TOOL = 0.8978
-LAMBDA_TURN = 0.6320
+LAMBDA_TOOL = 0.8838
+LAMBDA_TURN = 0.7829
 PREFIXES = ['rh44v2', 'c14v6b']   # 44-task calibration + 14-task held-out simulation-file prefixes
 
 
@@ -126,7 +126,7 @@ def compute_model_row(sim_dir, tasks_dir, model, floor):
 
     return {
         'model': model,
-        'rh44v2': scope_metrics(by_task_domain['rh44v2']),
+        'rh44': scope_metrics(by_task_domain['rh44v2']),
         'all58': scope_metrics(by_task_all58),
         'custom14': scope_metrics(by_task_domain['c14v6b'], with_u=True),
     }
@@ -135,7 +135,7 @@ def compute_model_row(sim_dir, tasks_dir, model, floor):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--sim-dir', default='../../data/simulations')
-    ap.add_argument('--tasks-dir', default='../../data/vita/domains/ridehailing')
+    ap.add_argument('--tasks-dir', default='../../data/eff/domains/ridehailing')
     ap.add_argument('--out', default='RESULTS_leaderboard.md')
     args = ap.parse_args()
 
@@ -148,7 +148,7 @@ def main():
         "",
         "SR / pass@3 / pass^3 use the finalized 3-judge panel (hy3-preview + Seed 2.0 Lite +",
         "Grok 4.3, 2-of-3 majority, each judge itself a 3-pass internal majority), reported on",
-        "three scopes: the 44-task rh44v2 calibration split, the pooled 58-task suite, and the",
+        "three scopes: the 44-task rh44 calibration split, the pooled 58-task suite, and the",
         "14-task custom14 held-out split. Mean U (custom14 only) uses the final 320-pair",
         f"Bradley-Terry fit, lambda_tool={LAMBDA_TOOL}, lambda_turn={LAMBDA_TURN} (U=0 on failed",
         "trials). Sorted by custom14 mean U descending.",
@@ -160,7 +160,7 @@ def main():
         "|---|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for i, r in enumerate(rows, 1):
-        a, b, c = r['rh44v2'], r['all58'], r['custom14']
+        a, b, c = r['rh44'], r['all58'], r['custom14']
         lines.append(
             f"| {i} | {r['model']} | {a['SR']:.1f} | {a['pass@3']:.3f} | {a['pass^3']:.3f} | "
             f"{b['SR']:.1f} | {b['pass@3']:.3f} | {b['pass^3']:.3f} | "

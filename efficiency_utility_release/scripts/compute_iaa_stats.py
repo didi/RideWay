@@ -10,17 +10,14 @@ another human annotator on these pairs).
 All statistics come with 90% bootstrap CIs (resampling items).
 
 Usage:
-    python3 compute_iaa_stats.py \
-        --manifest iaa_c14_tool_axis_subset_manifest.json \
-        --a1 iaa_c14_tool_axis_annotator1_votes.json \
-        --a2 iaa_c14_tool_axis_subset_annotator2_votes.json
+    python3 compute_iaa_stats.py
 """
 import argparse, json, math, random
 
 CATS = ['A', 'tie', 'B']          # ordered: A > tie > B (preference direction)
 SCORE = {'A': 0.0, 'tie': 1.0, 'B': 2.0}
 
-A_FIT, B_FIT = 0.1111, 0.4164     # 325-pair training fit
+A_FIT, B_FIT = 0.1235, 0.2448     # 320-pair training fit
 
 
 def u_pred(x):
@@ -92,7 +89,7 @@ def kripp_alpha(columns, ordinal=False):
     return 1 - do / de if de > 0 else float('nan')
 
 
-def boot_ci(fn, items, B=10000, seed=0):
+def boot_ci(fn, items, B=10000, seed=0, lo_p=5, hi_p=95):
     rng = random.Random(seed)
     vals = []
     for _ in range(B):
@@ -101,16 +98,18 @@ def boot_ci(fn, items, B=10000, seed=0):
         if v == v:
             vals.append(v)
     vals.sort()
-    return vals[int(0.05 * len(vals))], vals[int(0.95 * len(vals))]
+    return vals[int(lo_p / 100 * len(vals))], vals[int(hi_p / 100 * len(vals))]
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--manifest', default='iaa_c14_tool_axis_subset_manifest.json')
-    ap.add_argument('--a1', default='iaa_c14_tool_axis_annotator1_votes.json')
-    ap.add_argument('--a2', default='iaa_c14_tool_axis_subset_annotator2_votes.json')
+    ap.add_argument('--manifest', default='../data/iaa_c14_tool_axis_FINAL_manifest.json')
+    ap.add_argument('--a1', default='../data/iaa_c14_tool_axis_FINAL_annotator1_votes.json')
+    ap.add_argument('--a2', default='../data/iaa_c14_tool_axis_FINAL_annotator2_votes.json')
     ap.add_argument('-B', type=int, default=10000)
+    ap.add_argument('--ci', type=float, default=90.0, help='CI level as a percentage, e.g. 90 or 95')
     args = ap.parse_args()
+    lo_p, hi_p = (100 - args.ci) / 2, 100 - (100 - args.ci) / 2
 
     manifest = json.load(open(args.manifest))
     idx = {x['pair_id']: x for x in manifest}
@@ -138,11 +137,25 @@ def main():
         ('linear-weighted kappa', lambda ps: cohen_kappa(ps, weighted=True)),
         ("Gwet's AC1", lambda ps: gwet_ac1(ps)),
     ]
-    print(f"{'statistic':24s} {'value':8s} {'90% CI':18s}")
+    print(f"{'statistic':24s} {'value':8s} {f'{args.ci:.0f}% CI':18s}")
     for name, fn in stats:
         pt = fn(pairs)
-        lo, hi = boot_ci(fn, pairs, B=args.B)
+        lo, hi = boot_ci(fn, pairs, B=args.B, lo_p=lo_p, hi_p=hi_p)
         print(f"{name:24s} {pt:+.3f}   [{lo:+.3f}, {hi:+.3f}]")
+
+    # Same-slice three-way comparison: U vs A1, U vs A2, A1 vs A2 -- all on
+    # the identical n pairs, so the "U approaches the human ceiling" argument
+    # isn't comparing across different slices.
+    print(f"\nSame-slice comparison ({'raw agreement, Cohen kappa':s}), n={n}:")
+    u_a1 = [(u, v1) for _, v1, _, u in triples]
+    u_a2 = [(u, v2) for _, _, v2, u in triples]
+    for name, ps in [('U vs A1', u_a1), ('U vs A2', u_a2), ('A1 vs A2', pairs)]:
+        agree = raw_agreement(ps)
+        k = cohen_kappa(ps, weighted=False)
+        lo_a, hi_a = boot_ci(lambda p: raw_agreement(p), ps, B=args.B, lo_p=lo_p, hi_p=hi_p)
+        lo_k, hi_k = boot_ci(lambda p: cohen_kappa(p, weighted=False), ps, B=args.B, lo_p=lo_p, hi_p=hi_p)
+        print(f"  {name:10s} agreement={agree*100:5.1f}% [{lo_a*100:.1f},{hi_a*100:.1f}]  "
+              f"kappa={k:+.3f} [{lo_k:+.3f},{hi_k:+.3f}]")
 
     # Krippendorff's alpha: humans only vs humans+U (item-resampled bootstrap)
     def alpha_from_triples(ts, cols, ordinal):
@@ -152,7 +165,7 @@ def main():
         return kripp_alpha(columns, ordinal=ordinal)
 
     print()
-    print(f"{'Krippendorff alpha':38s} {'value':8s} {'90% CI':18s}")
+    print(f"{'Krippendorff alpha':38s} {'value':8s} {f'{args.ci:.0f}% CI':18s}")
     for label, cols, ordinal in [
         ('humans only, nominal', (1, 2), False),
         ('humans only, ordinal', (1, 2), True),
@@ -161,7 +174,7 @@ def main():
     ]:
         fn = lambda ts, c=cols, o=ordinal: alpha_from_triples(ts, c, o)
         pt = fn(triples)
-        lo, hi = boot_ci(fn, triples, B=args.B)
+        lo, hi = boot_ci(fn, triples, B=args.B, lo_p=lo_p, hi_p=hi_p)
         print(f"{label:38s} {pt:+.3f}   [{lo:+.3f}, {hi:+.3f}]")
 
     print("\nNote: U never votes 'tie' (it always has a directional preference when")

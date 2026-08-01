@@ -10,9 +10,9 @@ Forms (BT logit theta, per-side excess with transform f):
 Ties are split into balanced win/loss rows (same as fit_bt.py). Held-out eval on
 custom14 directional pairs: accuracy-on-answered and tau_b(full), 90% boot CI.
 
-Usage: python3 ablation_functional_forms.py
+Usage: python3 ablation_functional_forms.py [--ci 90|95]
 """
-import json, math, random
+import argparse, json, math, random
 
 F = {'linear': lambda x: x, 'log1p': lambda x: math.log(1 + x), 'sqrt': lambda x: math.sqrt(x)}
 
@@ -58,7 +58,7 @@ def fit(rows, single, l2=0.3, lr=0.05, iters=10000):
 
 
 def test_recs(f):
-    m = json.load(open('bt_manifest_FINAL_test.json')); v = json.load(open('bt_votes_FINAL_test.json'))
+    m = json.load(open('../data/bt_manifest_FINAL_test.json')); v = json.load(open('../data/bt_votes_FINAL_test.json'))
     idx = {x['pair_id']: x for x in m}; recs = []
     for pid, who in v.items():
         if who == 'tie' or pid not in idx:
@@ -85,17 +85,22 @@ def stats(sample, a, b, single):
     return (conc / n if n else float('nan')), (conc - disc) / tot
 
 
-def ci(recs, a, b, single, B=6000):
+def ci(recs, a, b, single, B=6000, lo_p=5, hi_p=95):
     accs = []; taus = []
     for _ in range(B):
         s = [random.choice(recs) for _ in recs]
         ac, ta = stats(s, a, b, single); accs.append(ac); taus.append(ta)
     accs = [x for x in accs if x == x]; accs.sort(); taus.sort()
-    return ((accs[int(0.05 * len(accs))], accs[int(0.95 * len(accs))]),
-            (taus[int(0.05 * len(taus))], taus[int(0.95 * len(taus))]))
+    return ((accs[int(lo_p / 100 * len(accs))], accs[int(hi_p / 100 * len(accs))]),
+            (taus[int(lo_p / 100 * len(taus))], taus[int(hi_p / 100 * len(taus))]))
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--ci', type=float, default=90.0, help='CI level as a percentage, e.g. 90 or 95')
+    args = ap.parse_args()
+    lo_p, hi_p = (100 - args.ci) / 2, 100 - (100 - args.ci) / 2
+
     random.seed(0)
     print("Functional-form ablation — fit on 320 training pairs, eval on 75 held-out custom14 pairs\n")
     print(f"{'form':28s} {'params':24s} {'acc(ans)':22s} {'tau_full':22s}")
@@ -106,10 +111,10 @@ def main():
         ('two-weight saturating sqrt', 'sqrt', False),
     ]:
         f = F[ft]
-        a, b = fit(load_rows('bt_manifest_FINAL_train.json', 'bt_votes_FINAL_train.json', f), single)
+        a, b = fit(load_rows('../data/bt_manifest_FINAL_train.json', '../data/bt_votes_FINAL_train.json', f), single)
         recs = test_recs(f)
         ac, ta = stats(recs, a, b, single)
-        (alo, ahi), (tlo, thi) = ci(recs, a, b, single)
+        (alo, ahi), (tlo, thi) = ci(recs, a, b, single, lo_p=lo_p, hi_p=hi_p)
         pstr = f"c={a:.3f}" if single else f"a={a:.3f} b={b:.3f} a/b={a / b:.2f}"
         print(f"{name:28s} {pstr:24s} {ac:+.3f} [{alo:+.2f},{ahi:+.2f}]   {ta:+.3f} [{tlo:+.2f},{thi:+.2f}]")
 

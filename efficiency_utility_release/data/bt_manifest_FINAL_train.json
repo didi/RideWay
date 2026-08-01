@@ -10,7 +10,7 @@
       "tool": 16,
       "turn": 18,
       "etool": 10,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t1",
@@ -19,36 +19,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 10,
-    "d_eturn": -4,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_01",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 3,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 4,
-      "turn": 21,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
+    "d_eturn": -8,
     "vote": null
   },
   {
@@ -62,7 +36,7 @@
       "tool": 16,
       "turn": 5,
       "etool": 11,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t2",
@@ -71,10 +45,10 @@
       "tool": 7,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 9,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -88,7 +62,7 @@
       "tool": 15,
       "turn": 6,
       "etool": 10,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t2",
@@ -97,61 +71,9 @@
       "tool": 6,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_04",
-    "axis": "tool",
-    "tid": "rp_01_sh_kid_clinic_class",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 9,
-      "turn": 5,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t2",
-      "model": "glm52",
-      "trial": 2,
-      "tool": 19,
-      "turn": 5,
-      "etool": 8.5,
-      "eturn": 0
-    },
-    "d_etool": -8.5,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_05",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 3,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 6,
-      "turn": 21,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": 8,
     "d_eturn": 0,
     "vote": null
   },
@@ -166,7 +88,7 @@
       "tool": 18,
       "turn": 4,
       "etool": 10,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t0",
@@ -175,36 +97,10 @@
       "tool": 10,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 8,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_07",
-    "axis": "tool",
-    "tid": "lc_01_sz_dismiss_home_no_ev",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 12,
-      "turn": 12,
-      "etool": 2,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t1",
-      "model": "glm52",
-      "trial": 1,
-      "tool": 19,
-      "turn": 13,
-      "etool": 9,
-      "eturn": 0
-    },
-    "d_etool": -7,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -218,7 +114,7 @@
       "tool": 12,
       "turn": 14,
       "etool": 2,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "glm52_t1",
@@ -230,7 +126,7 @@
       "eturn": 0
     },
     "d_etool": -7,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -260,84 +156,6 @@
     "vote": null
   },
   {
-    "pair_id": "tool_10",
-    "axis": "tool",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "A": {
-      "key": "qw36p_t0",
-      "model": "qw36p",
-      "trial": 0,
-      "tool": 13,
-      "turn": 18,
-      "etool": 7,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 4,
-      "turn": 26,
-      "etool": 0,
-      "eturn": 4
-    },
-    "d_etool": 7,
-    "d_eturn": -4,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_11",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 17,
-      "turn": 8,
-      "etool": 13,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t0",
-      "model": "glm52",
-      "trial": 0,
-      "tool": 10,
-      "turn": 14,
-      "etool": 6,
-      "eturn": 0
-    },
-    "d_etool": 7,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_12",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 3,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t2",
-      "model": "glm52",
-      "trial": 2,
-      "tool": 7,
-      "turn": 19,
-      "etool": 3,
-      "eturn": 0
-    },
-    "d_etool": 7,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
     "pair_id": "tool_13",
     "axis": "tool",
     "tid": "rp_02_km_errands_catch_train",
@@ -348,7 +166,7 @@
       "tool": 13,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "glm52_t1",
@@ -357,10 +175,10 @@
       "tool": 21,
       "turn": 6,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "d_etool": -7.0,
-    "d_eturn": 0,
+    "d_eturn": 0.0,
     "vote": null
   },
   {
@@ -374,7 +192,7 @@
       "tool": 13,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "glm52_t1",
@@ -383,10 +201,10 @@
       "tool": 21,
       "turn": 6,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "d_etool": -7.0,
-    "d_eturn": 0,
+    "d_eturn": 0.0,
     "vote": null
   },
   {
@@ -400,7 +218,7 @@
       "tool": 13,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "glm52_t1",
@@ -409,36 +227,10 @@
       "tool": 21,
       "turn": 6,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "d_etool": -7.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_16",
-    "axis": "tool",
-    "tid": "rp_09_cq_pickup_parents_hotpot",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 14,
-      "turn": 4,
-      "etool": 9.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 7,
-      "turn": 7,
-      "etool": 2.0,
-      "eturn": 0
-    },
-    "d_etool": 7.0,
-    "d_eturn": 0,
+    "d_eturn": 0.0,
     "vote": null
   },
   {
@@ -452,7 +244,7 @@
       "tool": 16,
       "turn": 5,
       "etool": 11,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "glm52_t0",
@@ -464,7 +256,7 @@
       "eturn": 0
     },
     "d_etool": 7,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -478,7 +270,7 @@
       "tool": 14,
       "turn": 6,
       "etool": 9,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t2",
@@ -487,7 +279,7 @@
       "tool": 7,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 7,
     "d_eturn": 0,
@@ -504,7 +296,7 @@
       "tool": 18,
       "turn": 4,
       "etool": 10,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t1",
@@ -513,10 +305,10 @@
       "tool": 11,
       "turn": 5,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 7,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -530,7 +322,7 @@
       "tool": 17,
       "turn": 5,
       "etool": 9,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t0",
@@ -539,62 +331,10 @@
       "tool": 10,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": 7,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_21",
-    "axis": "tool",
-    "tid": "mt_07_gz_pickup_classmate_dinner",
-    "A": {
-      "key": "dsv4pro_t1",
-      "model": "dsv4pro",
-      "trial": 1,
-      "tool": 13,
-      "turn": 12,
-      "etool": 8,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t2",
-      "model": "kimik26",
-      "trial": 2,
-      "tool": 6,
-      "turn": 14,
-      "etool": 1,
-      "eturn": 1
+      "eturn": 3
     },
     "d_etool": 7,
     "d_eturn": -1,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_22",
-    "axis": "tool",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "A": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 13,
-      "turn": 6,
-      "etool": 8,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t1",
-      "model": "glm52",
-      "trial": 1,
-      "tool": 7,
-      "turn": 13,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": 6,
-    "d_eturn": 0,
     "vote": null
   },
   {
@@ -608,7 +348,7 @@
       "tool": 5,
       "turn": 15,
       "etool": 1,
-      "eturn": 1
+      "eturn": 5
     },
     "B": {
       "key": "kimik26_t2",
@@ -617,10 +357,10 @@
       "tool": 11,
       "turn": 11,
       "etool": 7,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -6,
-    "d_eturn": 1,
+    "d_eturn": 4,
     "vote": null
   },
   {
@@ -634,7 +374,7 @@
       "tool": 9,
       "turn": 5,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t1",
@@ -643,10 +383,10 @@
       "tool": 3,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 6,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -660,7 +400,7 @@
       "tool": 9,
       "turn": 5,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t2",
@@ -669,10 +409,10 @@
       "tool": 3,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 6,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -686,7 +426,7 @@
       "tool": 9,
       "turn": 5,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t0",
@@ -695,10 +435,10 @@
       "tool": 3,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 6,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -712,7 +452,7 @@
       "tool": 12,
       "turn": 7,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t2",
@@ -721,7 +461,7 @@
       "tool": 6,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 6,
     "d_eturn": 0,
@@ -738,7 +478,7 @@
       "tool": 7,
       "turn": 11,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t2",
@@ -747,10 +487,10 @@
       "tool": 13,
       "turn": 10,
       "etool": 8,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -6,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -764,7 +504,7 @@
       "tool": 15,
       "turn": 6,
       "etool": 10,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "glm52_t1",
@@ -773,10 +513,10 @@
       "tool": 9,
       "turn": 5,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 6,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -858,32 +598,6 @@
     "vote": null
   },
   {
-    "pair_id": "tool_33",
-    "axis": "tool",
-    "tid": "lc_03_sh_business_flight_luggage",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 11,
-      "turn": 15,
-      "etool": 6,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 6,
-      "turn": 17,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 5,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
     "pair_id": "tool_34",
     "axis": "tool",
     "tid": "lc_08_wh_late_night_safety",
@@ -955,10 +669,10 @@
       "tool": 17,
       "turn": 9,
       "etool": 6.5,
-      "eturn": 0
+      "eturn": 4.0
     },
     "d_etool": -1.0,
-    "d_eturn": 0,
+    "d_eturn": -4.0,
     "vote": null
   },
   {
@@ -972,7 +686,7 @@
       "tool": 6,
       "turn": 17,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t1",
@@ -981,10 +695,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 0,
-    "d_eturn": -4,
+    "d_eturn": -9,
     "vote": null
   },
   {
@@ -1007,10 +721,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 1,
-    "d_eturn": -4,
+    "d_eturn": -10,
     "vote": null
   },
   {
@@ -1033,36 +747,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 0,
-    "d_eturn": -4,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_04",
-    "axis": "turn",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 7,
-      "turn": 9,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 8,
-      "turn": 14,
-      "etool": 4,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
+    "d_eturn": -10,
     "vote": null
   },
   {
@@ -1102,7 +790,7 @@
       "tool": 7,
       "turn": 12,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t2",
@@ -1111,10 +799,10 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "d_etool": 0,
-    "d_eturn": -2,
+    "d_eturn": -6,
     "vote": null
   },
   {
@@ -1128,7 +816,7 @@
       "tool": 9,
       "turn": 21,
       "etool": 4,
-      "eturn": 0
+      "eturn": 5
     },
     "B": {
       "key": "glm52_t1",
@@ -1140,7 +828,7 @@
       "eturn": 0
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": 5,
     "vote": null
   },
   {
@@ -1163,88 +851,10 @@
       "tool": 8,
       "turn": 14,
       "etool": 4,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_09",
-    "axis": "turn",
-    "tid": "lc_04_cd_taxi_pref_dismiss",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 3,
-      "turn": 12,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t0",
-      "model": "glm52",
-      "trial": 0,
-      "tool": 4,
-      "turn": 18,
-      "etool": 1,
-      "eturn": 3
-    },
-    "d_etool": -1,
-    "d_eturn": -3,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_10",
-    "axis": "turn",
-    "tid": "lc_04_cd_taxi_pref_dismiss",
-    "A": {
-      "key": "qw36p_t2",
-      "model": "qw36p",
-      "trial": 2,
-      "tool": 2,
-      "turn": 13,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t0",
-      "model": "glm52",
-      "trial": 0,
-      "tool": 4,
-      "turn": 18,
-      "etool": 1,
-      "eturn": 3
-    },
-    "d_etool": -1,
-    "d_eturn": -3,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_11",
-    "axis": "turn",
-    "tid": "lc_04_cd_taxi_pref_dismiss",
-    "A": {
-      "key": "qw37max_t2",
-      "model": "qw37max",
-      "trial": 2,
-      "tool": 2,
-      "turn": 11,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t0",
-      "model": "glm52",
-      "trial": 0,
-      "tool": 4,
-      "turn": 18,
-      "etool": 1,
-      "eturn": 3
-    },
-    "d_etool": -1,
-    "d_eturn": -3,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -1258,7 +868,7 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "B": {
       "key": "glm52_t0",
@@ -1267,10 +877,10 @@
       "tool": 7,
       "turn": 13,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 0,
-    "d_eturn": 2,
+    "d_eturn": 5,
     "vote": null
   },
   {
@@ -1284,7 +894,7 @@
       "tool": 9,
       "turn": 20,
       "etool": 5,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t0",
@@ -1296,7 +906,7 @@
       "eturn": 0
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -1310,7 +920,7 @@
       "tool": 12,
       "turn": 5,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "glm52_t0",
@@ -1319,10 +929,10 @@
       "tool": 13,
       "turn": 7,
       "etool": 8.0,
-      "eturn": 0
+      "eturn": 2.5
     },
     "d_etool": -1.0,
-    "d_eturn": 0,
+    "d_eturn": -2.0,
     "vote": null
   },
   {
@@ -1362,7 +972,7 @@
       "tool": 12,
       "turn": 5,
       "etool": 7,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "glm52_t1",
@@ -1374,7 +984,7 @@
       "eturn": 0
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -1388,7 +998,7 @@
       "tool": 9,
       "turn": 9,
       "etool": 0,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "glm52_t0",
@@ -1397,10 +1007,10 @@
       "tool": 10,
       "turn": 10,
       "etool": 0,
-      "eturn": 0
+      "eturn": 5
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -1414,7 +1024,7 @@
       "tool": 7,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "glm52_t0",
@@ -1423,10 +1033,10 @@
       "tool": 10,
       "turn": 10,
       "etool": 0,
-      "eturn": 0
+      "eturn": 5
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -1440,7 +1050,7 @@
       "tool": 6,
       "turn": 13,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t2",
@@ -1449,10 +1059,10 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "d_etool": -1,
-    "d_eturn": -2,
+    "d_eturn": -5,
     "vote": null
   },
   {
@@ -1475,88 +1085,10 @@
       "tool": 17,
       "turn": 9,
       "etool": 6.5,
-      "eturn": 0
+      "eturn": 4.0
     },
     "d_etool": 1.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_21",
-    "axis": "turn",
-    "tid": "airport_new_02_xm_current_immediate",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 6,
-      "turn": 4,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 6,
-      "turn": 8,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_22",
-    "axis": "turn",
-    "tid": "airport_new_02_xm_current_immediate",
-    "A": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 6,
-      "turn": 5,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 6,
-      "turn": 8,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_23",
-    "axis": "turn",
-    "tid": "airport_new_03_gz_quick_t2_pm3",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 5,
-      "turn": 3,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 6,
-      "turn": 6,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
+    "d_eturn": -4.0,
     "vote": null
   },
   {
@@ -1570,7 +1102,7 @@
       "tool": 18,
       "turn": 14,
       "etool": 8,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "glm52_t1",
@@ -1582,59 +1114,7 @@
       "eturn": 0
     },
     "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_25",
-    "axis": "turn",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 13,
-      "turn": 19,
-      "etool": 8,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t2",
-      "model": "glm52",
-      "trial": 2,
-      "tool": 13,
-      "turn": 17,
-      "etool": 8,
-      "eturn": 0
-    },
-    "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_26",
-    "axis": "turn",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "A": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 18,
-      "etool": 9,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t2",
-      "model": "glm52",
-      "trial": 2,
-      "tool": 13,
-      "turn": 17,
-      "etool": 8,
-      "eturn": 0
-    },
-    "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -1648,7 +1128,7 @@
       "tool": 6,
       "turn": 22,
       "etool": 2,
-      "eturn": 1
+      "eturn": 4
     },
     "B": {
       "key": "kimik26_t0",
@@ -1660,7 +1140,7 @@
       "eturn": 0
     },
     "d_etool": 1,
-    "d_eturn": 1,
+    "d_eturn": 4,
     "vote": null
   },
   {
@@ -1674,7 +1154,7 @@
       "tool": 7,
       "turn": 20,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t0",
@@ -1686,7 +1166,7 @@
       "eturn": 0
     },
     "d_etool": -1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -1700,7 +1180,7 @@
       "tool": 10,
       "turn": 7,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t0",
@@ -1709,7 +1189,7 @@
       "tool": 9,
       "turn": 7,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
     "d_eturn": 0,
@@ -1726,7 +1206,7 @@
       "tool": 10,
       "turn": 7,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t2",
@@ -1735,10 +1215,10 @@
       "tool": 10,
       "turn": 6,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -1752,7 +1232,7 @@
       "tool": 9,
       "turn": 15,
       "etool": 3,
-      "eturn": 0
+      "eturn": 7
     },
     "B": {
       "key": "glm52_t0",
@@ -1764,7 +1244,7 @@
       "eturn": 0
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 7,
     "vote": null
   },
   {
@@ -1778,7 +1258,7 @@
       "tool": 10,
       "turn": 15,
       "etool": 4,
-      "eturn": 0
+      "eturn": 7
     },
     "B": {
       "key": "glm52_t2",
@@ -1787,10 +1267,10 @@
       "tool": 9,
       "turn": 11,
       "etool": 3,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 4,
     "vote": null
   },
   {
@@ -1804,7 +1284,7 @@
       "tool": 10,
       "turn": 17,
       "etool": 3,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "kimik26_t2",
@@ -1813,10 +1293,10 @@
       "tool": 9,
       "turn": 15,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -1830,7 +1310,7 @@
       "tool": 10,
       "turn": 17,
       "etool": 3,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "glm52_t2",
@@ -1839,10 +1319,10 @@
       "tool": 9,
       "turn": 15,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -1882,7 +1362,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1.0
     },
     "B": {
       "key": "glm52_t2",
@@ -1894,7 +1374,7 @@
       "eturn": 0
     },
     "d_etool": -8.5,
-    "d_eturn": 0,
+    "d_eturn": 1.0,
     "vote": null
   },
   {
@@ -1908,7 +1388,7 @@
       "tool": 13,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1.5
     },
     "B": {
       "key": "glm52_t1",
@@ -1917,10 +1397,10 @@
       "tool": 21,
       "turn": 6,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "d_etool": -7.0,
-    "d_eturn": 0,
+    "d_eturn": 1.0,
     "vote": null
   },
   {
@@ -1950,32 +1430,6 @@
     "vote": null
   },
   {
-    "pair_id": "tool_40",
-    "axis": "tool",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "A": {
-      "key": "qw3627b_t2",
-      "model": "qw3627b",
-      "trial": 2,
-      "tool": 12,
-      "turn": 17,
-      "etool": 6,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 4,
-      "turn": 26,
-      "etool": 0,
-      "eturn": 4
-    },
-    "d_etool": 6,
-    "d_eturn": -4,
-    "vote": null
-  },
-  {
     "pair_id": "tool_41",
     "axis": "tool",
     "tid": "mt_02_bj_hotel_pickup_friend",
@@ -1986,7 +1440,7 @@
       "tool": 9,
       "turn": 5,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t2",
@@ -1995,10 +1449,10 @@
       "tool": 3,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 6,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -2012,7 +1466,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 7,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t0",
@@ -2021,7 +1475,7 @@
       "tool": 4,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 6,
     "d_eturn": 0,
@@ -2038,7 +1492,7 @@
       "tool": 15,
       "turn": 7,
       "etool": 1.0,
-      "eturn": 0
+      "eturn": 1.5
     },
     "B": {
       "key": "glm52_t1",
@@ -2047,10 +1501,10 @@
       "tool": 21,
       "turn": 6,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "d_etool": -6.0,
-    "d_eturn": 0,
+    "d_eturn": 1.0,
     "vote": null
   },
   {
@@ -2064,7 +1518,7 @@
       "tool": 21,
       "turn": 6,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "glm52_t2",
@@ -2073,36 +1527,10 @@
       "tool": 15,
       "turn": 6,
       "etool": 1.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "d_etool": 6.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_45",
-    "axis": "tool",
-    "tid": "rp_10_xa_pickup_friends_dropoff",
-    "A": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 13,
-      "turn": 4,
-      "etool": 8,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t2",
-      "model": "kimik26",
-      "trial": 2,
-      "tool": 7,
-      "turn": 6,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": 6,
-    "d_eturn": 0,
+    "d_eturn": 0.0,
     "vote": null
   },
   {
@@ -2142,7 +1570,7 @@
       "tool": 18,
       "turn": 4,
       "etool": 10,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "glm52_t0",
@@ -2151,10 +1579,10 @@
       "tool": 12,
       "turn": 5,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 6,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -2168,7 +1596,7 @@
       "tool": 17,
       "turn": 5,
       "etool": 9,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t1",
@@ -2177,7 +1605,7 @@
       "tool": 11,
       "turn": 5,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 6,
     "d_eturn": 0,
@@ -2236,32 +1664,6 @@
     "vote": null
   },
   {
-    "pair_id": "tool_51",
-    "axis": "tool",
-    "tid": "lc_01_sz_dismiss_home_no_ev",
-    "A": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 10,
-      "turn": 10,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t2",
-      "model": "glm52",
-      "trial": 2,
-      "tool": 15,
-      "turn": 12,
-      "etool": 5,
-      "eturn": 0
-    },
-    "d_etool": -5,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
     "pair_id": "tool_52",
     "axis": "tool",
     "tid": "mt_02_bj_hotel_pickup_friend",
@@ -2272,7 +1674,7 @@
       "tool": 9,
       "turn": 5,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t0",
@@ -2281,10 +1683,10 @@
       "tool": 4,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -2298,7 +1700,7 @@
       "tool": 12,
       "turn": 7,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t0",
@@ -2307,7 +1709,7 @@
       "tool": 7,
       "turn": 7,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -2324,7 +1726,7 @@
       "tool": 4,
       "turn": 18,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t1",
@@ -2333,10 +1735,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 0,
-    "d_eturn": -4,
+    "d_eturn": -8,
     "vote": null
   },
   {
@@ -2350,7 +1752,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "glm52_t0",
@@ -2362,7 +1764,7 @@
       "eturn": 0
     },
     "d_etool": 0,
-    "d_eturn": 4,
+    "d_eturn": 10,
     "vote": null
   },
   {
@@ -2376,7 +1778,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "glm52_t2",
@@ -2385,10 +1787,10 @@
       "tool": 7,
       "turn": 17,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -1,
-    "d_eturn": 4,
+    "d_eturn": 9,
     "vote": null
   },
   {
@@ -2402,7 +1804,7 @@
       "tool": 8,
       "turn": 11,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t1",
@@ -2411,10 +1813,10 @@
       "tool": 8,
       "turn": 14,
       "etool": 4,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": -3,
     "vote": null
   },
   {
@@ -2437,88 +1839,10 @@
       "tool": 8,
       "turn": 14,
       "etool": 4,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_40",
-    "axis": "turn",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 7,
-      "turn": 11,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 8,
-      "turn": 14,
-      "etool": 4,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_41",
-    "axis": "turn",
-    "tid": "lc_04_cd_taxi_pref_dismiss",
-    "A": {
-      "key": "qw36p_t0",
-      "model": "qw36p",
-      "trial": 0,
-      "tool": 5,
-      "turn": 11,
-      "etool": 2,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t0",
-      "model": "glm52",
-      "trial": 0,
-      "tool": 4,
-      "turn": 18,
-      "etool": 1,
-      "eturn": 3
-    },
-    "d_etool": 1,
-    "d_eturn": -3,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_42",
-    "axis": "turn",
-    "tid": "lc_04_cd_taxi_pref_dismiss",
-    "A": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 2,
-      "turn": 14,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t0",
-      "model": "glm52",
-      "trial": 0,
-      "tool": 4,
-      "turn": 18,
-      "etool": 1,
-      "eturn": 3
-    },
-    "d_etool": -1,
-    "d_eturn": -3,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -2532,7 +1856,7 @@
       "tool": 7,
       "turn": 12,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t2",
@@ -2541,10 +1865,10 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "d_etool": 0,
-    "d_eturn": -2,
+    "d_eturn": -6,
     "vote": null
   },
   {
@@ -2558,7 +1882,7 @@
       "tool": 7,
       "turn": 12,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t2",
@@ -2567,10 +1891,10 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "d_etool": 0,
-    "d_eturn": -2,
+    "d_eturn": -6,
     "vote": null
   },
   {
@@ -2584,7 +1908,7 @@
       "tool": 7,
       "turn": 12,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t2",
@@ -2593,10 +1917,10 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "d_etool": 0,
-    "d_eturn": -2,
+    "d_eturn": -6,
     "vote": null
   },
   {
@@ -2610,7 +1934,7 @@
       "tool": 10,
       "turn": 20,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t2",
@@ -2622,7 +1946,7 @@
       "eturn": 0
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -2636,7 +1960,7 @@
       "tool": 9,
       "turn": 20,
       "etool": 5,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t1",
@@ -2648,7 +1972,7 @@
       "eturn": 0
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -2662,7 +1986,7 @@
       "tool": 13,
       "turn": 6,
       "etool": 8,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t1",
@@ -2674,7 +1998,7 @@
       "eturn": 0
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -2688,7 +2012,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "glm52_t0",
@@ -2697,62 +2021,10 @@
       "tool": 10,
       "turn": 10,
       "etool": 0,
-      "eturn": 0
+      "eturn": 5
     },
     "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_50",
-    "axis": "turn",
-    "tid": "mt_07_gz_pickup_classmate_dinner",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 12,
-      "turn": 11,
-      "etool": 7,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t2",
-      "model": "glm52",
-      "trial": 2,
-      "tool": 13,
-      "turn": 10,
-      "etool": 8,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_51",
-    "axis": "turn",
-    "tid": "mt_07_gz_pickup_classmate_dinner",
-    "A": {
-      "key": "opus46_t0",
-      "model": "opus46",
-      "trial": 0,
-      "tool": 5,
-      "turn": 10,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t2",
-      "model": "kimik26",
-      "trial": 2,
-      "tool": 6,
-      "turn": 14,
-      "etool": 1,
-      "eturn": 1
-    },
-    "d_etool": -1,
-    "d_eturn": -1,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -2775,10 +2047,10 @@
       "tool": 13,
       "turn": 10,
       "etool": 8,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -2792,7 +2064,7 @@
       "tool": 11,
       "turn": 6,
       "etool": 5,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "glm52_t0",
@@ -2804,7 +2076,7 @@
       "eturn": 0
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -2844,7 +2116,7 @@
       "tool": 13,
       "turn": 6,
       "etool": 2.5,
-      "eturn": 0
+      "eturn": 1.0
     },
     "B": {
       "key": "glm52_t2",
@@ -2856,33 +2128,7 @@
       "eturn": 0
     },
     "d_etool": -6.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_56",
-    "axis": "tool",
-    "tid": "lc_01_sz_dismiss_home_no_ev",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 16,
-      "turn": 12,
-      "etool": 6,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t0",
-      "model": "glm52",
-      "trial": 0,
-      "tool": 11,
-      "turn": 10,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": 1.0,
     "vote": null
   },
   {
@@ -2948,7 +2194,7 @@
       "tool": 9,
       "turn": 5,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t1",
@@ -2957,10 +2203,10 @@
       "tool": 4,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -2974,7 +2220,7 @@
       "tool": 8,
       "turn": 6,
       "etool": 5,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t1",
@@ -2983,7 +2229,7 @@
       "tool": 3,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -3000,7 +2246,7 @@
       "tool": 8,
       "turn": 6,
       "etool": 5,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t2",
@@ -3009,7 +2255,7 @@
       "tool": 3,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -3026,7 +2272,7 @@
       "tool": 11,
       "turn": 7,
       "etool": 5,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t2",
@@ -3035,7 +2281,7 @@
       "tool": 6,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -3052,7 +2298,7 @@
       "tool": 11,
       "turn": 8,
       "etool": 5,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t2",
@@ -3061,10 +2307,10 @@
       "tool": 6,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -3078,7 +2324,7 @@
       "tool": 11,
       "turn": 7,
       "etool": 5,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t2",
@@ -3087,7 +2333,7 @@
       "tool": 6,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -3104,7 +2350,7 @@
       "tool": 12,
       "turn": 5,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "kimik26_t1",
@@ -3113,10 +2359,10 @@
       "tool": 7,
       "turn": 7,
       "etool": 2.0,
-      "eturn": 0
+      "eturn": 2.5
     },
     "d_etool": 5.0,
-    "d_eturn": 0,
+    "d_eturn": -2.0,
     "vote": null
   },
   {
@@ -3130,7 +2376,7 @@
       "tool": 12,
       "turn": 5,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "kimik26_t2",
@@ -3139,10 +2385,10 @@
       "tool": 7,
       "turn": 6,
       "etool": 2.0,
-      "eturn": 0
+      "eturn": 1.5
     },
     "d_etool": 5.0,
-    "d_eturn": 0,
+    "d_eturn": -1.0,
     "vote": null
   },
   {
@@ -3156,7 +2402,7 @@
       "tool": 7,
       "turn": 7,
       "etool": 2.0,
-      "eturn": 0
+      "eturn": 2.5
     },
     "B": {
       "key": "glm52_t1",
@@ -3165,10 +2411,10 @@
       "tool": 12,
       "turn": 6,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 1.5
     },
     "d_etool": -5.0,
-    "d_eturn": 0,
+    "d_eturn": 1.0,
     "vote": null
   },
   {
@@ -3182,7 +2428,7 @@
       "tool": 17,
       "turn": 5,
       "etool": 9,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t0",
@@ -3191,7 +2437,7 @@
       "tool": 12,
       "turn": 5,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -3217,36 +2463,10 @@
       "tool": 14,
       "turn": 5,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -5,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_70",
-    "axis": "tool",
-    "tid": "lc_04_cd_taxi_pref_dismiss",
-    "A": {
-      "key": "dsv4pro_t1",
-      "model": "dsv4pro",
-      "trial": 1,
-      "tool": 8,
-      "turn": 11,
-      "etool": 5,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 2,
-      "turn": 14,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -3260,7 +2480,7 @@
       "tool": 13,
       "turn": 15,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t1",
@@ -3269,36 +2489,10 @@
       "tool": 8,
       "turn": 19,
       "etool": 1,
-      "eturn": 0
+      "eturn": 6
     },
     "d_etool": 5,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_72",
-    "axis": "tool",
-    "tid": "mt_07_gz_pickup_classmate_dinner",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 11,
-      "turn": 10,
-      "etool": 6,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t2",
-      "model": "kimik26",
-      "trial": 2,
-      "tool": 6,
-      "turn": 14,
-      "etool": 1,
-      "eturn": 1
-    },
-    "d_etool": 5,
-    "d_eturn": -1,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -3312,7 +2506,7 @@
       "tool": 7,
       "turn": 17,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t1",
@@ -3321,10 +2515,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 1,
-    "d_eturn": -4,
+    "d_eturn": -9,
     "vote": null
   },
   {
@@ -3338,7 +2532,7 @@
       "tool": 6,
       "turn": 18,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t1",
@@ -3347,10 +2541,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 0,
-    "d_eturn": -4,
+    "d_eturn": -8,
     "vote": null
   },
   {
@@ -3373,10 +2567,10 @@
       "tool": 5,
       "turn": 15,
       "etool": 1,
-      "eturn": 1
+      "eturn": 5
     },
     "d_etool": 0,
-    "d_eturn": -1,
+    "d_eturn": -5,
     "vote": null
   },
   {
@@ -3390,7 +2584,7 @@
       "tool": 7,
       "turn": 16,
       "etool": 1,
-      "eturn": 0
+      "eturn": 5
     },
     "B": {
       "key": "glm52_t0",
@@ -3399,10 +2593,10 @@
       "tool": 7,
       "turn": 13,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": 3,
     "vote": null
   },
   {
@@ -3416,7 +2610,7 @@
       "tool": 5,
       "turn": 13,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t2",
@@ -3425,10 +2619,10 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "d_etool": -1,
-    "d_eturn": -2,
+    "d_eturn": -5,
     "vote": null
   },
   {
@@ -3442,7 +2636,7 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "B": {
       "key": "glm52_t1",
@@ -3451,10 +2645,10 @@
       "tool": 6,
       "turn": 12,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 1,
-    "d_eturn": 2,
+    "d_eturn": 6,
     "vote": null
   },
   {
@@ -3468,7 +2662,7 @@
       "tool": 8,
       "turn": 11,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t1",
@@ -3477,10 +2671,10 @@
       "tool": 8,
       "turn": 14,
       "etool": 4,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": -3,
     "vote": null
   },
   {
@@ -3494,7 +2688,7 @@
       "tool": 7,
       "turn": 7,
       "etool": 2,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "kimik26_t1",
@@ -3503,10 +2697,10 @@
       "tool": 7,
       "turn": 5,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -3572,7 +2766,7 @@
       "tool": 6,
       "turn": 9,
       "etool": 1,
-      "eturn": 0
+      "eturn": 5
     },
     "B": {
       "key": "glm52_t1",
@@ -3581,10 +2775,10 @@
       "tool": 5,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 3,
     "vote": null
   },
   {
@@ -3598,7 +2792,7 @@
       "tool": 6,
       "turn": 9,
       "etool": 1,
-      "eturn": 0
+      "eturn": 5
     },
     "B": {
       "key": "glm52_t2",
@@ -3607,88 +2801,10 @@
       "tool": 5,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_66",
-    "axis": "turn",
-    "tid": "airport_new_01_bj_home_flight",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 6,
-      "turn": 5,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 7,
-      "turn": 8,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_67",
-    "axis": "turn",
-    "tid": "airport_new_02_xm_current_immediate",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 6,
-      "turn": 4,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t2",
-      "model": "kimik26",
-      "trial": 2,
-      "tool": 6,
-      "turn": 7,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_68",
-    "axis": "turn",
-    "tid": "airport_new_02_xm_current_immediate",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 6,
-      "turn": 4,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t1",
-      "model": "glm52",
-      "trial": 1,
-      "tool": 7,
-      "turn": 8,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
+    "d_eturn": 3,
     "vote": null
   },
   {
@@ -3702,7 +2818,7 @@
       "tool": 6,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "glm52_t2",
@@ -3711,10 +2827,10 @@
       "tool": 5,
       "turn": 4,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -3806,7 +2922,7 @@
       "tool": 8,
       "turn": 6,
       "etool": 5,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "glm52_t0",
@@ -3815,7 +2931,7 @@
       "tool": 3,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -3832,7 +2948,7 @@
       "tool": 8,
       "turn": 6,
       "etool": 5,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "glm52_t2",
@@ -3841,7 +2957,7 @@
       "tool": 3,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -3858,7 +2974,7 @@
       "tool": 11,
       "turn": 7,
       "etool": 5,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t2",
@@ -3867,7 +2983,7 @@
       "tool": 6,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 5,
     "d_eturn": 0,
@@ -3893,10 +3009,10 @@
       "tool": 7,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -3919,10 +3035,10 @@
       "tool": 7,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -3945,10 +3061,10 @@
       "tool": 7,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -3971,10 +3087,10 @@
       "tool": 4,
       "turn": 8,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1.0
     },
     "d_etool": 4.5,
-    "d_eturn": 0,
+    "d_eturn": -1.0,
     "vote": null
   },
   {
@@ -3988,7 +3104,7 @@
       "tool": 6,
       "turn": 18,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "kimik26_t1",
@@ -3997,10 +3113,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 0,
-    "d_eturn": -4,
+    "d_eturn": -8,
     "vote": null
   },
   {
@@ -4014,7 +3130,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "kimik26_t2",
@@ -4023,10 +3139,10 @@
       "tool": 6,
       "turn": 19,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 0,
-    "d_eturn": 4,
+    "d_eturn": 7,
     "vote": null
   },
   {
@@ -4040,7 +3156,7 @@
       "tool": 6,
       "turn": 19,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t1",
@@ -4049,10 +3165,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 0,
-    "d_eturn": -4,
+    "d_eturn": -7,
     "vote": null
   },
   {
@@ -4075,10 +3191,10 @@
       "tool": 8,
       "turn": 14,
       "etool": 4,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": -1,
-    "d_eturn": 0,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -4092,7 +3208,7 @@
       "tool": 8,
       "turn": 14,
       "etool": 4,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "glm52_t1",
@@ -4101,10 +3217,10 @@
       "tool": 7,
       "turn": 12,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -4118,7 +3234,7 @@
       "tool": 6,
       "turn": 14,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t2",
@@ -4127,10 +3243,10 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "d_etool": -1,
-    "d_eturn": -2,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -4144,7 +3260,7 @@
       "tool": 7,
       "turn": 16,
       "etool": 1,
-      "eturn": 0
+      "eturn": 5
     },
     "B": {
       "key": "kimik26_t0",
@@ -4153,10 +3269,10 @@
       "tool": 5,
       "turn": 13,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 3,
     "vote": null
   },
   {
@@ -4170,7 +3286,7 @@
       "tool": 7,
       "turn": 16,
       "etool": 1,
-      "eturn": 0
+      "eturn": 5
     },
     "B": {
       "key": "glm52_t1",
@@ -4179,36 +3295,10 @@
       "tool": 6,
       "turn": 12,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_78",
-    "axis": "turn",
-    "tid": "airport_new_01_bj_home_flight",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 6,
-      "turn": 4,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 7,
-      "turn": 8,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
+    "d_eturn": 4,
     "vote": null
   },
   {
@@ -4222,7 +3312,7 @@
       "tool": 6,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "glm52_t1",
@@ -4231,10 +3321,10 @@
       "tool": 5,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -4248,7 +3338,7 @@
       "tool": 12,
       "turn": 5,
       "etool": 6,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "kimik26_t2",
@@ -4257,10 +3347,10 @@
       "tool": 7,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": -3,
     "vote": null
   },
   {
@@ -4274,7 +3364,7 @@
       "tool": 8,
       "turn": 6,
       "etool": 4.0,
-      "eturn": 0
+      "eturn": 1.0
     },
     "B": {
       "key": "glm52_t1",
@@ -4283,10 +3373,10 @@
       "tool": 4,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2.0
     },
     "d_etool": 4.0,
-    "d_eturn": 0,
+    "d_eturn": -1.0,
     "vote": null
   },
   {
@@ -4342,32 +3432,6 @@
     "vote": null
   },
   {
-    "pair_id": "tool_87",
-    "axis": "tool",
-    "tid": "lc_03_sh_business_flight_luggage",
-    "A": {
-      "key": "dsv4pro_t1",
-      "model": "dsv4pro",
-      "trial": 1,
-      "tool": 10,
-      "turn": 15,
-      "etool": 5,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 6,
-      "turn": 17,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 4,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
     "pair_id": "tool_88",
     "axis": "tool",
     "tid": "lc_05_hz_elder_hospital_smooth",
@@ -4378,7 +3442,7 @@
       "tool": 5,
       "turn": 18,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "glm52_t1",
@@ -4390,33 +3454,7 @@
       "eturn": 0
     },
     "d_etool": -4,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_89",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "opus46_t2",
-      "model": "opus46",
-      "trial": 2,
-      "tool": 7,
-      "turn": 13,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t2",
-      "model": "kimik26",
-      "trial": 2,
-      "tool": 11,
-      "turn": 11,
-      "etool": 7,
-      "eturn": 0
-    },
-    "d_etool": -4,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -4430,7 +3468,7 @@
       "tool": 7,
       "turn": 15,
       "etool": 3,
-      "eturn": 1
+      "eturn": 5
     },
     "B": {
       "key": "kimik26_t2",
@@ -4439,10 +3477,10 @@
       "tool": 11,
       "turn": 11,
       "etool": 7,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -4,
-    "d_eturn": 1,
+    "d_eturn": 4,
     "vote": null
   },
   {
@@ -4508,7 +3546,7 @@
       "tool": 6,
       "turn": 19,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t1",
@@ -4517,10 +3555,10 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "d_etool": 0,
-    "d_eturn": -4,
+    "d_eturn": -7,
     "vote": null
   },
   {
@@ -4534,7 +3572,7 @@
       "tool": 5,
       "turn": 14,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "kimik26_t2",
@@ -4543,10 +3581,10 @@
       "tool": 7,
       "turn": 18,
       "etool": 1,
-      "eturn": 2
+      "eturn": 7
     },
     "d_etool": -1,
-    "d_eturn": -2,
+    "d_eturn": -4,
     "vote": null
   },
   {
@@ -4560,7 +3598,7 @@
       "tool": 6,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "glm52_t2",
@@ -4569,88 +3607,10 @@
       "tool": 5,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_83",
-    "axis": "turn",
-    "tid": "airport_new_02_xm_current_immediate",
-    "A": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 6,
-      "turn": 5,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t2",
-      "model": "kimik26",
-      "trial": 2,
-      "tool": 6,
-      "turn": 7,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_84",
-    "axis": "turn",
-    "tid": "airport_new_02_xm_current_immediate",
-    "A": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 6,
-      "turn": 5,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "glm52_t1",
-      "model": "glm52",
-      "trial": 1,
-      "tool": 7,
-      "turn": 8,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_85",
-    "axis": "turn",
-    "tid": "airport_new_02_xm_current_immediate",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 6,
-      "turn": 6,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 6,
-      "turn": 8,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -4673,10 +3633,10 @@
       "tool": 6,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": -3,
     "vote": null
   },
   {
@@ -4699,10 +3659,10 @@
       "tool": 6,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": -3,
     "vote": null
   },
   {
@@ -4725,218 +3685,10 @@
       "tool": 6,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_89",
-    "axis": "turn",
-    "tid": "ft_021_time_contradict_current",
-    "A": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 5,
-      "turn": 4,
-      "etool": 1.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 6,
-      "turn": 7,
-      "etool": 2.0,
-      "eturn": 0
-    },
-    "d_etool": -1.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_90",
-    "axis": "turn",
-    "tid": "ft_021_time_contradict_current",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 5,
-      "turn": 4,
-      "etool": 1.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 6,
-      "turn": 7,
-      "etool": 2.0,
-      "eturn": 0
-    },
-    "d_etool": -1.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_93",
-    "axis": "tool",
-    "tid": "mt_09_nj_business_three_stop",
-    "A": {
-      "key": "opus46_t2",
-      "model": "opus46",
-      "trial": 2,
-      "tool": 14,
-      "turn": 8,
-      "etool": 2,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw3627b_t2",
-      "model": "qw3627b",
-      "trial": 2,
-      "tool": 27,
-      "turn": 6,
-      "etool": 15,
-      "eturn": 0
-    },
-    "d_etool": -13,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_94",
-    "axis": "tool",
-    "tid": "rp_03_cd_furniture_moving",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 28,
-      "turn": 6,
-      "etool": 14.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw37plus_t1",
-      "model": "qw37plus",
-      "trial": 1,
-      "tool": 17,
-      "turn": 6,
-      "etool": 3.0,
-      "eturn": 0
-    },
-    "d_etool": 11.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_95",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "qw37max_t2",
-      "model": "qw37max",
-      "trial": 2,
-      "tool": 4,
-      "turn": 21,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 3,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_96",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 3,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw3627b_t0",
-      "model": "qw3627b",
-      "trial": 0,
-      "tool": 4,
-      "turn": 17,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_97",
-    "axis": "tool",
-    "tid": "lc_10_cq_pickup_luxury",
-    "A": {
-      "key": "qw37max_t2",
-      "model": "qw37max",
-      "trial": 2,
-      "tool": 7,
-      "turn": 13,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw35ba3b_t2",
-      "model": "qw35ba3b",
-      "trial": 2,
-      "tool": 17,
-      "turn": 4,
-      "etool": 11,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_98",
-    "axis": "tool",
-    "tid": "mt_09_nj_business_three_stop",
-    "A": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 17,
-      "turn": 7,
-      "etool": 5,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw3627b_t2",
-      "model": "qw3627b",
-      "trial": 2,
-      "tool": 27,
-      "turn": 6,
-      "etool": 15,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
+    "d_eturn": -3,
     "vote": null
   },
   {
@@ -4950,7 +3702,7 @@
       "tool": 16,
       "turn": 11,
       "etool": 4,
-      "eturn": 0
+      "eturn": 6
     },
     "B": {
       "key": "qw3627b_t0",
@@ -4959,10 +3711,10 @@
       "tool": 26,
       "turn": 8,
       "etool": 14,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": -10,
-    "d_eturn": 0,
+    "d_eturn": 3,
     "vote": null
   },
   {
@@ -4976,7 +3728,7 @@
       "tool": 16,
       "turn": 5,
       "etool": 11,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "qw37max_t2",
@@ -4985,35 +3737,9 @@
       "tool": 6,
       "turn": 5,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_101",
-    "axis": "tool",
-    "tid": "rp_08_nj_pickup_classmates_dinner",
-    "A": {
-      "key": "dsv4pro_t0",
-      "model": "dsv4pro",
-      "trial": 0,
-      "tool": 15,
-      "turn": 6,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw36p_t2",
-      "model": "qw36p",
-      "trial": 2,
-      "tool": 6,
-      "turn": 6,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 9,
     "d_eturn": 0,
     "vote": null
   },
@@ -5037,10 +3763,10 @@
       "tool": 6,
       "turn": 5,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 9,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -5054,7 +3780,7 @@
       "tool": 26,
       "turn": 7,
       "etool": 14,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "qw3627b_t2",
@@ -5063,88 +3789,10 @@
       "tool": 27,
       "turn": 6,
       "etool": 15,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_92",
-    "axis": "turn",
-    "tid": "mt_09_nj_business_three_stop",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 22,
-      "turn": 8,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw37plus_t0",
-      "model": "qw37plus",
-      "trial": 0,
-      "tool": 21,
-      "turn": 9,
-      "etool": 9,
-      "eturn": 0
-    },
-    "d_etool": 1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_93",
-    "axis": "turn",
-    "tid": "lc_10_cq_pickup_luxury",
-    "A": {
-      "key": "qw37plus_t0",
-      "model": "qw37plus",
-      "trial": 0,
-      "tool": 18,
-      "turn": 14,
-      "etool": 12,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw35ba3b_t2",
-      "model": "qw35ba3b",
-      "trial": 2,
-      "tool": 17,
-      "turn": 4,
-      "etool": 11,
-      "eturn": 0
-    },
-    "d_etool": 1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_94",
-    "axis": "turn",
-    "tid": "mt_09_nj_business_three_stop",
-    "A": {
-      "key": "gpt55_t0",
-      "model": "gpt55",
-      "trial": 0,
-      "tool": 22,
-      "turn": 8,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw36p_t0",
-      "model": "qw36p",
-      "trial": 0,
-      "tool": 21,
-      "turn": 6,
-      "etool": 9,
-      "eturn": 0
-    },
-    "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -5167,36 +3815,10 @@
       "tool": 10,
       "turn": 20,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_96",
-    "axis": "turn",
-    "tid": "lc_08_wh_late_night_safety",
-    "A": {
-      "key": "dsv4pro_t1",
-      "model": "dsv4pro",
-      "trial": 1,
-      "tool": 10,
-      "turn": 19,
-      "etool": 6,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 11,
-      "turn": 26,
-      "etool": 7,
-      "eturn": 5
-    },
-    "d_etool": -1,
-    "d_eturn": -5,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -5219,88 +3841,10 @@
       "tool": 10,
       "turn": 20,
       "etool": 6,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_98",
-    "axis": "turn",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "A": {
-      "key": "dsv4pro_t1",
-      "model": "dsv4pro",
-      "trial": 1,
-      "tool": 9,
-      "turn": 16,
-      "etool": 4,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw36p_t1",
-      "model": "qw36p",
-      "trial": 1,
-      "tool": 9,
-      "turn": 21,
-      "etool": 4,
-      "eturn": 0
-    },
-    "d_etool": 0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_99",
-    "axis": "turn",
-    "tid": "rp_10_xa_pickup_friends_dropoff",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 12,
-      "turn": 4,
-      "etool": 7,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw37max_t1",
-      "model": "qw37max",
-      "trial": 1,
-      "tool": 13,
-      "turn": 4,
-      "etool": 8,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_100",
-    "axis": "turn",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 7,
-      "turn": 9,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 7,
-      "turn": 15,
-      "etool": 3,
-      "eturn": 1
-    },
-    "d_etool": 0,
-    "d_eturn": -1,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -5314,7 +3858,7 @@
       "tool": 9,
       "turn": 20,
       "etool": 3,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "ministral8b_t0",
@@ -5326,7 +3870,7 @@
       "eturn": 0
     },
     "d_etool": -20,
-    "d_eturn": 0,
+    "d_eturn": 4,
     "vote": null
   },
   {
@@ -5340,7 +3884,7 @@
       "tool": 27,
       "turn": 6,
       "etool": 15,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "gemma431b_t1",
@@ -5349,62 +3893,10 @@
       "tool": 12,
       "turn": 8,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 15,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_107",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 7,
-      "turn": 15,
-      "etool": 3,
-      "eturn": 1
-    },
-    "B": {
-      "key": "llama3370b_t0",
-      "model": "llama3370b",
-      "trial": 0,
-      "tool": 21,
-      "turn": 1,
-      "etool": 17,
-      "eturn": 0
-    },
-    "d_etool": -14,
-    "d_eturn": 1,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_109",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 8,
-      "turn": 14,
-      "etool": 4,
-      "eturn": 0
-    },
-    "B": {
-      "key": "llama3370b_t0",
-      "model": "llama3370b",
-      "trial": 0,
-      "tool": 21,
-      "turn": 1,
-      "etool": 17,
-      "eturn": 0
-    },
-    "d_etool": -13,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -5418,7 +3910,7 @@
       "tool": 27,
       "turn": 6,
       "etool": 15,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "gemma431b_t0",
@@ -5427,88 +3919,10 @@
       "tool": 14,
       "turn": 7,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 13,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_111",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "llama3370b_t0",
-      "model": "llama3370b",
-      "trial": 0,
-      "tool": 21,
-      "turn": 1,
-      "etool": 17,
-      "eturn": 0
-    },
-    "B": {
-      "key": "ministral3b_t1",
-      "model": "ministral3b",
-      "trial": 1,
-      "tool": 9,
-      "turn": 15,
-      "etool": 5,
-      "eturn": 1
-    },
-    "d_etool": 12,
     "d_eturn": -1,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_113",
-    "axis": "tool",
-    "tid": "lc_10_cq_pickup_luxury",
-    "A": {
-      "key": "ministral14b_t0",
-      "model": "ministral14b",
-      "trial": 0,
-      "tool": 19,
-      "turn": 4,
-      "etool": 13,
-      "eturn": 0
-    },
-    "B": {
-      "key": "ministral14b_t1",
-      "model": "ministral14b",
-      "trial": 1,
-      "tool": 7,
-      "turn": 14,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 12,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_114",
-    "axis": "tool",
-    "tid": "rp_03_cd_furniture_moving",
-    "A": {
-      "key": "gpt55_t2",
-      "model": "gpt55",
-      "trial": 2,
-      "tool": 28,
-      "turn": 6,
-      "etool": 14.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "mimo_t2",
-      "model": "mimo",
-      "trial": 2,
-      "tool": 16,
-      "turn": 5,
-      "etool": 2.0,
-      "eturn": 0
-    },
-    "d_etool": 12.0,
-    "d_eturn": 0,
     "vote": null
   },
   {
@@ -5548,7 +3962,7 @@
       "tool": 10,
       "turn": 5,
       "etool": 5,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "mimo_t1",
@@ -5560,85 +3974,7 @@
       "eturn": 0
     },
     "d_etool": -12,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_117",
-    "axis": "tool",
-    "tid": "rp_11_wh_pickup_parents_friend_dropoff",
-    "A": {
-      "key": "mimo_t0",
-      "model": "mimo",
-      "trial": 0,
-      "tool": 23,
-      "turn": 4,
-      "etool": 15,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gptoss20b_t0",
-      "model": "gptoss20b",
-      "trial": 0,
-      "tool": 11,
-      "turn": 4,
-      "etool": 3,
-      "eturn": 0
-    },
-    "d_etool": 12,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_118",
-    "axis": "tool",
-    "tid": "rp_11_wh_pickup_parents_friend_dropoff",
-    "A": {
-      "key": "mimo_t0",
-      "model": "mimo",
-      "trial": 0,
-      "tool": 23,
-      "turn": 4,
-      "etool": 15,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gptoss20b_t2",
-      "model": "gptoss20b",
-      "trial": 2,
-      "tool": 11,
-      "turn": 5,
-      "etool": 3,
-      "eturn": 0
-    },
-    "d_etool": 12,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_119",
-    "axis": "tool",
-    "tid": "rp_11_wh_pickup_parents_friend_dropoff",
-    "A": {
-      "key": "mimo_t1",
-      "model": "mimo",
-      "trial": 1,
-      "tool": 21,
-      "turn": 4,
-      "etool": 13,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemma426b_t0",
-      "model": "gemma426b",
-      "trial": 0,
-      "tool": 9,
-      "turn": 4,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 12,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -5652,7 +3988,7 @@
       "tool": 27,
       "turn": 6,
       "etool": 15,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "gemma431b_t2",
@@ -5661,62 +3997,10 @@
       "tool": 16,
       "turn": 7,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 11,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_122",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 3,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemma431b_t1",
-      "model": "gemma431b",
-      "trial": 1,
-      "tool": 4,
-      "turn": 18,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_123",
-    "axis": "tool",
-    "tid": "lc_10_cq_pickup_luxury",
-    "A": {
-      "key": "qw35ba3b_t2",
-      "model": "qw35ba3b",
-      "trial": 2,
-      "tool": 17,
-      "turn": 4,
-      "etool": 11,
-      "eturn": 0
-    },
-    "B": {
-      "key": "ministral14b_t1",
-      "model": "ministral14b",
-      "trial": 1,
-      "tool": 7,
-      "turn": 14,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -5730,7 +4014,7 @@
       "tool": 6,
       "turn": 11,
       "etool": 0,
-      "eturn": 0
+      "eturn": 4.0
     },
     "B": {
       "key": "ministral3b_t0",
@@ -5739,36 +4023,10 @@
       "tool": 16,
       "turn": 8,
       "etool": 9.5,
-      "eturn": 0
+      "eturn": 1.0
     },
     "d_etool": -9.5,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "tool_125",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 3,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemma431b_t2",
-      "model": "gemma431b",
-      "trial": 2,
-      "tool": 5,
-      "turn": 18,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 9,
-    "d_eturn": 0,
+    "d_eturn": 3.0,
     "vote": null
   },
   {
@@ -5817,10 +4075,10 @@
       "tool": 15,
       "turn": 4,
       "etool": 10,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -9,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -5834,7 +4092,7 @@
       "tool": 13,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "mimo_t1",
@@ -5846,7 +4104,7 @@
       "eturn": 0
     },
     "d_etool": -8.0,
-    "d_eturn": 0,
+    "d_eturn": 0.5,
     "vote": null
   },
   {
@@ -5860,7 +4118,7 @@
       "tool": 13,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "mimo_t1",
@@ -5872,7 +4130,7 @@
       "eturn": 0
     },
     "d_etool": -8.0,
-    "d_eturn": 0,
+    "d_eturn": 0.5,
     "vote": null
   },
   {
@@ -5886,7 +4144,7 @@
       "tool": 13,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "mimo_t1",
@@ -5898,7 +4156,7 @@
       "eturn": 0
     },
     "d_etool": -8.0,
-    "d_eturn": 0,
+    "d_eturn": 0.5,
     "vote": null
   },
   {
@@ -6016,7 +4274,7 @@
       "tool": 18,
       "turn": 48,
       "etool": 9,
-      "eturn": 33
+      "eturn": 42
     },
     "B": {
       "key": "ministral14b_t1",
@@ -6025,10 +4283,10 @@
       "tool": 17,
       "turn": 7,
       "etool": 8,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 1,
-    "d_eturn": 33,
+    "d_eturn": 41,
     "vote": null
   },
   {
@@ -6042,7 +4300,7 @@
       "tool": 7,
       "turn": 34,
       "etool": 3,
-      "eturn": 20
+      "eturn": 24
     },
     "B": {
       "key": "ministral8b_t0",
@@ -6054,7 +4312,7 @@
       "eturn": 0
     },
     "d_etool": 1,
-    "d_eturn": 20,
+    "d_eturn": 24,
     "vote": null
   },
   {
@@ -6068,7 +4326,7 @@
       "tool": 14,
       "turn": 30,
       "etool": 8,
-      "eturn": 13
+      "eturn": 22
     },
     "B": {
       "key": "ministral3b_t1",
@@ -6077,36 +4335,10 @@
       "tool": 14,
       "turn": 11,
       "etool": 8,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 0,
-    "d_eturn": 13,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_109",
-    "axis": "turn",
-    "tid": "lc_08_wh_late_night_safety",
-    "A": {
-      "key": "gpt55_t1",
-      "model": "gpt55",
-      "trial": 1,
-      "tool": 11,
-      "turn": 26,
-      "etool": 7,
-      "eturn": 5
-    },
-    "B": {
-      "key": "mimo_t0",
-      "model": "mimo",
-      "trial": 0,
-      "tool": 10,
-      "turn": 14,
-      "etool": 6,
-      "eturn": 0
-    },
-    "d_etool": 1,
-    "d_eturn": 5,
+    "d_eturn": 19,
     "vote": null
   },
   {
@@ -6120,7 +4352,7 @@
       "tool": 21,
       "turn": 9,
       "etool": 9,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "mimo_t1",
@@ -6129,36 +4361,10 @@
       "tool": 22,
       "turn": 7,
       "etool": 10,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_114",
-    "axis": "turn",
-    "tid": "exp_090_extreme_temporal_backward",
-    "A": {
-      "key": "dsv4pro_t0",
-      "model": "dsv4pro",
-      "trial": 0,
-      "tool": 8,
-      "turn": 5,
-      "etool": 3.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gptoss20b_t1",
-      "model": "gptoss20b",
-      "trial": 1,
-      "tool": 9,
-      "turn": 14,
-      "etool": 4.0,
-      "eturn": 2.5
-    },
-    "d_etool": -1.0,
-    "d_eturn": -2.5,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -6172,7 +4378,7 @@
       "tool": 17,
       "turn": 9,
       "etool": 6.5,
-      "eturn": 0
+      "eturn": 4.0
     },
     "B": {
       "key": "mimo_t0",
@@ -6184,33 +4390,7 @@
       "eturn": 0
     },
     "d_etool": 0.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_117",
-    "axis": "turn",
-    "tid": "exp_090_extreme_temporal_backward",
-    "A": {
-      "key": "dsv4pro_t1",
-      "model": "dsv4pro",
-      "trial": 1,
-      "tool": 8,
-      "turn": 7,
-      "etool": 3.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gptoss20b_t1",
-      "model": "gptoss20b",
-      "trial": 1,
-      "tool": 9,
-      "turn": 14,
-      "etool": 4.0,
-      "eturn": 2.5
-    },
-    "d_etool": -1.0,
-    "d_eturn": -2.5,
+    "d_eturn": 4.0,
     "vote": null
   },
   {
@@ -6224,7 +4404,7 @@
       "tool": 11,
       "turn": 11,
       "etool": 5,
-      "eturn": 0
+      "eturn": 6
     },
     "B": {
       "key": "ministral14b_t2",
@@ -6236,7 +4416,7 @@
       "eturn": 0
     },
     "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 6,
     "vote": null
   },
   {
@@ -6250,7 +4430,7 @@
       "tool": 21,
       "turn": 6,
       "etool": 9,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "mimo_t1",
@@ -6259,62 +4439,10 @@
       "tool": 22,
       "turn": 7,
       "etool": 10,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_122",
-    "axis": "turn",
-    "tid": "lc_10_cq_pickup_luxury",
-    "A": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 14,
-      "turn": 14,
-      "etool": 8,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gptoss20b_t2",
-      "model": "gptoss20b",
-      "trial": 2,
-      "tool": 13,
-      "turn": 6,
-      "etool": 7,
-      "eturn": 0
-    },
-    "d_etool": 1,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_124",
-    "axis": "turn",
-    "tid": "rp_10_xa_pickup_friends_dropoff",
-    "A": {
-      "key": "glm52_t1",
-      "model": "glm52",
-      "trial": 1,
-      "tool": 12,
-      "turn": 4,
-      "etool": 7,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemma426b_t2",
-      "model": "gemma426b",
-      "trial": 2,
-      "tool": 13,
-      "turn": 9,
-      "etool": 8,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -6328,7 +4456,7 @@
       "tool": 17,
       "turn": 9,
       "etool": 6.5,
-      "eturn": 0
+      "eturn": 4.0
     },
     "B": {
       "key": "gemma426b_t2",
@@ -6337,62 +4465,10 @@
       "tool": 16,
       "turn": 7,
       "etool": 5.5,
-      "eturn": 0
+      "eturn": 2.0
     },
     "d_etool": 1.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_126",
-    "axis": "turn",
-    "tid": "exp_090_extreme_temporal_backward",
-    "A": {
-      "key": "gptoss20b_t1",
-      "model": "gptoss20b",
-      "trial": 1,
-      "tool": 9,
-      "turn": 14,
-      "etool": 4.0,
-      "eturn": 2.5
-    },
-    "B": {
-      "key": "ministral14b_t0",
-      "model": "ministral14b",
-      "trial": 0,
-      "tool": 8,
-      "turn": 8,
-      "etool": 3.0,
-      "eturn": 0
-    },
-    "d_etool": 1.0,
-    "d_eturn": 2.5,
-    "vote": null
-  },
-  {
-    "pair_id": "turn_127",
-    "axis": "turn",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "A": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 12,
-      "turn": 17,
-      "etool": 7,
-      "eturn": 0
-    },
-    "B": {
-      "key": "granite418b_t0",
-      "model": "granite418b",
-      "trial": 0,
-      "tool": 11,
-      "turn": 4,
-      "etool": 6,
-      "eturn": 0
-    },
-    "d_etool": 1,
-    "d_eturn": 0,
+    "d_eturn": 2.0,
     "vote": null
   },
   {
@@ -6406,7 +4482,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "mimo_t2",
@@ -6418,7 +4494,7 @@
       "eturn": 0
     },
     "d_etool": -1,
-    "d_eturn": 4,
+    "d_eturn": 10,
     "vote": null
   },
   {
@@ -6432,7 +4508,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "gemma431b_t0",
@@ -6441,10 +4517,10 @@
       "tool": 6,
       "turn": 17,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 0,
-    "d_eturn": 4,
+    "d_eturn": 9,
     "vote": null
   },
   {
@@ -6458,7 +4534,7 @@
       "tool": 11,
       "turn": 6,
       "etool": 5,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "mistralsmall_t1",
@@ -6467,10 +4543,10 @@
       "tool": 11,
       "turn": 11,
       "etool": 5,
-      "eturn": 0
+      "eturn": 6
     },
     "d_etool": 0,
-    "d_eturn": 0,
+    "d_eturn": -5,
     "vote": null
   },
   {
@@ -6484,7 +4560,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "mistralsmall_t1",
@@ -6493,10 +4569,10 @@
       "tool": 11,
       "turn": 11,
       "etool": 5,
-      "eturn": 0
+      "eturn": 6
     },
     "d_etool": -1,
-    "d_eturn": 0,
+    "d_eturn": -5,
     "vote": null
   },
   {
@@ -6545,10 +4621,10 @@
       "tool": 10,
       "turn": 5,
       "etool": 5,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 15,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -6562,7 +4638,7 @@
       "tool": 23,
       "turn": 4,
       "etool": 15,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "sonnet5_t0",
@@ -6571,88 +4647,10 @@
       "tool": 8,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 15,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_03",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "qw37max_t1",
-      "model": "qw37max",
-      "trial": 1,
-      "tool": 4,
-      "turn": 13,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 18,
-      "turn": 13,
-      "etool": 14,
-      "eturn": 0
-    },
-    "d_etool": -14,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_04",
-    "axis": "tool",
-    "tid": "rp_10_xa_pickup_friends_dropoff",
-    "A": {
-      "key": "mimo_t2",
-      "model": "mimo",
-      "trial": 2,
-      "tool": 25,
-      "turn": 4,
-      "etool": 20,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 11,
-      "turn": 5,
-      "etool": 6,
-      "eturn": 0
-    },
-    "d_etool": 14,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_05",
-    "axis": "tool",
-    "tid": "rp_11_wh_pickup_parents_friend_dropoff",
-    "A": {
-      "key": "mimo_t0",
-      "model": "mimo",
-      "trial": 0,
-      "tool": 23,
-      "turn": 4,
-      "etool": 15,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 9,
-      "turn": 5,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 14,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -6666,7 +4664,7 @@
       "tool": 23,
       "turn": 4,
       "etool": 15,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "sonnet5_t1",
@@ -6675,87 +4673,9 @@
       "tool": 9,
       "turn": 4,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 14,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_07",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "qw36p_t1",
-      "model": "qw36p",
-      "trial": 1,
-      "tool": 5,
-      "turn": 12,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 18,
-      "turn": 13,
-      "etool": 14,
-      "eturn": 0
-    },
-    "d_etool": -13,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_08",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "qw36p_t2",
-      "model": "qw36p",
-      "trial": 2,
-      "tool": 5,
-      "turn": 12,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 18,
-      "turn": 13,
-      "etool": 14,
-      "eturn": 0
-    },
-    "d_etool": -13,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_09",
-    "axis": "tool",
-    "tid": "mt_09_nj_business_three_stop",
-    "A": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 13,
-      "turn": 10,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t1",
-      "model": "gemini35flash",
-      "trial": 1,
-      "tool": 26,
-      "turn": 9,
-      "etool": 14,
-      "eturn": 0
-    },
-    "d_etool": -13,
     "d_eturn": 0,
     "vote": null
   },
@@ -6770,7 +4690,7 @@
       "tool": 18,
       "turn": 14,
       "etool": 12,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "sonnet5_t1",
@@ -6779,7 +4699,7 @@
       "tool": 5,
       "turn": 14,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 12,
     "d_eturn": 0,
@@ -6796,7 +4716,7 @@
       "tool": 18,
       "turn": 14,
       "etool": 12,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "sonnet5_t2",
@@ -6805,7 +4725,7 @@
       "tool": 5,
       "turn": 14,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 12,
     "d_eturn": 0,
@@ -6822,7 +4742,7 @@
       "tool": 14,
       "turn": 8,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -6831,36 +4751,10 @@
       "tool": 26,
       "turn": 9,
       "etool": 14,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": -12,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_13",
-    "axis": "tool",
-    "tid": "mt_09_nj_business_three_stop",
-    "A": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 13,
-      "turn": 10,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t0",
-      "model": "gemini35flash",
-      "trial": 0,
-      "tool": 25,
-      "turn": 6,
-      "etool": 13,
-      "eturn": 0
-    },
-    "d_etool": -12,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -6874,7 +4768,7 @@
       "tool": 18,
       "turn": 14,
       "etool": 12,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "sonnet5_t0",
@@ -6883,61 +4777,9 @@
       "tool": 7,
       "turn": 14,
       "etool": 1,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 11,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_15",
-    "axis": "tool",
-    "tid": "rp_03_cd_furniture_moving",
-    "A": {
-      "key": "mimo_t0",
-      "model": "mimo",
-      "trial": 0,
-      "tool": 25,
-      "turn": 5,
-      "etool": 11.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t0",
-      "model": "gpt55nothink",
-      "trial": 0,
-      "tool": 14,
-      "turn": 6,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 11.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_16",
-    "axis": "tool",
-    "tid": "rp_03_cd_furniture_moving",
-    "A": {
-      "key": "mimo_t0",
-      "model": "mimo",
-      "trial": 0,
-      "tool": 25,
-      "turn": 5,
-      "etool": 11.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 14,
-      "turn": 5,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 11.0,
     "d_eturn": 0,
     "vote": null
   },
@@ -6968,162 +4810,6 @@
     "vote": null
   },
   {
-    "pair_id": "v4tool_18",
-    "axis": "tool",
-    "tid": "rp_04_tj_four_stops_errands",
-    "A": {
-      "key": "qw36p_t1",
-      "model": "qw36p",
-      "trial": 1,
-      "tool": 30,
-      "turn": 8,
-      "etool": 11,
-      "eturn": 0
-    },
-    "B": {
-      "key": "sonnet5_t0",
-      "model": "sonnet5",
-      "trial": 0,
-      "tool": 15,
-      "turn": 5,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 11,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_19",
-    "axis": "tool",
-    "tid": "rp_04_tj_four_stops_errands",
-    "A": {
-      "key": "qw36p_t1",
-      "model": "qw36p",
-      "trial": 1,
-      "tool": 30,
-      "turn": 8,
-      "etool": 11,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t2",
-      "model": "gemini35flash",
-      "trial": 2,
-      "tool": 15,
-      "turn": 9,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 11,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_20",
-    "axis": "tool",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "A": {
-      "key": "qw37max_t1",
-      "model": "qw37max",
-      "trial": 1,
-      "tool": 4,
-      "turn": 12,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t1",
-      "model": "gemini35flash",
-      "trial": 1,
-      "tool": 15,
-      "turn": 11,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_21",
-    "axis": "tool",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "A": {
-      "key": "qw37max_t2",
-      "model": "qw37max",
-      "trial": 2,
-      "tool": 5,
-      "turn": 12,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t1",
-      "model": "gemini35flash",
-      "trial": 1,
-      "tool": 15,
-      "turn": 11,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_22",
-    "axis": "tool",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "A": {
-      "key": "qw37plus_t0",
-      "model": "qw37plus",
-      "trial": 0,
-      "tool": 4,
-      "turn": 12,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t1",
-      "model": "gemini35flash",
-      "trial": 1,
-      "tool": 15,
-      "turn": 11,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_23",
-    "axis": "tool",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 16,
-      "turn": 18,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "sonnet5_t2",
-      "model": "sonnet5",
-      "trial": 2,
-      "tool": 6,
-      "turn": 17,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
     "pair_id": "v4tool_24",
     "axis": "tool",
     "tid": "lc_06_gz_morning_rush_immediate",
@@ -7134,7 +4820,7 @@
       "tool": 6,
       "turn": 17,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "gemini35flash_t2",
@@ -7143,88 +4829,10 @@
       "tool": 16,
       "turn": 18,
       "etool": 10,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_25",
-    "axis": "tool",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "A": {
-      "key": "qw37max_t0",
-      "model": "qw37max",
-      "trial": 0,
-      "tool": 6,
-      "turn": 19,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t2",
-      "model": "gemini35flash",
-      "trial": 2,
-      "tool": 16,
-      "turn": 18,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_26",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "qw37max_t2",
-      "model": "qw37max",
-      "trial": 2,
-      "tool": 4,
-      "turn": 21,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t0",
-      "model": "gemini35flash",
-      "trial": 0,
-      "tool": 14,
-      "turn": 16,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_27",
-    "axis": "tool",
-    "tid": "lc_09_nj_business_hotel_client",
-    "A": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 4,
-      "turn": 21,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t0",
-      "model": "gemini35flash",
-      "trial": 0,
-      "tool": 14,
-      "turn": 16,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -7238,7 +4846,7 @@
       "tool": 30,
       "turn": 8,
       "etool": 11,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "gemini35flash_t0",
@@ -7247,139 +4855,9 @@
       "tool": 20,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_29",
-    "axis": "tool",
-    "tid": "exp_090_extreme_temporal_backward",
-    "A": {
-      "key": "mimo_t1",
-      "model": "mimo",
-      "trial": 1,
-      "tool": 14,
-      "turn": 9,
-      "etool": 9.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t0",
-      "model": "gpt55nothink",
-      "trial": 0,
-      "tool": 4,
-      "turn": 2,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 9.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_30",
-    "axis": "tool",
-    "tid": "exp_090_extreme_temporal_backward",
-    "A": {
-      "key": "mimo_t1",
-      "model": "mimo",
-      "trial": 1,
-      "tool": 14,
-      "turn": 9,
-      "etool": 9.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t1",
-      "model": "gpt55nothink",
-      "trial": 1,
-      "tool": 4,
-      "turn": 3,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 9.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_31",
-    "axis": "tool",
-    "tid": "exp_090_extreme_temporal_backward",
-    "A": {
-      "key": "mimo_t1",
-      "model": "mimo",
-      "trial": 1,
-      "tool": 14,
-      "turn": 9,
-      "etool": 9.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 4,
-      "turn": 3,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 9.0,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_32",
-    "axis": "tool",
-    "tid": "lc_01_sz_dismiss_home_no_ev",
-    "A": {
-      "key": "glm52_t1",
-      "model": "glm52",
-      "trial": 1,
-      "tool": 19,
-      "turn": 13,
-      "etool": 9,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t0",
-      "model": "gpt55nothink",
-      "trial": 0,
-      "tool": 9,
-      "turn": 9,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_33",
-    "axis": "tool",
-    "tid": "lc_01_sz_dismiss_home_no_ev",
-    "A": {
-      "key": "glm52_t1",
-      "model": "glm52",
-      "trial": 1,
-      "tool": 19,
-      "turn": 13,
-      "etool": 9,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 10,
-      "turn": 11,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 9,
     "d_eturn": 0,
     "vote": null
   },
@@ -7410,32 +4888,6 @@
     "vote": null
   },
   {
-    "pair_id": "v4tool_35",
-    "axis": "tool",
-    "tid": "lc_08_wh_late_night_safety",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 14,
-      "turn": 19,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "sonnet5_t1",
-      "model": "sonnet5",
-      "trial": 1,
-      "tool": 5,
-      "turn": 17,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
     "pair_id": "v4tool_36",
     "axis": "tool",
     "tid": "lc_09_nj_business_hotel_client",
@@ -7446,7 +4898,7 @@
       "tool": 5,
       "turn": 23,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "gemini35flash_t0",
@@ -7458,33 +4910,7 @@
       "eturn": 0
     },
     "d_etool": -9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_37",
-    "axis": "tool",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "A": {
-      "key": "opus46_t0",
-      "model": "opus46",
-      "trial": 0,
-      "tool": 6,
-      "turn": 15,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t2",
-      "model": "gemini35flash",
-      "trial": 2,
-      "tool": 16,
-      "turn": 14,
-      "etool": 9,
-      "eturn": 0
-    },
-    "d_etool": -9,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -7498,7 +4924,7 @@
       "tool": 6,
       "turn": 15,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "gemini35flash_t2",
@@ -7507,36 +4933,10 @@
       "tool": 16,
       "turn": 14,
       "etool": 9,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4tool_39",
-    "axis": "tool",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "A": {
-      "key": "qw37max_t1",
-      "model": "qw37max",
-      "trial": 1,
-      "tool": 6,
-      "turn": 16,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t2",
-      "model": "gemini35flash",
-      "trial": 2,
-      "tool": 16,
-      "turn": 14,
-      "etool": 9,
-      "eturn": 0
-    },
-    "d_etool": -9,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
@@ -7550,7 +4950,7 @@
       "tool": 9,
       "turn": 6,
       "etool": 4.0,
-      "eturn": 0
+      "eturn": 1.5
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -7559,10 +4959,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": -1.0,
-    "d_eturn": -59.5,
+    "d_eturn": -63.0,
     "vote": null
   },
   {
@@ -7576,7 +4976,7 @@
       "tool": 9,
       "turn": 6,
       "etool": 4.0,
-      "eturn": 0
+      "eturn": 1.5
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -7585,10 +4985,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": -1.0,
-    "d_eturn": -59.5,
+    "d_eturn": -63.0,
     "vote": null
   },
   {
@@ -7602,7 +5002,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 5.0,
-      "eturn": 0
+      "eturn": 1.5
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -7611,10 +5011,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": 0.0,
-    "d_eturn": -59.5,
+    "d_eturn": -63.0,
     "vote": null
   },
   {
@@ -7637,10 +5037,10 @@
       "tool": 11,
       "turn": 72,
       "etool": 1.0,
-      "eturn": 55.0
+      "eturn": 65.0
     },
     "d_etool": 0.0,
-    "d_eturn": -55.0,
+    "d_eturn": -65.0,
     "vote": null
   },
   {
@@ -7663,10 +5063,10 @@
       "tool": 11,
       "turn": 72,
       "etool": 1.0,
-      "eturn": 55.0
+      "eturn": 65.0
     },
     "d_etool": -1.0,
-    "d_eturn": -55.0,
+    "d_eturn": -65.0,
     "vote": null
   },
   {
@@ -7689,36 +5089,10 @@
       "tool": 11,
       "turn": 72,
       "etool": 1.0,
-      "eturn": 55.0
+      "eturn": 65.0
     },
     "d_etool": 0.0,
-    "d_eturn": -55.0,
-    "vote": null
-  },
-  {
-    "pair_id": "v4turn_06",
-    "axis": "turn",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "A": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 4,
-      "turn": 26,
-      "etool": 0,
-      "eturn": 4
-    },
-    "B": {
-      "key": "gpt55nothink_t0",
-      "model": "gpt55nothink",
-      "trial": 0,
-      "tool": 7,
-      "turn": 16,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": -1,
-    "d_eturn": 4,
+    "d_eturn": -65.0,
     "vote": null
   },
   {
@@ -7732,7 +5106,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "sonnet5_t2",
@@ -7741,10 +5115,10 @@
       "tool": 6,
       "turn": 17,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 0,
-    "d_eturn": 4,
+    "d_eturn": 9,
     "vote": null
   },
   {
@@ -7767,62 +5141,10 @@
       "tool": 7,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 15,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_01",
-    "axis": "tool",
-    "tid": "rp_11_wh_pickup_parents_friend_dropoff",
-    "A": {
-      "key": "mimo_t0",
-      "model": "mimo",
-      "trial": 0,
-      "tool": 23,
-      "turn": 4,
-      "etool": 15,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t1",
-      "model": "gpt55nothink",
-      "trial": 1,
-      "tool": 7,
-      "turn": 5,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 15,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_02",
-    "axis": "tool",
-    "tid": "rp_11_wh_pickup_parents_friend_dropoff",
-    "A": {
-      "key": "mimo_t1",
-      "model": "mimo",
-      "trial": 1,
-      "tool": 21,
-      "turn": 4,
-      "etool": 13,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t1",
-      "model": "gpt55nothink",
-      "trial": 1,
-      "tool": 7,
-      "turn": 5,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 13,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -7836,7 +5158,7 @@
       "tool": 21,
       "turn": 4,
       "etool": 13,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "gpt55nothink_t2",
@@ -7845,7 +5167,7 @@
       "tool": 6,
       "turn": 4,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 13,
     "d_eturn": 0,
@@ -7871,114 +5193,10 @@
       "tool": 7,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 11,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_05",
-    "axis": "tool",
-    "tid": "rp_04_tj_four_stops_errands",
-    "A": {
-      "key": "qw36p_t1",
-      "model": "qw36p",
-      "trial": 1,
-      "tool": 30,
-      "turn": 8,
-      "etool": 11,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t0",
-      "model": "gpt55nothink",
-      "trial": 0,
-      "tool": 15,
-      "turn": 6,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 11,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_06",
-    "axis": "tool",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 16,
-      "turn": 18,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t0",
-      "model": "gpt55nothink",
-      "trial": 0,
-      "tool": 6,
-      "turn": 18,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_07",
-    "axis": "tool",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 16,
-      "turn": 18,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t1",
-      "model": "gpt55nothink",
-      "trial": 1,
-      "tool": 6,
-      "turn": 17,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_08",
-    "axis": "tool",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 16,
-      "turn": 18,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 6,
-      "turn": 18,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -7992,7 +5210,7 @@
       "tool": 16,
       "turn": 13,
       "etool": 12,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "gpt55nothink_t0",
@@ -8001,10 +5219,10 @@
       "tool": 6,
       "turn": 11,
       "etool": 2,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 10,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null
   },
   {
@@ -8018,7 +5236,7 @@
       "tool": 16,
       "turn": 13,
       "etool": 12,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "gpt55nothink_t2",
@@ -8027,36 +5245,10 @@
       "tool": 6,
       "turn": 15,
       "etool": 2,
-      "eturn": 1
+      "eturn": 5
     },
     "d_etool": 10,
-    "d_eturn": -1,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_11",
-    "axis": "tool",
-    "tid": "mt_06_cd_elder_pharmacy_hospital",
-    "A": {
-      "key": "mimo_t2",
-      "model": "mimo",
-      "trial": 2,
-      "tool": 16,
-      "turn": 13,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t0",
-      "model": "gpt55nothink",
-      "trial": 0,
-      "tool": 6,
-      "turn": 10,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 10,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -8070,7 +5262,7 @@
       "tool": 15,
       "turn": 7,
       "etool": 10.0,
-      "eturn": 0
+      "eturn": 2.5
     },
     "B": {
       "key": "gpt55nothink_t2",
@@ -8079,10 +5271,10 @@
       "tool": 5,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "d_etool": 10.0,
-    "d_eturn": 0,
+    "d_eturn": 2.0,
     "vote": null
   },
   {
@@ -8105,36 +5297,10 @@
       "tool": 7,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 10,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_14",
-    "axis": "tool",
-    "tid": "rp_04_tj_four_stops_errands",
-    "A": {
-      "key": "qw37max_t2",
-      "model": "qw37max",
-      "trial": 2,
-      "tool": 14,
-      "turn": 5,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t2",
-      "model": "gpt55nothink",
-      "trial": 2,
-      "tool": 29,
-      "turn": 6,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -10,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   },
   {
@@ -8164,110 +5330,6 @@
     "vote": null
   },
   {
-    "pair_id": "v5tool_16",
-    "axis": "tool",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "A": {
-      "key": "gemini35flash_t1",
-      "model": "gemini35flash",
-      "trial": 1,
-      "tool": 15,
-      "turn": 11,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t1",
-      "model": "gpt55nothink",
-      "trial": 1,
-      "tool": 6,
-      "turn": 12,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_17",
-    "axis": "tool",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "A": {
-      "key": "qw37plus_t1",
-      "model": "qw37plus",
-      "trial": 1,
-      "tool": 16,
-      "turn": 13,
-      "etool": 12,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t1",
-      "model": "gpt55nothink",
-      "trial": 1,
-      "tool": 7,
-      "turn": 13,
-      "etool": 3,
-      "eturn": 0
-    },
-    "d_etool": 9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_18",
-    "axis": "tool",
-    "tid": "lc_08_wh_late_night_safety",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 14,
-      "turn": 19,
-      "etool": 10,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t1",
-      "model": "gpt55nothink",
-      "trial": 1,
-      "tool": 5,
-      "turn": 19,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
-    "pair_id": "v5tool_19",
-    "axis": "tool",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "A": {
-      "key": "gemini35flash_t2",
-      "model": "gemini35flash",
-      "trial": 2,
-      "tool": 16,
-      "turn": 14,
-      "etool": 9,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gpt55nothink_t1",
-      "model": "gpt55nothink",
-      "trial": 1,
-      "tool": 6,
-      "turn": 16,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 9,
-    "d_eturn": 0,
-    "vote": null
-  },
-  {
     "pair_id": "v5turn_00",
     "axis": "turn",
     "tid": "rp_05_hz_elder_checkup",
@@ -8278,7 +5340,7 @@
       "tool": 11,
       "turn": 72,
       "etool": 1.0,
-      "eturn": 55.0
+      "eturn": 65.0
     },
     "B": {
       "key": "gpt55nothink_t2",
@@ -8290,7 +5352,7 @@
       "eturn": 0
     },
     "d_etool": -1.0,
-    "d_eturn": 55.0,
+    "d_eturn": 65.0,
     "vote": null
   },
   {
@@ -8304,7 +5366,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "gpt55nothink_t1",
@@ -8313,10 +5375,10 @@
       "tool": 6,
       "turn": 17,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 0,
-    "d_eturn": 4,
+    "d_eturn": 9,
     "vote": null
   },
   {
@@ -8330,7 +5392,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "gpt55nothink_t2",
@@ -8339,10 +5401,10 @@
       "tool": 6,
       "turn": 18,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 0,
-    "d_eturn": 4,
+    "d_eturn": 8,
     "vote": null
   },
   {
@@ -8356,7 +5418,7 @@
       "tool": 6,
       "turn": 7,
       "etool": 1,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -8365,10 +5427,10 @@
       "tool": 9,
       "turn": 5,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -3,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null,
     "axis": "tool"
   },
@@ -8383,7 +5445,7 @@
       "tool": 5,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -8392,37 +5454,10 @@
       "tool": 9,
       "turn": 5,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -4,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_002",
-    "tid": "airport_new_02_xm_current_immediate",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "granite418b_t1",
-      "model": "granite418b",
-      "trial": 1,
-      "tool": 8,
-      "turn": 8,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "mistralsmall_t0",
-      "model": "mistralsmall",
-      "trial": 0,
-      "tool": 4,
-      "turn": 8,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 3,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null,
     "axis": "tool"
   },
@@ -8437,7 +5472,7 @@
       "tool": 7,
       "turn": 7,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "qw359b_t1",
@@ -8446,10 +5481,10 @@
       "tool": 6,
       "turn": 64,
       "etool": 1,
-      "eturn": 55
+      "eturn": 60
     },
     "d_etool": 1,
-    "d_eturn": -55,
+    "d_eturn": -57,
     "vote": null,
     "axis": "mixed"
   },
@@ -8464,7 +5499,7 @@
       "tool": 8,
       "turn": 6,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "gemma431b_t0",
@@ -8473,7 +5508,7 @@
       "tool": 5,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 3,
     "d_eturn": 0,
@@ -8491,7 +5526,7 @@
       "tool": 6,
       "turn": 64,
       "etool": 1,
-      "eturn": 55
+      "eturn": 60
     },
     "B": {
       "key": "qw3627b_t1",
@@ -8500,10 +5535,10 @@
       "tool": 8,
       "turn": 6,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -2,
-    "d_eturn": 55,
+    "d_eturn": 58,
     "vote": null,
     "axis": "mixed"
   },
@@ -8518,7 +5553,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "qw37plus_t1",
@@ -8530,7 +5565,7 @@
       "eturn": 0
     },
     "d_etool": 4,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null,
     "axis": "tool"
   },
@@ -8545,7 +5580,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "gpt55nothink_t0",
@@ -8554,10 +5589,10 @@
       "tool": 7,
       "turn": 5,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 3,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null,
     "axis": "tool"
   },
@@ -8572,7 +5607,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "gemma431b_t1",
@@ -8581,37 +5616,10 @@
       "tool": 6,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 4,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_009",
-    "tid": "airport_new_04_sz_cheapest_company",
-    "tier_combo": "A-B",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 11,
-      "turn": 6,
-      "etool": 5,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t0",
-      "model": "gemini35flash",
-      "trial": 0,
-      "tool": 7,
-      "turn": 7,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 4,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null,
     "axis": "tool"
   },
@@ -8626,7 +5634,7 @@
       "tool": 7,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "ministral14b_t0",
@@ -8635,91 +5643,10 @@
       "tool": 10,
       "turn": 5,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -3,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_011",
-    "tid": "airport_new_04_sz_cheapest_company",
-    "tier_combo": "C-C",
-    "A": {
-      "key": "gemma426b_t1",
-      "model": "gemma426b",
-      "trial": 1,
-      "tool": 9,
-      "turn": 7,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw3627b_t1",
-      "model": "qw3627b",
-      "trial": 1,
-      "tool": 12,
-      "turn": 5,
-      "etool": 6,
-      "eturn": 0
-    },
-    "d_etool": -3,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_014",
-    "tid": "airport_new_05_sjz_via_friend_pm5",
-    "tier_combo": "B-C",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 10,
-      "turn": 8,
-      "etool": 4,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemma426b_t1",
-      "model": "gemma426b",
-      "trial": 1,
-      "tool": 7,
-      "turn": 9,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 3,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_015",
-    "tid": "airport_new_05_sjz_via_friend_pm5",
-    "tier_combo": "B-C",
-    "A": {
-      "key": "dsv4pro_t0",
-      "model": "dsv4pro",
-      "trial": 0,
-      "tool": 12,
-      "turn": 9,
-      "etool": 6,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemma426b_t1",
-      "model": "gemma426b",
-      "trial": 1,
-      "tool": 7,
-      "turn": 9,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null,
     "axis": "tool"
   },
@@ -8734,7 +5661,7 @@
       "tool": 6,
       "turn": 9,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -8743,10 +5670,10 @@
       "tool": 11,
       "turn": 7,
       "etool": 5,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -5,
-    "d_eturn": 0,
+    "d_eturn": 2,
     "vote": null,
     "axis": "tool"
   },
@@ -8761,7 +5688,7 @@
       "tool": 10,
       "turn": 9,
       "etool": 4.5,
-      "eturn": 0
+      "eturn": 3.0
     },
     "B": {
       "key": "sonnet5_t1",
@@ -8773,7 +5700,7 @@
       "eturn": 0
     },
     "d_etool": 4.5,
-    "d_eturn": 0,
+    "d_eturn": 3.0,
     "vote": null,
     "axis": "tool"
   },
@@ -8788,7 +5715,7 @@
       "tool": 3,
       "turn": 9,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3.0
     },
     "B": {
       "key": "qw37plus_t1",
@@ -8800,7 +5727,7 @@
       "eturn": 0
     },
     "d_etool": -4.5,
-    "d_eturn": 0,
+    "d_eturn": 3.0,
     "vote": null,
     "axis": "tool"
   },
@@ -8815,7 +5742,7 @@
       "tool": 10,
       "turn": 9,
       "etool": 4.5,
-      "eturn": 0
+      "eturn": 3.0
     },
     "B": {
       "key": "opus46_t0",
@@ -8824,37 +5751,10 @@
       "tool": 7,
       "turn": 9,
       "etool": 1.5,
-      "eturn": 0
+      "eturn": 3.0
     },
     "d_etool": 3.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_021",
-    "tid": "exp_056_combo_compound_temporal",
-    "tier_combo": "B-B",
-    "A": {
-      "key": "dsv4pro_t0",
-      "model": "dsv4pro",
-      "trial": 0,
-      "tool": 10,
-      "turn": 9,
-      "etool": 4.5,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t0",
-      "model": "kimik26",
-      "trial": 0,
-      "tool": 3,
-      "turn": 9,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 4.5,
-    "d_eturn": 0,
+    "d_eturn": 0.0,
     "vote": null,
     "axis": "tool"
   },
@@ -8886,33 +5786,6 @@
     "axis": "tool"
   },
   {
-    "pair_id": "rh44supp_023",
-    "tid": "exp_056_combo_compound_temporal",
-    "tier_combo": "C-C",
-    "A": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 9,
-      "turn": 7,
-      "etool": 3.5,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw35ba3b_t2",
-      "model": "qw35ba3b",
-      "trial": 2,
-      "tool": 6,
-      "turn": 7,
-      "etool": 0.5,
-      "eturn": 0
-    },
-    "d_etool": 3.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
     "pair_id": "rh44supp_024",
     "tid": "exp_090_extreme_temporal_backward",
     "tier_combo": "B-B",
@@ -8923,7 +5796,7 @@
       "tool": 8,
       "turn": 7,
       "etool": 3.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "mimo_t2",
@@ -8935,7 +5808,7 @@
       "eturn": 0
     },
     "d_etool": 3.0,
-    "d_eturn": 0,
+    "d_eturn": 0.5,
     "vote": null,
     "axis": "tool"
   },
@@ -8967,87 +5840,6 @@
     "axis": "tool"
   },
   {
-    "pair_id": "rh44supp_026",
-    "tid": "exp_090_extreme_temporal_backward",
-    "tier_combo": "A-B",
-    "A": {
-      "key": "mimo_t1",
-      "model": "mimo",
-      "trial": 1,
-      "tool": 14,
-      "turn": 9,
-      "etool": 9.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "opus46_t0",
-      "model": "opus46",
-      "trial": 0,
-      "tool": 7,
-      "turn": 7,
-      "etool": 2.0,
-      "eturn": 0
-    },
-    "d_etool": 7.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_027",
-    "tid": "exp_090_extreme_temporal_backward",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "ministral14b_t0",
-      "model": "ministral14b",
-      "trial": 0,
-      "tool": 8,
-      "turn": 8,
-      "etool": 3.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 6,
-      "etool": 9.0,
-      "eturn": 0
-    },
-    "d_etool": -6.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_028",
-    "tid": "exp_090_extreme_temporal_backward",
-    "tier_combo": "B-C",
-    "A": {
-      "key": "mimo_t1",
-      "model": "mimo",
-      "trial": 1,
-      "tool": 14,
-      "turn": 9,
-      "etool": 9.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "mistralsmall_t0",
-      "model": "mistralsmall",
-      "trial": 0,
-      "tool": 6,
-      "turn": 7,
-      "etool": 1.0,
-      "eturn": 0
-    },
-    "d_etool": 8.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
     "pair_id": "rh44supp_029",
     "tid": "exp_090_extreme_temporal_backward",
     "tier_combo": "C-D",
@@ -9067,174 +5859,12 @@
       "tool": 6,
       "turn": 64,
       "etool": 1.0,
-      "eturn": 52.5
+      "eturn": 57.5
     },
     "d_etool": -1.0,
-    "d_eturn": -52.5,
+    "d_eturn": -57.5,
     "vote": null,
     "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44supp_030",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "tier_combo": "B-B",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 8,
-      "turn": 11,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw37plus_t0",
-      "model": "qw37plus",
-      "trial": 0,
-      "tool": 4,
-      "turn": 12,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 3,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_031",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "tier_combo": "A-B",
-    "A": {
-      "key": "mimo_t1",
-      "model": "mimo",
-      "trial": 1,
-      "tool": 6,
-      "turn": 11,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t1",
-      "model": "gemini35flash",
-      "trial": 1,
-      "tool": 15,
-      "turn": 11,
-      "etool": 10,
-      "eturn": 0
-    },
-    "d_etool": -9,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_032",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "tier_combo": "B-C",
-    "A": {
-      "key": "mimo_t0",
-      "model": "mimo",
-      "trial": 0,
-      "tool": 6,
-      "turn": 11,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 10,
-      "turn": 13,
-      "etool": 5,
-      "eturn": 0
-    },
-    "d_etool": -4,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_033",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "tier_combo": "A-B",
-    "A": {
-      "key": "qw37plus_t0",
-      "model": "qw37plus",
-      "trial": 0,
-      "tool": 4,
-      "turn": 12,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t0",
-      "model": "gemini35flash",
-      "trial": 0,
-      "tool": 10,
-      "turn": 12,
-      "etool": 5,
-      "eturn": 0
-    },
-    "d_etool": -5,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_034",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "tier_combo": "B-C",
-    "A": {
-      "key": "dsv4pro_t2",
-      "model": "dsv4pro",
-      "trial": 2,
-      "tool": 8,
-      "turn": 11,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw3627b_t0",
-      "model": "qw3627b",
-      "trial": 0,
-      "tool": 5,
-      "turn": 13,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 3,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_035",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "tier_combo": "A-B",
-    "A": {
-      "key": "qw36p_t2",
-      "model": "qw36p",
-      "trial": 2,
-      "tool": 6,
-      "turn": 12,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t0",
-      "model": "gemini35flash",
-      "trial": 0,
-      "tool": 10,
-      "turn": 12,
-      "etool": 5,
-      "eturn": 0
-    },
-    "d_etool": -4,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
   },
   {
     "pair_id": "rh44supp_037",
@@ -9256,10 +5886,10 @@
       "tool": 15,
       "turn": 10,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -4,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null,
     "axis": "tool"
   },
@@ -9291,33 +5921,6 @@
     "axis": "tool"
   },
   {
-    "pair_id": "rh44supp_039",
-    "tid": "mt_05_sz_morning_coffee_client",
-    "tier_combo": "A-B",
-    "A": {
-      "key": "qw37plus_t0",
-      "model": "qw37plus",
-      "trial": 0,
-      "tool": 16,
-      "turn": 8,
-      "etool": 5,
-      "eturn": 0
-    },
-    "B": {
-      "key": "opus46_t0",
-      "model": "opus46",
-      "trial": 0,
-      "tool": 9,
-      "turn": 9,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 5,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
     "pair_id": "rh44supp_040",
     "tid": "mt_05_sz_morning_coffee_client",
     "tier_combo": "B-B",
@@ -9337,37 +5940,10 @@
       "tool": 9,
       "turn": 10,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 3,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_041",
-    "tid": "mt_05_sz_morning_coffee_client",
-    "tier_combo": "B-C",
-    "A": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 15,
-      "turn": 10,
-      "etool": 4,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw37max_t2",
-      "model": "qw37max",
-      "trial": 2,
-      "tool": 8,
-      "turn": 9,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 4,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null,
     "axis": "tool"
   },
@@ -9382,7 +5958,7 @@
       "tool": 11,
       "turn": 11,
       "etool": 6,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "key": "qw36p_t2",
@@ -9391,91 +5967,10 @@
       "tool": 7,
       "turn": 10,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 4,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_043",
-    "tid": "mt_07b_gz_pickup_classmate_dinner_scheduled",
-    "tier_combo": "A-B",
-    "A": {
-      "key": "qw37max_t1",
-      "model": "qw37max",
-      "trial": 1,
-      "tool": 7,
-      "turn": 10,
-      "etool": 2,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t1",
-      "model": "gemini35flash",
-      "trial": 1,
-      "tool": 12,
-      "turn": 11,
-      "etool": 7,
-      "eturn": 0
-    },
-    "d_etool": -5,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_044",
-    "tid": "mt_07b_gz_pickup_classmate_dinner_scheduled",
-    "tier_combo": "B-B",
-    "A": {
-      "key": "dsv4pro_t1",
-      "model": "dsv4pro",
-      "trial": 1,
-      "tool": 11,
-      "turn": 11,
-      "etool": 6,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw37max_t1",
-      "model": "qw37max",
-      "trial": 1,
-      "tool": 7,
-      "turn": 10,
-      "etool": 2,
-      "eturn": 0
-    },
-    "d_etool": 4,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_046",
-    "tid": "mt_07b_gz_pickup_classmate_dinner_scheduled",
-    "tier_combo": "A-A",
-    "A": {
-      "key": "opus46_t2",
-      "model": "opus46",
-      "trial": 2,
-      "tool": 6,
-      "turn": 11,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "gemini35flash_t1",
-      "model": "gemini35flash",
-      "trial": 1,
-      "tool": 12,
-      "turn": 11,
-      "etool": 7,
-      "eturn": 0
-    },
-    "d_etool": -6,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null,
     "axis": "tool"
   },
@@ -9490,7 +5985,7 @@
       "tool": 10,
       "turn": 10,
       "etool": 5,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "gpt55nothink_t0",
@@ -9499,7 +5994,7 @@
       "tool": 7,
       "turn": 10,
       "etool": 2,
-      "eturn": 0
+      "eturn": 3
     },
     "d_etool": 3,
     "d_eturn": 0,
@@ -9571,7 +6066,7 @@
       "tool": 11,
       "turn": 8,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "sonnet5_t0",
@@ -9583,61 +6078,7 @@
       "eturn": 0
     },
     "d_etool": -4,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_051",
-    "tid": "mt_08_bj_pet_supermarket_weekend",
-    "tier_combo": "A-A",
-    "A": {
-      "key": "sonnet5_t0",
-      "model": "sonnet5",
-      "trial": 0,
-      "tool": 15,
-      "turn": 6,
-      "etool": 4,
-      "eturn": 0
-    },
-    "B": {
-      "key": "sonnet5_t1",
-      "model": "sonnet5",
-      "trial": 1,
-      "tool": 12,
-      "turn": 8,
-      "etool": 1,
-      "eturn": 0
-    },
-    "d_etool": 3,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_053",
-    "tid": "mt_08_bj_pet_supermarket_weekend",
-    "tier_combo": "A-A",
-    "A": {
-      "key": "opus46_t1",
-      "model": "opus46",
-      "trial": 1,
-      "tool": 12,
-      "turn": 10,
-      "etool": 1,
-      "eturn": 0
-    },
-    "B": {
-      "key": "sonnet5_t0",
-      "model": "sonnet5",
-      "trial": 0,
-      "tool": 15,
-      "turn": 6,
-      "etool": 4,
-      "eturn": 0
-    },
-    "d_etool": -3,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null,
     "axis": "tool"
   },
@@ -9661,10 +6102,10 @@
       "tool": 13,
       "turn": 7,
       "etool": 7,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -5,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null,
     "axis": "tool"
   },
@@ -9715,37 +6156,10 @@
       "tool": 13,
       "turn": 7,
       "etool": 7,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -5,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_057",
-    "tid": "mt_18_bj_short_stop_waiting",
-    "tier_combo": "B-B",
-    "A": {
-      "key": "qw37plus_t1",
-      "model": "qw37plus",
-      "trial": 1,
-      "tool": 9,
-      "turn": 4,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw37plus_t2",
-      "model": "qw37plus",
-      "trial": 2,
-      "tool": 13,
-      "turn": 4,
-      "etool": 7,
-      "eturn": 0
-    },
-    "d_etool": -4,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null,
     "axis": "tool"
   },
@@ -9769,147 +6183,12 @@
       "tool": 5,
       "turn": 67,
       "etool": 0,
-      "eturn": 55
+      "eturn": 61
     },
     "d_etool": 0,
-    "d_eturn": -55,
+    "d_eturn": -61,
     "vote": null,
     "axis": "turn"
-  },
-  {
-    "pair_id": "rh44supp_059",
-    "tid": "mt_18_bj_short_stop_waiting",
-    "tier_combo": "C-C",
-    "A": {
-      "key": "gemma431b_t0",
-      "model": "gemma431b",
-      "trial": 0,
-      "tool": 6,
-      "turn": 4,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw35ba3b_t2",
-      "model": "qw35ba3b",
-      "trial": 2,
-      "tool": 9,
-      "turn": 4,
-      "etool": 3,
-      "eturn": 0
-    },
-    "d_etool": -3,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_061",
-    "tid": "supp_c1_002_8acf69",
-    "tier_combo": "B-B",
-    "A": {
-      "key": "dsv4pro_t0",
-      "model": "dsv4pro",
-      "trial": 0,
-      "tool": 8,
-      "turn": 6,
-      "etool": 3.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw37max_t2",
-      "model": "qw37max",
-      "trial": 2,
-      "tool": 5,
-      "turn": 8,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 3.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_063",
-    "tid": "supp_c1_002_8acf69",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "gemma431b_t0",
-      "model": "gemma431b",
-      "trial": 0,
-      "tool": 8,
-      "turn": 7,
-      "etool": 3.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw359b_t2",
-      "model": "qw359b",
-      "trial": 2,
-      "tool": 5,
-      "turn": 7,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 3.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_064",
-    "tid": "supp_c1_002_8acf69",
-    "tier_combo": "B-C",
-    "A": {
-      "key": "gemma431b_t0",
-      "model": "gemma431b",
-      "trial": 0,
-      "tool": 8,
-      "turn": 7,
-      "etool": 3.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "kimik26_t1",
-      "model": "kimik26",
-      "trial": 1,
-      "tool": 4,
-      "turn": 4,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 3.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
-  },
-  {
-    "pair_id": "rh44supp_065",
-    "tid": "supp_c1_002_8acf69",
-    "tier_combo": "A-B",
-    "A": {
-      "key": "mimo_t2",
-      "model": "mimo",
-      "trial": 2,
-      "tool": 9,
-      "turn": 6,
-      "etool": 4.0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "opus46_t2",
-      "model": "opus46",
-      "trial": 2,
-      "tool": 6,
-      "turn": 7,
-      "etool": 1.0,
-      "eturn": 0
-    },
-    "d_etool": 3.0,
-    "d_eturn": 0,
-    "vote": null,
-    "axis": "tool"
   },
   {
     "pair_id": "rh44gapmix_000",
@@ -9922,7 +6201,7 @@
       "tool": 6,
       "turn": 64,
       "etool": 1,
-      "eturn": 55
+      "eturn": 60
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -9931,10 +6210,10 @@
       "tool": 9,
       "turn": 5,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -3,
-    "d_eturn": 55,
+    "d_eturn": 59,
     "vote": null,
     "axis": "mixed"
   },
@@ -9949,7 +6228,7 @@
       "tool": 5,
       "turn": 67,
       "etool": 0,
-      "eturn": 55.5
+      "eturn": 60.5
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -9961,7 +6240,7 @@
       "eturn": 0
     },
     "d_etool": -9.0,
-    "d_eturn": 55.5,
+    "d_eturn": 60.5,
     "vote": null,
     "axis": "mixed"
   },
@@ -9976,7 +6255,7 @@
       "tool": 6,
       "turn": 64,
       "etool": 1.0,
-      "eturn": 52.5
+      "eturn": 57.5
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -9988,7 +6267,7 @@
       "eturn": 0
     },
     "d_etool": -8.0,
-    "d_eturn": 52.5,
+    "d_eturn": 57.5,
     "vote": null,
     "axis": "mixed"
   },
@@ -10003,7 +6282,7 @@
       "tool": 8,
       "turn": 8,
       "etool": 3.0,
-      "eturn": 0
+      "eturn": 1.5
     },
     "B": {
       "key": "qw359b_t1",
@@ -10012,10 +6291,10 @@
       "tool": 5,
       "turn": 67,
       "etool": 0,
-      "eturn": 55.5
+      "eturn": 60.5
     },
     "d_etool": 3.0,
-    "d_eturn": -55.5,
+    "d_eturn": -59.0,
     "vote": null,
     "axis": "mixed"
   },
@@ -10030,7 +6309,7 @@
       "tool": 6,
       "turn": 59,
       "etool": 1,
-      "eturn": 43
+      "eturn": 48
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -10039,10 +6318,10 @@
       "tool": 10,
       "turn": 13,
       "etool": 5,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -4,
-    "d_eturn": 43,
+    "d_eturn": 46,
     "vote": null,
     "axis": "mixed"
   },
@@ -10057,7 +6336,7 @@
       "tool": 12,
       "turn": 13,
       "etool": 7,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "qw359b_t2",
@@ -10066,10 +6345,10 @@
       "tool": 6,
       "turn": 59,
       "etool": 1,
-      "eturn": 43
+      "eturn": 48
     },
     "d_etool": 6,
-    "d_eturn": -43,
+    "d_eturn": -46,
     "vote": null,
     "axis": "mixed"
   },
@@ -10084,7 +6363,7 @@
       "tool": 15,
       "turn": 47,
       "etool": 9,
-      "eturn": 35
+      "eturn": 41
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -10096,7 +6375,7 @@
       "eturn": 0
     },
     "d_etool": 8,
-    "d_eturn": 35,
+    "d_eturn": 41,
     "vote": null,
     "axis": "mixed"
   },
@@ -10120,10 +6399,10 @@
       "tool": 5,
       "turn": 67,
       "etool": 0,
-      "eturn": 55
+      "eturn": 61
     },
     "d_etool": 4,
-    "d_eturn": -55,
+    "d_eturn": -61,
     "vote": null,
     "axis": "mixed"
   },
@@ -10138,7 +6417,7 @@
       "tool": 15,
       "turn": 47,
       "etool": 9,
-      "eturn": 35
+      "eturn": 41
     },
     "B": {
       "key": "qw3627b_t1",
@@ -10150,169 +6429,7 @@
       "eturn": 0
     },
     "d_etool": 8,
-    "d_eturn": 35,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_003",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 18,
-      "turn": 41,
-      "etool": 13,
-      "eturn": 20
-    },
-    "B": {
-      "key": "qw3627b_t1",
-      "model": "qw3627b",
-      "trial": 1,
-      "tool": 12,
-      "turn": 15,
-      "etool": 7,
-      "eturn": 0
-    },
-    "d_etool": 6,
-    "d_eturn": 20,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_004",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 18,
-      "turn": 41,
-      "etool": 13,
-      "eturn": 20
-    },
-    "B": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 12,
-      "turn": 17,
-      "etool": 7,
-      "eturn": 0
-    },
-    "d_etool": 6,
-    "d_eturn": 20,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_005",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "gemma426b_t1",
-      "model": "gemma426b",
-      "trial": 1,
-      "tool": 4,
-      "turn": 19,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 18,
-      "turn": 41,
-      "etool": 13,
-      "eturn": 20
-    },
-    "d_etool": -13,
-    "d_eturn": -20,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_006",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "gemma426b_t2",
-      "model": "gemma426b",
-      "trial": 2,
-      "tool": 7,
-      "turn": 18,
-      "etool": 2,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 18,
-      "turn": 41,
-      "etool": 13,
-      "eturn": 20
-    },
-    "d_etool": -11,
-    "d_eturn": -20,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_007",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "gemma431b_t1",
-      "model": "gemma431b",
-      "trial": 1,
-      "tool": 7,
-      "turn": 16,
-      "etool": 2,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 18,
-      "turn": 41,
-      "etool": 13,
-      "eturn": 20
-    },
-    "d_etool": -11,
-    "d_eturn": -20,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_008",
-    "tid": "lc_05_hz_elder_hospital_smooth",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 18,
-      "turn": 41,
-      "etool": 13,
-      "eturn": 20
-    },
-    "B": {
-      "key": "qw35ba3b_t0",
-      "model": "qw35ba3b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 18,
-      "etool": 9,
-      "eturn": 0
-    },
-    "d_etool": 4,
-    "d_eturn": 20,
+    "d_eturn": 41,
     "vote": null,
     "axis": "mixed"
   },
@@ -10327,7 +6444,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "qw3627b_t1",
@@ -10336,10 +6453,10 @@
       "tool": 18,
       "turn": 17,
       "etool": 12,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -12,
-    "d_eturn": 4,
+    "d_eturn": 9,
     "vote": null,
     "axis": "mixed"
   },
@@ -10354,7 +6471,7 @@
       "tool": 5,
       "turn": 51,
       "etool": 0,
-      "eturn": 29
+      "eturn": 35
     },
     "B": {
       "key": "qw3627b_t2",
@@ -10363,10 +6480,10 @@
       "tool": 12,
       "turn": 17,
       "etool": 6,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -6,
-    "d_eturn": 29,
+    "d_eturn": 34,
     "vote": null,
     "axis": "mixed"
   },
@@ -10381,7 +6498,7 @@
       "tool": 14,
       "turn": 19,
       "etool": 8,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "qw359b_t1",
@@ -10390,37 +6507,10 @@
       "tool": 9,
       "turn": 44,
       "etool": 3,
-      "eturn": 22
+      "eturn": 28
     },
     "d_etool": 5,
-    "d_eturn": -22,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_012",
-    "tid": "lc_06_gz_morning_rush_immediate",
-    "tier_combo": "D-D",
-    "A": {
-      "key": "ministral14b_t0",
-      "model": "ministral14b",
-      "trial": 0,
-      "tool": 12,
-      "turn": 8,
-      "etool": 6,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 5,
-      "turn": 51,
-      "etool": 0,
-      "eturn": 29
-    },
-    "d_etool": 6,
-    "d_eturn": -29,
+    "d_eturn": -25,
     "vote": null,
     "axis": "mixed"
   },
@@ -10435,7 +6525,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "qw36p_t0",
@@ -10444,10 +6534,10 @@
       "tool": 13,
       "turn": 18,
       "etool": 7,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -7,
-    "d_eturn": 4,
+    "d_eturn": 8,
     "vote": null,
     "axis": "mixed"
   },
@@ -10462,7 +6552,7 @@
       "tool": 4,
       "turn": 26,
       "etool": 0,
-      "eturn": 4
+      "eturn": 10
     },
     "B": {
       "key": "qw35ba3b_t2",
@@ -10471,91 +6561,10 @@
       "tool": 9,
       "turn": 20,
       "etool": 3,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": -3,
-    "d_eturn": 4,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_015",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "tier_combo": "D-D",
-    "A": {
-      "key": "ministral14b_t0",
-      "model": "ministral14b",
-      "trial": 0,
-      "tool": 12,
-      "turn": 11,
-      "etool": 8,
-      "eturn": 0
-    },
-    "B": {
-      "key": "ministral14b_t2",
-      "model": "ministral14b",
-      "trial": 2,
-      "tool": 7,
-      "turn": 34,
-      "etool": 3,
-      "eturn": 20
-    },
-    "d_etool": 5,
-    "d_eturn": -20,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_016",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "tier_combo": "D-D",
-    "A": {
-      "key": "ministral14b_t2",
-      "model": "ministral14b",
-      "trial": 2,
-      "tool": 7,
-      "turn": 34,
-      "etool": 3,
-      "eturn": 20
-    },
-    "B": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 16,
-      "turn": 7,
-      "etool": 12,
-      "eturn": 0
-    },
-    "d_etool": -9,
-    "d_eturn": 20,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_017",
-    "tid": "lc_07_sz_weekend_gym_smooth",
-    "tier_combo": "D-D",
-    "A": {
-      "key": "ministral14b_t2",
-      "model": "ministral14b",
-      "trial": 2,
-      "tool": 7,
-      "turn": 34,
-      "etool": 3,
-      "eturn": 20
-    },
-    "B": {
-      "key": "qw359b_t1",
-      "model": "qw359b",
-      "trial": 1,
-      "tool": 16,
-      "turn": 6,
-      "etool": 12,
-      "eturn": 0
-    },
-    "d_etool": -9,
-    "d_eturn": 20,
+    "d_eturn": 6,
     "vote": null,
     "axis": "mixed"
   },
@@ -10570,7 +6579,7 @@
       "tool": 17,
       "turn": 12,
       "etool": 13,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "ministral14b_t2",
@@ -10579,10 +6588,10 @@
       "tool": 7,
       "turn": 34,
       "etool": 3,
-      "eturn": 20
+      "eturn": 24
     },
     "d_etool": 10,
-    "d_eturn": -20,
+    "d_eturn": -22,
     "vote": null,
     "axis": "mixed"
   },
@@ -10597,7 +6606,7 @@
       "tool": 7,
       "turn": 34,
       "etool": 3,
-      "eturn": 20
+      "eturn": 24
     },
     "B": {
       "key": "qw3627b_t1",
@@ -10606,10 +6615,10 @@
       "tool": 13,
       "turn": 12,
       "etool": 9,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -6,
-    "d_eturn": 20,
+    "d_eturn": 22,
     "vote": null,
     "axis": "mixed"
   },
@@ -10624,7 +6633,7 @@
       "tool": 7,
       "turn": 34,
       "etool": 3,
-      "eturn": 20
+      "eturn": 24
     },
     "B": {
       "key": "mistralsmall_t1",
@@ -10633,172 +6642,10 @@
       "tool": 19,
       "turn": 12,
       "etool": 15,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": -12,
-    "d_eturn": 20,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_021",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "gemma431b_t1",
-      "model": "gemma431b",
-      "trial": 1,
-      "tool": 6,
-      "turn": 14,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 50,
-      "etool": 7,
-      "eturn": 28
-    },
-    "d_etool": -7,
-    "d_eturn": -28,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_022",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 50,
-      "etool": 7,
-      "eturn": 28
-    },
-    "B": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 10,
-      "turn": 17,
-      "etool": 3,
-      "eturn": 0
-    },
-    "d_etool": 4,
-    "d_eturn": 28,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_023",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "gemma431b_t0",
-      "model": "gemma431b",
-      "trial": 0,
-      "tool": 6,
-      "turn": 14,
-      "etool": 0,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 50,
-      "etool": 7,
-      "eturn": 28
-    },
-    "d_etool": -7,
-    "d_eturn": -28,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_024",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 50,
-      "etool": 7,
-      "eturn": 28
-    },
-    "B": {
-      "key": "qw3627b_t1",
-      "model": "qw3627b",
-      "trial": 1,
-      "tool": 6,
-      "turn": 14,
-      "etool": 0,
-      "eturn": 0
-    },
-    "d_etool": 7,
-    "d_eturn": 28,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_025",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 50,
-      "etool": 7,
-      "eturn": 28
-    },
-    "B": {
-      "key": "qw3627b_t2",
-      "model": "qw3627b",
-      "trial": 2,
-      "tool": 11,
-      "turn": 14,
-      "etool": 4,
-      "eturn": 0
-    },
-    "d_etool": 3,
-    "d_eturn": 28,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_026",
-    "tid": "lc_11_hz_after_work_via_supermarket",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "gemma426b_t0",
-      "model": "gemma426b",
-      "trial": 0,
-      "tool": 10,
-      "turn": 15,
-      "etool": 3,
-      "eturn": 0
-    },
-    "B": {
-      "key": "qw359b_t0",
-      "model": "qw359b",
-      "trial": 0,
-      "tool": 14,
-      "turn": 50,
-      "etool": 7,
-      "eturn": 28
-    },
-    "d_etool": -4,
-    "d_eturn": -28,
+    "d_eturn": 22,
     "vote": null,
     "axis": "mixed"
   },
@@ -10813,7 +6660,7 @@
       "tool": 10,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -10822,10 +6669,10 @@
       "tool": 18,
       "turn": 48,
       "etool": 9,
-      "eturn": 33
+      "eturn": 42
     },
     "d_etool": -8,
-    "d_eturn": -33,
+    "d_eturn": -40,
     "vote": null,
     "axis": "mixed"
   },
@@ -10840,7 +6687,7 @@
       "tool": 11,
       "turn": 7,
       "etool": 2,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -10849,10 +6696,10 @@
       "tool": 18,
       "turn": 48,
       "etool": 9,
-      "eturn": 33
+      "eturn": 42
     },
     "d_etool": -7,
-    "d_eturn": -33,
+    "d_eturn": -41,
     "vote": null,
     "axis": "mixed"
   },
@@ -10867,7 +6714,7 @@
       "tool": 10,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -10876,10 +6723,10 @@
       "tool": 18,
       "turn": 48,
       "etool": 9,
-      "eturn": 33
+      "eturn": 42
     },
     "d_etool": -8,
-    "d_eturn": -33,
+    "d_eturn": -40,
     "vote": null,
     "axis": "mixed"
   },
@@ -10894,7 +6741,7 @@
       "tool": 10,
       "turn": 7,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -10903,10 +6750,10 @@
       "tool": 18,
       "turn": 48,
       "etool": 9,
-      "eturn": 33
+      "eturn": 42
     },
     "d_etool": -8,
-    "d_eturn": -33,
+    "d_eturn": -41,
     "vote": null,
     "axis": "mixed"
   },
@@ -10930,10 +6777,10 @@
       "tool": 18,
       "turn": 48,
       "etool": 9,
-      "eturn": 33
+      "eturn": 42
     },
     "d_etool": -9,
-    "d_eturn": -33,
+    "d_eturn": -42,
     "vote": null,
     "axis": "mixed"
   },
@@ -10948,7 +6795,7 @@
       "tool": 8,
       "turn": 11,
       "etool": 0,
-      "eturn": 0
+      "eturn": 5
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -10957,10 +6804,10 @@
       "tool": 18,
       "turn": 48,
       "etool": 9,
-      "eturn": 33
+      "eturn": 42
     },
     "d_etool": -9,
-    "d_eturn": -33,
+    "d_eturn": -37,
     "vote": null,
     "axis": "mixed"
   },
@@ -10975,7 +6822,7 @@
       "tool": 3,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "ministral3b_t0",
@@ -10984,10 +6831,10 @@
       "tool": 7,
       "turn": 9,
       "etool": 4,
-      "eturn": 3
+      "eturn": 6
     },
     "d_etool": -4,
-    "d_eturn": -3,
+    "d_eturn": -4,
     "vote": null,
     "axis": "mixed"
   },
@@ -11011,10 +6858,10 @@
       "tool": 7,
       "turn": 9,
       "etool": 4,
-      "eturn": 3
+      "eturn": 6
     },
     "d_etool": -3,
-    "d_eturn": -3,
+    "d_eturn": -6,
     "vote": null,
     "axis": "mixed"
   },
@@ -11029,7 +6876,7 @@
       "tool": 7,
       "turn": 9,
       "etool": 4,
-      "eturn": 3
+      "eturn": 6
     },
     "B": {
       "key": "qw3627b_t2",
@@ -11038,10 +6885,10 @@
       "tool": 4,
       "turn": 5,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 3,
-    "d_eturn": 3,
+    "d_eturn": 4,
     "vote": null,
     "axis": "mixed"
   },
@@ -11056,7 +6903,7 @@
       "tool": 7,
       "turn": 9,
       "etool": 4,
-      "eturn": 3
+      "eturn": 6
     },
     "B": {
       "key": "qw3627b_t1",
@@ -11065,10 +6912,10 @@
       "tool": 4,
       "turn": 4,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 3,
-    "d_eturn": 3,
+    "d_eturn": 5,
     "vote": null,
     "axis": "mixed"
   },
@@ -11083,7 +6930,7 @@
       "tool": 3,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "ministral3b_t0",
@@ -11092,10 +6939,10 @@
       "tool": 7,
       "turn": 9,
       "etool": 4,
-      "eturn": 3
+      "eturn": 6
     },
     "d_etool": -4,
-    "d_eturn": -3,
+    "d_eturn": -4,
     "vote": null,
     "axis": "mixed"
   },
@@ -11110,7 +6957,7 @@
       "tool": 3,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "ministral3b_t0",
@@ -11119,10 +6966,10 @@
       "tool": 7,
       "turn": 9,
       "etool": 4,
-      "eturn": 3
+      "eturn": 6
     },
     "d_etool": -4,
-    "d_eturn": -3,
+    "d_eturn": -4,
     "vote": null,
     "axis": "mixed"
   },
@@ -11137,7 +6984,7 @@
       "tool": 6,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "ministral3b_t0",
@@ -11146,10 +6993,10 @@
       "tool": 10,
       "turn": 42,
       "etool": 4,
-      "eturn": 31
+      "eturn": 37
     },
     "d_etool": -4,
-    "d_eturn": -31,
+    "d_eturn": -36,
     "vote": null,
     "axis": "mixed"
   },
@@ -11164,7 +7011,7 @@
       "tool": 10,
       "turn": 42,
       "etool": 4,
-      "eturn": 31
+      "eturn": 37
     },
     "B": {
       "key": "qw35ba3b_t2",
@@ -11173,10 +7020,10 @@
       "tool": 13,
       "turn": 6,
       "etool": 7,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -3,
-    "d_eturn": 31,
+    "d_eturn": 36,
     "vote": null,
     "axis": "mixed"
   },
@@ -11191,7 +7038,7 @@
       "tool": 10,
       "turn": 42,
       "etool": 4,
-      "eturn": 31
+      "eturn": 37
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -11200,10 +7047,10 @@
       "tool": 16,
       "turn": 6,
       "etool": 10,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": -6,
-    "d_eturn": 31,
+    "d_eturn": 36,
     "vote": null,
     "axis": "mixed"
   },
@@ -11218,7 +7065,7 @@
       "tool": 10,
       "turn": 42,
       "etool": 4,
-      "eturn": 31
+      "eturn": 37
     },
     "B": {
       "key": "qw35ba3b_t1",
@@ -11230,7 +7077,7 @@
       "eturn": 0
     },
     "d_etool": -6,
-    "d_eturn": 31,
+    "d_eturn": 37,
     "vote": null,
     "axis": "mixed"
   },
@@ -11245,7 +7092,7 @@
       "tool": 11,
       "turn": 8,
       "etool": 5,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "key": "qw359b_t2",
@@ -11254,10 +7101,10 @@
       "tool": 15,
       "turn": 45,
       "etool": 9,
-      "eturn": 34
+      "eturn": 40
     },
     "d_etool": -4,
-    "d_eturn": -34,
+    "d_eturn": -37,
     "vote": null,
     "axis": "mixed"
   },
@@ -11281,10 +7128,10 @@
       "tool": 14,
       "turn": 47,
       "etool": 8,
-      "eturn": 35
+      "eturn": 42
     },
     "d_etool": -4,
-    "d_eturn": -35,
+    "d_eturn": -42,
     "vote": null,
     "axis": "mixed"
   },
@@ -11299,7 +7146,7 @@
       "tool": 14,
       "turn": 47,
       "etool": 8,
-      "eturn": 35
+      "eturn": 42
     },
     "B": {
       "key": "qw35ba3b_t1",
@@ -11311,7 +7158,7 @@
       "eturn": 0
     },
     "d_etool": 3,
-    "d_eturn": 35,
+    "d_eturn": 42,
     "vote": null,
     "axis": "mixed"
   },
@@ -11326,7 +7173,7 @@
       "tool": 14,
       "turn": 47,
       "etool": 8,
-      "eturn": 35
+      "eturn": 42
     },
     "B": {
       "key": "qw3627b_t1",
@@ -11335,10 +7182,10 @@
       "tool": 8,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 6,
-    "d_eturn": 35,
+    "d_eturn": 41,
     "vote": null,
     "axis": "mixed"
   },
@@ -11353,7 +7200,7 @@
       "tool": 6,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "qw359b_t2",
@@ -11362,10 +7209,10 @@
       "tool": 14,
       "turn": 47,
       "etool": 8,
-      "eturn": 35
+      "eturn": 42
     },
     "d_etool": -8,
-    "d_eturn": -35,
+    "d_eturn": -40,
     "vote": null,
     "axis": "mixed"
   },
@@ -11380,7 +7227,7 @@
       "tool": 14,
       "turn": 47,
       "etool": 8,
-      "eturn": 35
+      "eturn": 42
     },
     "B": {
       "key": "qw3627b_t0",
@@ -11389,10 +7236,10 @@
       "tool": 8,
       "turn": 6,
       "etool": 2,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 6,
-    "d_eturn": 35,
+    "d_eturn": 41,
     "vote": null,
     "axis": "mixed"
   },
@@ -11407,7 +7254,7 @@
       "tool": 14,
       "turn": 47,
       "etool": 8,
-      "eturn": 35
+      "eturn": 42
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -11419,7 +7266,7 @@
       "eturn": 0
     },
     "d_etool": 3,
-    "d_eturn": 35,
+    "d_eturn": 42,
     "vote": null,
     "axis": "mixed"
   },
@@ -11434,7 +7281,7 @@
       "tool": 14,
       "turn": 30,
       "etool": 8,
-      "eturn": 13
+      "eturn": 22
     },
     "B": {
       "key": "qw35ba3b_t0",
@@ -11443,37 +7290,10 @@
       "tool": 8,
       "turn": 10,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 6,
-    "d_eturn": 13,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44mixed_052",
-    "tid": "mt_06_cd_elder_pharmacy_hospital",
-    "tier_combo": "D-D",
-    "A": {
-      "key": "ministral8b_t2",
-      "model": "ministral8b",
-      "trial": 2,
-      "tool": 14,
-      "turn": 30,
-      "etool": 8,
-      "eturn": 13
-    },
-    "B": {
-      "key": "qw359b_t1",
-      "model": "qw359b",
-      "trial": 1,
-      "tool": 9,
-      "turn": 52,
-      "etool": 3,
-      "eturn": 35
-    },
-    "d_etool": 5,
-    "d_eturn": -22,
+    "d_eturn": 20,
     "vote": null,
     "axis": "mixed"
   },
@@ -11488,7 +7308,7 @@
       "tool": 14,
       "turn": 30,
       "etool": 8,
-      "eturn": 13
+      "eturn": 22
     },
     "B": {
       "key": "qw3627b_t1",
@@ -11497,10 +7317,10 @@
       "tool": 7,
       "turn": 10,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 7,
-    "d_eturn": 13,
+    "d_eturn": 20,
     "vote": null,
     "axis": "mixed"
   },
@@ -11515,7 +7335,7 @@
       "tool": 14,
       "turn": 30,
       "etool": 8,
-      "eturn": 13
+      "eturn": 22
     },
     "B": {
       "key": "qw3627b_t2",
@@ -11524,10 +7344,10 @@
       "tool": 6,
       "turn": 9,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 8,
-    "d_eturn": 13,
+    "d_eturn": 21,
     "vote": null,
     "axis": "mixed"
   },
@@ -11542,7 +7362,7 @@
       "tool": 12,
       "turn": 9,
       "etool": 6,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "qw359b_t1",
@@ -11551,10 +7371,10 @@
       "tool": 9,
       "turn": 52,
       "etool": 3,
-      "eturn": 35
+      "eturn": 44
     },
     "d_etool": 3,
-    "d_eturn": -35,
+    "d_eturn": -43,
     "vote": null,
     "axis": "mixed"
   },
@@ -11569,7 +7389,7 @@
       "tool": 8,
       "turn": 10,
       "etool": 2,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "key": "ministral8b_t2",
@@ -11578,10 +7398,10 @@
       "tool": 14,
       "turn": 30,
       "etool": 8,
-      "eturn": 13
+      "eturn": 22
     },
     "d_etool": -6,
-    "d_eturn": -13,
+    "d_eturn": -20,
     "vote": null,
     "axis": "mixed"
   },
@@ -11605,10 +7425,10 @@
       "tool": 5,
       "turn": 67,
       "etool": 0,
-      "eturn": 55
+      "eturn": 61
     },
     "d_etool": 8,
-    "d_eturn": -55,
+    "d_eturn": -61,
     "vote": null,
     "axis": "mixed"
   },
@@ -11623,7 +7443,7 @@
       "tool": 15,
       "turn": 47,
       "etool": 9,
-      "eturn": 35
+      "eturn": 41
     },
     "B": {
       "key": "qw35ba3b_t2",
@@ -11635,7 +7455,7 @@
       "eturn": 0
     },
     "d_etool": 6,
-    "d_eturn": 35,
+    "d_eturn": 41,
     "vote": null,
     "axis": "mixed"
   },
@@ -11650,7 +7470,7 @@
       "tool": 21,
       "turn": 7,
       "etool": 15,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "qw359b_t0",
@@ -11659,10 +7479,10 @@
       "tool": 15,
       "turn": 47,
       "etool": 9,
-      "eturn": 35
+      "eturn": 41
     },
     "d_etool": 6,
-    "d_eturn": -35,
+    "d_eturn": -40,
     "vote": null,
     "axis": "mixed"
   },
@@ -11686,10 +7506,10 @@
       "tool": 11,
       "turn": 72,
       "etool": 1.0,
-      "eturn": 55.0
+      "eturn": 65.0
     },
     "d_etool": 3.0,
-    "d_eturn": -55.0,
+    "d_eturn": -65.0,
     "vote": null,
     "axis": "mixed"
   },
@@ -11713,10 +7533,10 @@
       "tool": 11,
       "turn": 72,
       "etool": 1.0,
-      "eturn": 55.0
+      "eturn": 65.0
     },
     "d_etool": 3.0,
-    "d_eturn": -55.0,
+    "d_eturn": -65.0,
     "vote": null,
     "axis": "mixed"
   },
@@ -11731,7 +7551,7 @@
       "tool": 7,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "qw359b_t1",
@@ -11740,10 +7560,10 @@
       "tool": 16,
       "turn": 46,
       "etool": 10,
-      "eturn": 35
+      "eturn": 41
     },
     "d_etool": -9,
-    "d_eturn": -35,
+    "d_eturn": -40,
     "vote": null,
     "axis": "mixed"
   },
@@ -11758,7 +7578,7 @@
       "tool": 16,
       "turn": 46,
       "etool": 10,
-      "eturn": 35
+      "eturn": 41
     },
     "B": {
       "key": "qw3627b_t0",
@@ -11770,7 +7590,7 @@
       "eturn": 0
     },
     "d_etool": 6,
-    "d_eturn": 35,
+    "d_eturn": 41,
     "vote": null,
     "axis": "mixed"
   },
@@ -11785,7 +7605,7 @@
       "tool": 16,
       "turn": 46,
       "etool": 10,
-      "eturn": 35
+      "eturn": 41
     },
     "B": {
       "key": "qw3627b_t2",
@@ -11797,7 +7617,7 @@
       "eturn": 0
     },
     "d_etool": 8,
-    "d_eturn": 35,
+    "d_eturn": 41,
     "vote": null,
     "axis": "mixed"
   },
@@ -11812,7 +7632,7 @@
       "tool": 16,
       "turn": 46,
       "etool": 10,
-      "eturn": 35
+      "eturn": 41
     },
     "B": {
       "key": "qw3627b_t1",
@@ -11824,7 +7644,7 @@
       "eturn": 0
     },
     "d_etool": 4,
-    "d_eturn": 35,
+    "d_eturn": 41,
     "vote": null,
     "axis": "mixed"
   },
@@ -11839,7 +7659,7 @@
       "tool": 9,
       "turn": 6,
       "etool": 3,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "key": "qw359b_t1",
@@ -11848,10 +7668,10 @@
       "tool": 16,
       "turn": 46,
       "etool": 10,
-      "eturn": 35
+      "eturn": 41
     },
     "d_etool": -7,
-    "d_eturn": -35,
+    "d_eturn": -40,
     "vote": null,
     "axis": "mixed"
   },
@@ -11875,10 +7695,10 @@
       "tool": 16,
       "turn": 46,
       "etool": 10,
-      "eturn": 35
+      "eturn": 41
     },
     "d_etool": -8,
-    "d_eturn": -35,
+    "d_eturn": -41,
     "vote": null,
     "axis": "mixed"
   },
@@ -11893,7 +7713,7 @@
       "tool": 5,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -11902,10 +7722,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": -5.0,
-    "d_eturn": -59.5,
+    "d_eturn": -64.0,
     "vote": null,
     "axis": "mixed"
   },
@@ -11920,7 +7740,7 @@
       "tool": 15,
       "turn": 7,
       "etool": 10.0,
-      "eturn": 0
+      "eturn": 2.5
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -11929,10 +7749,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": 5.0,
-    "d_eturn": -59.5,
+    "d_eturn": -62.0,
     "vote": null,
     "axis": "mixed"
   },
@@ -11947,7 +7767,7 @@
       "tool": 13,
       "turn": 7,
       "etool": 8.0,
-      "eturn": 0
+      "eturn": 2.5
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -11956,10 +7776,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": 3.0,
-    "d_eturn": -59.5,
+    "d_eturn": -62.0,
     "vote": null,
     "axis": "mixed"
   },
@@ -11974,7 +7794,7 @@
       "tool": 7,
       "turn": 7,
       "etool": 2.0,
-      "eturn": 0
+      "eturn": 2.5
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -11983,10 +7803,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": -3.0,
-    "d_eturn": -59.5,
+    "d_eturn": -62.0,
     "vote": null,
     "axis": "mixed"
   },
@@ -12010,10 +7830,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": -3.0,
-    "d_eturn": -59.5,
+    "d_eturn": -64.5,
     "vote": null,
     "axis": "mixed"
   },
@@ -12028,7 +7848,7 @@
       "tool": 7,
       "turn": 5,
       "etool": 2.0,
-      "eturn": 0
+      "eturn": 0.5
     },
     "B": {
       "key": "gemini35flash_t1",
@@ -12037,37 +7857,10 @@
       "tool": 10,
       "turn": 69,
       "etool": 5.0,
-      "eturn": 59.5
+      "eturn": 64.5
     },
     "d_etool": -3.0,
-    "d_eturn": -59.5,
-    "vote": null,
-    "axis": "mixed"
-  },
-  {
-    "pair_id": "rh44gapmix_008",
-    "tid": "lc_02_bj_kid_hospital_scheduled",
-    "tier_combo": "C-D",
-    "A": {
-      "key": "qw359b_t2",
-      "model": "qw359b",
-      "trial": 2,
-      "tool": 6,
-      "turn": 59,
-      "etool": 1,
-      "eturn": 43
-    },
-    "B": {
-      "key": "qw35ba3b_t1",
-      "model": "qw35ba3b",
-      "trial": 1,
-      "tool": 13,
-      "turn": 6,
-      "etool": 8,
-      "eturn": 0
-    },
-    "d_etool": -7,
-    "d_eturn": 43,
+    "d_eturn": -64.0,
     "vote": null,
     "axis": "mixed"
   },
@@ -12109,7 +7902,7 @@
       "tool": 12,
       "turn": 9,
       "etool": 7.0,
-      "eturn": 0
+      "eturn": 2.0
     },
     "B": {
       "key": "qw3627b_t0",
@@ -12121,7 +7914,7 @@
       "eturn": 0
     },
     "d_etool": 5.0,
-    "d_eturn": 0,
+    "d_eturn": 2.0,
     "vote": null,
     "axis": "tool"
   },
@@ -12135,7 +7928,7 @@
       "tool": 9,
       "turn": 15,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "model": "gemma426b",
@@ -12143,10 +7936,10 @@
       "tool": 6,
       "turn": 16,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 3,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -12159,7 +7952,7 @@
       "tool": 9,
       "turn": 15,
       "etool": 4,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "model": "gemma426b",
@@ -12167,10 +7960,10 @@
       "tool": 6,
       "turn": 18,
       "etool": 1,
-      "eturn": 0
+      "eturn": 4
     },
     "d_etool": 3,
-    "d_eturn": 0,
+    "d_eturn": -3,
     "vote": null
   },
   {
@@ -12183,7 +7976,7 @@
       "tool": 6,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "model": "qw359b",
@@ -12191,10 +7984,10 @@
       "tool": 6,
       "turn": 64,
       "etool": 1,
-      "eturn": 55
+      "eturn": 60
     },
     "d_etool": 0,
-    "d_eturn": -55,
+    "d_eturn": -58,
     "vote": null
   },
   {
@@ -12207,7 +8000,7 @@
       "tool": 18,
       "turn": 4,
       "etool": 10,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "model": "dsv4pro",
@@ -12215,10 +8008,10 @@
       "tool": 11,
       "turn": 5,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 7,
-    "d_eturn": 0,
+    "d_eturn": -1,
     "vote": null
   },
   {
@@ -12231,7 +8024,7 @@
       "tool": 18,
       "turn": 4,
       "etool": 10,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "model": "gemma426b",
@@ -12239,7 +8032,7 @@
       "tool": 9,
       "turn": 4,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 9,
     "d_eturn": 0,
@@ -12255,7 +8048,7 @@
       "tool": 8,
       "turn": 7,
       "etool": 3,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "model": "qw359b",
@@ -12263,10 +8056,10 @@
       "tool": 6,
       "turn": 64,
       "etool": 1,
-      "eturn": 55
+      "eturn": 60
     },
     "d_etool": 2,
-    "d_eturn": -55,
+    "d_eturn": -57,
     "vote": null
   },
   {
@@ -12279,7 +8072,7 @@
       "tool": 8,
       "turn": 6,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "model": "qw359b",
@@ -12287,10 +8080,10 @@
       "tool": 6,
       "turn": 64,
       "etool": 1,
-      "eturn": 55
+      "eturn": 60
     },
     "d_etool": 2,
-    "d_eturn": -55,
+    "d_eturn": -58,
     "vote": null
   },
   {
@@ -12303,7 +8096,7 @@
       "tool": 8,
       "turn": 8,
       "etool": 3,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "model": "qw359b",
@@ -12311,10 +8104,10 @@
       "tool": 6,
       "turn": 64,
       "etool": 1,
-      "eturn": 55
+      "eturn": 60
     },
     "d_etool": 2,
-    "d_eturn": -55,
+    "d_eturn": -56,
     "vote": null
   },
   {
@@ -12327,7 +8120,7 @@
       "tool": 8,
       "turn": 6,
       "etool": 3,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "model": "qw359b",
@@ -12335,10 +8128,10 @@
       "tool": 6,
       "turn": 64,
       "etool": 1,
-      "eturn": 55
+      "eturn": 60
     },
     "d_etool": 2,
-    "d_eturn": -55,
+    "d_eturn": -58,
     "vote": null
   },
   {
@@ -12351,7 +8144,7 @@
       "tool": 5,
       "turn": 11,
       "etool": 1,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "model": "ministral14b",
@@ -12359,10 +8152,10 @@
       "tool": 7,
       "turn": 34,
       "etool": 3,
-      "eturn": 20
+      "eturn": 24
     },
     "d_etool": -2,
-    "d_eturn": -20,
+    "d_eturn": -23,
     "vote": null
   },
   {
@@ -12375,7 +8168,7 @@
       "tool": 7,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "model": "qw359b",
@@ -12383,10 +8176,10 @@
       "tool": 9,
       "turn": 58,
       "etool": 3,
-      "eturn": 48
+      "eturn": 54
     },
     "d_etool": -2,
-    "d_eturn": -48,
+    "d_eturn": -52,
     "vote": null
   },
   {
@@ -12399,7 +8192,7 @@
       "tool": 6,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "B": {
       "model": "qw359b",
@@ -12407,10 +8200,10 @@
       "tool": 9,
       "turn": 58,
       "etool": 3,
-      "eturn": 48
+      "eturn": 54
     },
     "d_etool": -3,
-    "d_eturn": -48,
+    "d_eturn": -53,
     "vote": null
   },
   {
@@ -12423,7 +8216,7 @@
       "tool": 6,
       "turn": 6,
       "etool": 0,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "model": "qw359b",
@@ -12431,10 +8224,10 @@
       "tool": 9,
       "turn": 58,
       "etool": 3,
-      "eturn": 48
+      "eturn": 54
     },
     "d_etool": -3,
-    "d_eturn": -48,
+    "d_eturn": -52,
     "vote": null
   },
   {
@@ -12447,7 +8240,7 @@
       "tool": 7,
       "turn": 8,
       "etool": 1,
-      "eturn": 0
+      "eturn": 4
     },
     "B": {
       "model": "qw359b",
@@ -12455,10 +8248,10 @@
       "tool": 9,
       "turn": 58,
       "etool": 3,
-      "eturn": 48
+      "eturn": 54
     },
     "d_etool": -2,
-    "d_eturn": -48,
+    "d_eturn": -50,
     "vote": null
   },
   {
@@ -12471,7 +8264,7 @@
       "tool": 6,
       "turn": 7,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3
     },
     "B": {
       "model": "qw359b",
@@ -12479,10 +8272,10 @@
       "tool": 9,
       "turn": 58,
       "etool": 3,
-      "eturn": 48
+      "eturn": 54
     },
     "d_etool": -3,
-    "d_eturn": -48,
+    "d_eturn": -51,
     "vote": null
   },
   {
@@ -12495,7 +8288,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "model": "gemma431b",
@@ -12503,7 +8296,7 @@
       "tool": 7,
       "turn": 6,
       "etool": 1,
-      "eturn": 0
+      "eturn": 2
     },
     "d_etool": 3,
     "d_eturn": 0,
@@ -12519,7 +8312,7 @@
       "tool": 10,
       "turn": 6,
       "etool": 4,
-      "eturn": 0
+      "eturn": 2
     },
     "B": {
       "model": "gemma431b",
@@ -12527,50 +8320,58 @@
       "tool": 6,
       "turn": 5,
       "etool": 0,
-      "eturn": 0
+      "eturn": 1
     },
     "d_etool": 4,
-    "d_eturn": 0,
+    "d_eturn": 1,
     "vote": null
   },
   {
     "pair_id": "lc04_cov_000",
     "tid": "lc_04_cd_taxi_pref_dismiss",
-    "axis": "tool",
+    "axis": "mixed",
     "A": {
       "model": "gemini35flash",
       "trial": 2,
       "etool": 6,
-      "eturn": 0
+      "eturn": 1,
+      "tool": 9,
+      "turn": 11
     },
     "B": {
       "model": "qw36p",
       "trial": 2,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3,
+      "tool": 2,
+      "turn": 13
     },
     "d_etool": 6,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   },
   {
     "pair_id": "lc04_cov_001",
     "tid": "lc_04_cd_taxi_pref_dismiss",
-    "axis": "tool",
+    "axis": "mixed",
     "A": {
       "model": "dsv4pro",
       "trial": 1,
       "etool": 5,
-      "eturn": 0
+      "eturn": 1,
+      "tool": 8,
+      "turn": 11
     },
     "B": {
       "model": "qw36p",
       "trial": 2,
       "etool": 0,
-      "eturn": 0
+      "eturn": 3,
+      "tool": 2,
+      "turn": 13
     },
     "d_etool": 5,
-    "d_eturn": 0,
+    "d_eturn": -2,
     "vote": null
   }
 ]

@@ -21,7 +21,7 @@
     "turn": 13,
     "tool": 6,
     "etool": 0,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_015_shanghai_mcdonalds_rain_nosmoking::t00-03",
@@ -33,7 +33,7 @@
     "turn": 13,
     "tool": 13,
     "etool": 6,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_015_shanghai_mcdonalds_rain_nosmoking::t00-04",
@@ -45,7 +45,7 @@
     "turn": 39,
     "tool": 6,
     "etool": 0,
-    "eturn": 21
+    "eturn": 27
   },
   {
     "annotation_id": "custom_015_shanghai_mcdonalds_rain_nosmoking::t00-05",
@@ -81,7 +81,7 @@
     "turn": 13,
     "tool": 6,
     "etool": 0,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_015_shanghai_mcdonalds_rain_nosmoking::t00-08",
@@ -117,7 +117,7 @@
     "turn": 18,
     "tool": 5,
     "etool": 0,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_022_guangzhou_home_baitiange_long_chitchat::t01-03",
@@ -129,7 +129,7 @@
     "turn": 18,
     "tool": 3,
     "etool": 0,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_022_guangzhou_home_baitiange_long_chitchat::t01-04",
@@ -141,7 +141,7 @@
     "turn": 53,
     "tool": 7,
     "etool": 0,
-    "eturn": 30
+    "eturn": 37
   },
   {
     "annotation_id": "custom_022_guangzhou_home_baitiange_long_chitchat::t01-05",
@@ -153,7 +153,7 @@
     "turn": 17,
     "tool": 3,
     "etool": 0,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_022_guangzhou_home_baitiange_long_chitchat::t01-06",
@@ -165,7 +165,7 @@
     "turn": 19,
     "tool": 4,
     "etool": 0,
-    "eturn": 0
+    "eturn": 3
   },
   {
     "annotation_id": "custom_022_guangzhou_home_baitiange_long_chitchat::t01-07",
@@ -177,7 +177,7 @@
     "turn": 18,
     "tool": 12,
     "etool": 5,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_022_guangzhou_home_baitiange_long_chitchat::t01-08",
@@ -189,7 +189,7 @@
     "turn": 18,
     "tool": 5,
     "etool": 0,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_017_beijing_tourist_yiheyuan_female_driver::t02-01",
@@ -201,7 +201,7 @@
     "turn": 52,
     "tool": 7,
     "etool": 2,
-    "eturn": 24
+    "eturn": 29
   },
   {
     "annotation_id": "custom_017_beijing_tourist_yiheyuan_female_driver::t02-02",
@@ -225,7 +225,7 @@
     "turn": 25,
     "tool": 2,
     "etool": 0,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_017_beijing_tourist_yiheyuan_female_driver::t02-04",
@@ -237,7 +237,7 @@
     "turn": 24,
     "tool": 2,
     "etool": 0,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_017_beijing_tourist_yiheyuan_female_driver::t02-05",
@@ -249,7 +249,7 @@
     "turn": 30,
     "tool": 13,
     "etool": 8,
-    "eturn": 2
+    "eturn": 7
   },
   {
     "annotation_id": "custom_017_beijing_tourist_yiheyuan_female_driver::t02-06",
@@ -297,7 +297,7 @@
     "turn": 11,
     "tool": 13,
     "etool": 6,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat::t03-02",
@@ -309,7 +309,7 @@
     "turn": 11,
     "tool": 6,
     "etool": 0,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat::t03-03",
@@ -321,7 +321,7 @@
     "turn": 13,
     "tool": 4,
     "etool": 0,
-    "eturn": 0
+    "eturn": 3
   },
   {
     "annotation_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat::t03-04",
@@ -333,7 +333,7 @@
     "turn": 12,
     "tool": 10,
     "etool": 3,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat::t03-05",
@@ -345,7 +345,7 @@
     "turn": 11,
     "tool": 4,
     "etool": 0,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat::t03-06",
@@ -357,7 +357,7 @@
     "turn": 12,
     "tool": 3,
     "etool": 0,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat::t03-07",
@@ -369,7 +369,7 @@
     "turn": 11,
     "tool": 15,
     "etool": 8,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_025_shenzhen_huaqiangbei_north_station_biztrip_chitchat::t03-08",
@@ -381,7 +381,7 @@
     "turn": 12,
     "tool": 5,
     "etool": 0,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_016_beijing_tourist_shisanling_preference::t04-01",
@@ -393,7 +393,7 @@
     "turn": 17,
     "tool": 9,
     "etool": 4,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_016_beijing_tourist_shisanling_preference::t04-02",
@@ -405,7 +405,7 @@
     "turn": 21,
     "tool": 9,
     "etool": 4,
-    "eturn": 1
+    "eturn": 5
   },
   {
     "annotation_id": "custom_016_beijing_tourist_shisanling_preference::t04-03",
@@ -417,7 +417,7 @@
     "turn": 17,
     "tool": 5,
     "etool": 0,
-    "eturn": 0
+    "eturn": 1
   },
   {
     "annotation_id": "custom_016_beijing_tourist_shisanling_preference::t04-04",
@@ -429,7 +429,7 @@
     "turn": 18,
     "tool": 9,
     "etool": 4,
-    "eturn": 0
+    "eturn": 2
   },
   {
     "annotation_id": "custom_016_beijing_tourist_shisanling_preference::t04-05",
@@ -453,7 +453,7 @@
     "turn": 26,
     "tool": 5,
     "etool": 0,
-    "eturn": 6
+    "eturn": 10
   },
   {
     "annotation_id": "custom_016_beijing_tourist_shisanling_preference::t04-07",
@@ -465,7 +465,7 @@
     "turn": 20,
     "tool": 4,
     "etool": 0,
-    "eturn": 0
+    "eturn": 4
   },
   {
     "annotation_id": "custom_016_beijing_tourist_shisanling_preference::t04-08",
@@ -480,102 +480,6 @@
     "eturn": 0
   },
   {
-    "annotation_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat::t05-01",
-    "task_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
-    "anon": "05-01",
-    "model": "gemma426b",
-    "tier": "C",
-    "trial": 1,
-    "turn": 18,
-    "tool": 9,
-    "etool": 1.0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat::t05-02",
-    "task_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
-    "anon": "05-02",
-    "model": "gemma431b",
-    "tier": "C",
-    "trial": 2,
-    "turn": 14,
-    "tool": 4,
-    "etool": 0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat::t05-03",
-    "task_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
-    "anon": "05-03",
-    "model": "gemini35flash",
-    "tier": "A",
-    "trial": 1,
-    "turn": 18,
-    "tool": 13,
-    "etool": 5.0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat::t05-04",
-    "task_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
-    "anon": "05-04",
-    "model": "qw359b",
-    "tier": "D",
-    "trial": 0,
-    "turn": 20,
-    "tool": 14,
-    "etool": 6.0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat::t05-05",
-    "task_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
-    "anon": "05-05",
-    "model": "qw37max",
-    "tier": "B",
-    "trial": 1,
-    "turn": 22,
-    "tool": 5,
-    "etool": 0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat::t05-06",
-    "task_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
-    "anon": "05-06",
-    "model": "dsv4pro",
-    "tier": "B",
-    "trial": 2,
-    "turn": 19,
-    "tool": 9,
-    "etool": 1.0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat::t05-07",
-    "task_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
-    "anon": "05-07",
-    "model": "glm52",
-    "tier": "B",
-    "trial": 2,
-    "turn": 22,
-    "tool": 5,
-    "etool": 0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat::t05-08",
-    "task_id": "custom_024_shenzhen_home_pizzahut_complaint_chitchat",
-    "anon": "05-08",
-    "model": "sonnet5",
-    "tier": "A",
-    "trial": 2,
-    "turn": 18,
-    "tool": 7,
-    "etool": 0,
-    "eturn": 0
-  },
-  {
     "annotation_id": "custom_018_guangzhou_student_shangjiu_preference::t06-01",
     "task_id": "custom_018_guangzhou_student_shangjiu_preference",
     "anon": "06-01",
@@ -585,7 +489,7 @@
     "turn": 57,
     "tool": 6,
     "etool": 0.5,
-    "eturn": 41.0
+    "eturn": 46.5
   },
   {
     "annotation_id": "custom_018_guangzhou_student_shangjiu_preference::t06-02",
@@ -597,7 +501,7 @@
     "turn": 13,
     "tool": 3,
     "etool": 0,
-    "eturn": 0
+    "eturn": 2.5
   },
   {
     "annotation_id": "custom_018_guangzhou_student_shangjiu_preference::t06-03",
@@ -609,7 +513,7 @@
     "turn": 13,
     "tool": 9,
     "etool": 3.5,
-    "eturn": 0
+    "eturn": 2.5
   },
   {
     "annotation_id": "custom_018_guangzhou_student_shangjiu_preference::t06-04",
@@ -621,7 +525,7 @@
     "turn": 11,
     "tool": 5,
     "etool": 0,
-    "eturn": 0
+    "eturn": 0.5
   },
   {
     "annotation_id": "custom_018_guangzhou_student_shangjiu_preference::t06-05",
@@ -633,7 +537,7 @@
     "turn": 11,
     "tool": 7,
     "etool": 1.5,
-    "eturn": 0
+    "eturn": 0.5
   },
   {
     "annotation_id": "custom_018_guangzhou_student_shangjiu_preference::t06-06",
@@ -645,7 +549,7 @@
     "turn": 12,
     "tool": 5,
     "etool": 0,
-    "eturn": 0
+    "eturn": 1.5
   },
   {
     "annotation_id": "custom_018_guangzhou_student_shangjiu_preference::t06-07",
@@ -657,7 +561,7 @@
     "turn": 11,
     "tool": 4,
     "etool": 0,
-    "eturn": 0
+    "eturn": 0.5
   },
   {
     "annotation_id": "custom_018_guangzhou_student_shangjiu_preference::t06-08",
@@ -669,103 +573,7 @@
     "turn": 13,
     "tool": 5,
     "etool": 0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_027_beijing_shuangqing_military_museum_chitchat::t07-01",
-    "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
-    "anon": "07-01",
-    "model": "qw359b",
-    "tier": "D",
-    "trial": 0,
-    "turn": 58,
-    "tool": 5,
-    "etool": 0,
-    "eturn": 39
-  },
-  {
-    "annotation_id": "custom_027_beijing_shuangqing_military_museum_chitchat::t07-02",
-    "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
-    "anon": "07-02",
-    "model": "qw35ba3b",
-    "tier": "C",
-    "trial": 2,
-    "turn": 17,
-    "tool": 4,
-    "etool": 0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_027_beijing_shuangqing_military_museum_chitchat::t07-03",
-    "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
-    "anon": "07-03",
-    "model": "gemini35flash",
-    "tier": "A",
-    "trial": 0,
-    "turn": 12,
-    "tool": 10,
-    "etool": 3,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_027_beijing_shuangqing_military_museum_chitchat::t07-04",
-    "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
-    "anon": "07-04",
-    "model": "mistralsmall",
-    "tier": "C",
-    "trial": 2,
-    "turn": 14,
-    "tool": 3,
-    "etool": 0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_027_beijing_shuangqing_military_museum_chitchat::t07-05",
-    "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
-    "anon": "07-05",
-    "model": "opus46",
-    "tier": "A",
-    "trial": 1,
-    "turn": 15,
-    "tool": 3,
-    "etool": 0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_027_beijing_shuangqing_military_museum_chitchat::t07-06",
-    "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
-    "anon": "07-06",
-    "model": "ministral14b",
-    "tier": "D",
-    "trial": 0,
-    "turn": 13,
-    "tool": 12,
-    "etool": 5,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_027_beijing_shuangqing_military_museum_chitchat::t07-07",
-    "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
-    "anon": "07-07",
-    "model": "gemma426b",
-    "tier": "C",
-    "trial": 1,
-    "turn": 11,
-    "tool": 3,
-    "etool": 0,
-    "eturn": 0
-  },
-  {
-    "annotation_id": "custom_027_beijing_shuangqing_military_museum_chitchat::t07-08",
-    "task_id": "custom_027_beijing_shuangqing_military_museum_chitchat",
-    "anon": "07-08",
-    "model": "dsv4pro",
-    "tier": "B",
-    "trial": 1,
-    "turn": 13,
-    "tool": 7,
-    "etool": 0,
-    "eturn": 0
+    "eturn": 2.5
   },
   {
     "annotation_id": "custom_031_guangzhou_tourist_sightseeing_cantonese::t08-01",
@@ -777,7 +585,7 @@
     "turn": 9,
     "tool": 20,
     "etool": 0,
-    "eturn": 1
+    "eturn": 0
   },
   {
     "annotation_id": "custom_031_guangzhou_tourist_sightseeing_cantonese::t08-02",
@@ -788,7 +596,7 @@
     "trial": 0,
     "turn": 7,
     "tool": 32,
-    "etool": 11,
+    "etool": 12,
     "eturn": 0
   },
   {
@@ -800,7 +608,7 @@
     "trial": 0,
     "turn": 7,
     "tool": 32,
-    "etool": 11,
+    "etool": 12,
     "eturn": 0
   },
   {
@@ -824,7 +632,7 @@
     "trial": 1,
     "turn": 8,
     "tool": 22,
-    "etool": 1,
+    "etool": 2,
     "eturn": 0
   },
   {
@@ -836,8 +644,8 @@
     "trial": 1,
     "turn": 9,
     "tool": 21,
-    "etool": 0,
-    "eturn": 1
+    "etool": 1,
+    "eturn": 0
   },
   {
     "annotation_id": "custom_031_guangzhou_tourist_sightseeing_cantonese::t08-07",
@@ -848,7 +656,7 @@
     "trial": 0,
     "turn": 7,
     "tool": 22,
-    "etool": 1,
+    "etool": 2,
     "eturn": 0
   },
   {
@@ -873,7 +681,7 @@
     "turn": 21,
     "tool": 8,
     "etool": 0.5,
-    "eturn": 0
+    "eturn": 0.5
   },
   {
     "annotation_id": "custom_023_shanghai_tangchenyipin_disney_long_chitchat::t09-02",
@@ -885,7 +693,7 @@
     "turn": 30,
     "tool": 17,
     "etool": 9.5,
-    "eturn": 2.0
+    "eturn": 9.5
   },
   {
     "annotation_id": "custom_023_shanghai_tangchenyipin_disney_long_chitchat::t09-03",
@@ -921,7 +729,7 @@
     "turn": 21,
     "tool": 6,
     "etool": 0,
-    "eturn": 0
+    "eturn": 0.5
   },
   {
     "annotation_id": "custom_023_shanghai_tangchenyipin_disney_long_chitchat::t09-06",
@@ -1089,7 +897,7 @@
     "turn": 20,
     "tool": 3,
     "etool": 0,
-    "eturn": 0
+    "eturn": 3
   },
   {
     "annotation_id": "custom_026_guangzhou_huangpu_home_south_station_family_trip::t11-04",

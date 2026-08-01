@@ -43,7 +43,7 @@ def get_environment(
 
 
 # Default task sets: 44 session-derived tasks + 14 custom long-horizon tasks
-DEFAULT_TASK_FILES = ["tasks_rh44_v3_all.json", "tasks_custom14_all.json"]
+DEFAULT_TASK_FILES = ["tasks_rh44_all.json", "tasks_custom14_all.json"]
 
 
 def get_tasks(language: str = None) -> list[Task]:
