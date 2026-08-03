@@ -1,7 +1,4 @@
-<div align=center><h1>
-    🚕 RideWay: Benchmarking LLM Agents<br>
-    on Interactive Ride-hailing Tasks
-</h1></div>
+# RideWay: Benchmarking Efficient Task Completion for Tool-Using Language Agents
 
 ## 📖 Introduction
 
@@ -13,6 +10,8 @@ The benchmark contains **58 Chinese ride-hailing tasks**:
 - **14 custom long-horizon tasks** (`tasks_custom14_all.json`) — long-context tasks with personas, shifting intent, chit-chat distractors, and preference constraints.
 
 Tasks require agents to reason over temporal and spatial constraints, proactively clarify ambiguous instructions, track shifting user intent, and use tools efficiently across long conversations.
+
+The Efficiency Utility metric and its human-preference calibration artifacts are packaged under [`efficiency_utility_release/`](efficiency_utility_release/). Start with [`efficiency_utility_release/HOW_TO_REPRODUCE.md`](efficiency_utility_release/HOW_TO_REPRODUCE.md) for the metric definition, Bradley--Terry calibration workflow, pairwise/listwise preference data, validation scripts, and commands for reproducing the reported efficiency results.
 
 ## 🚀 Getting Started
 
