@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>RideWay — Benchmarking Efficient Task Completion for Tool-Using Language Agents</title>
+  <meta name="description" content="RideWay is a Chinese ride-hailing benchmark for task success and interaction efficiency: 58 tasks, 26 tools, 24 models, and human-calibrated Efficiency Utility.">
+  <meta property="og:title" content="RideWay — Beyond task success">
+  <meta property="og:description" content="Benchmarking Efficient Task Completion for Tool-Using Language Agents. Explore the paper, dataset, method, and published 24-model leaderboard.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/data.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="wordmark" href="#"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 25V12a5 5 0 0 1 5-5h8a5 5 0 0 1 0 10h-8a5 5 0 0 0 0 10h13"/><circle cx="7" cy="26" r="3"/><circle cx="25" cy="7" r="3"/></svg>RideWay</a>
+    <div class="navlinks"><a href="#Overview">Overview</a><a href="#Method">Method</a><a href="#Leaderboard">Leaderboard</a><a href="#Dataset">Dataset</a><a href="#Citation">Citation</a></div>
+    <a class="nav-code" href="https://github.com/didi/RideWay" target="_blank" rel="noopener noreferrer" aria-label="RideWay on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero wrap">
+    <p class="eyebrow"><span class="status-dot"></span> DIDI GLOBAL <span class="divider">/</span> RESEARCH · SEPTEMBER 2026</p>
+    <h1><span class="hero-name">RideWay: </span><span class="hero-title">Benchmarking Efficient Task Completion<br class="desktop-break"> for Tool-Using Language Agents</span></h1>
+    <p class="hero-question">Getting it done is only half the story.</p>
+    <p class="authors">Qingnuan Han<sup>*</sup><span>·</span>Boli Fang<sup>*†</sup><span>·</span>Mingzhi Hou<span>·</span>Claire Liu</p>
+    <p class="affiliation">Didi Global <span>·</span> <small><sup>*</sup> Equal contribution <span>·</span> <sup>†</sup> Corresponding author</small></p>
+    <div class="resource-links" aria-label="Project resources">
+      <a href="https://arxiv.org/pdf/2609.17985" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">📃</span> Paper</a>
+      <a href="https://github.com/didi/RideWay/tree/main/efficiency_utility_release/data" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🤗</span> Dataset</a>
+      <a href="#Leaderboard"><span aria-hidden="true">🏆</span> Leaderboard</a>
+      <a href="https://github.com/didi/RideWay" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.1c-3.12.67-3.78-1.33-3.78-1.33-.5-1.29-1.25-1.63-1.25-1.63-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.63 1.22 3.27.94.1-.73.4-1.22.71-1.5-2.5-.28-5.12-1.25-5.12-5.57 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.55.23 2.7.12 2.98.72.79 1.15 1.79 1.15 3.02 0 4.33-2.63 5.29-5.13 5.57.4.35.76 1.03.76 2.07v3.08c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg> Code</a>
+      <a href="https://arxiv.org/abs/2609.17985" target="_blank" rel="noopener noreferrer"><span class="arxiv-icon" aria-hidden="true">χ</span> arXiv</a>
+    </div>
+    <div class="hero-stats" aria-label="Benchmark at a glance">
+      <div><strong>58</strong><span>Chinese ride-hailing tasks</span></div>
+      <div><strong>26</strong><span>Stateful API tools</span></div>
+      <div><strong>24</strong><span>Model configurations</span></div>
+      <div><strong>3</strong><span>Attempts per task</span></div>
+    </div>
+  </section>
+
+  <section id="Abstract" class="section tinted text-section">
+    <p class="section-kicker">THE RESEARCH</p><h2>Abstract</h2>
+    <p>AI agents are usually evaluated by whether they complete a task. In interactive service settings, a successful agent can still frustrate users by asking repeated questions, performing redundant searches, or making avoidable revisions. We introduce <strong>RideWay</strong>, an efficiency-centered benchmark for ride-hailing agents in a stateful tool-calling environment, together with <strong>Efficiency Utility</strong>, a success-gated metric that discounts successful trajectories for excess tool calls and user-facing turns relative to task-specific reference effort.</p>
+    <p>Human paired preferences calibrate the relative penalties. Across 58 tasks and 24 models, the fitted penalty for excess turns is about twice that for excess tool calls. On task-disjoint held-out preferences, Efficiency Utility achieves <strong>78.7% accuracy overall</strong>: 90.6% when trajectories differ in turns, but chance-level accuracy when they differ solely in tool calls. RideWay makes interaction efficiency measurable alongside task success, while exposing the boundary of count-based tool-use evaluation.</p>
+  </section>
+
+  <section id="Overview" class="section tinted">
+    <div class="wrap"><div class="section-head"><div><p class="section-kicker">BEYOND THE FINAL OUTCOME</p><h2>Overview</h2></div><p>Two agents can complete the same request<br>and take very different paths to get there.</p></div>
+      <div class="comparison">
+        <div class="comparison-intro"><span class="little-label">HELD-OUT · 14 TASKS</span><h3>Success rate alone<br>misses the difference.</h3><p>GPT-5.5 and Claude Opus 4.6 tie at 88.1% success. Among successful trials, their mean efficiency utilities are about 0.80 and 0.69.</p><p class="small muted">Conditional efficiency is a diagnostic of successful runs, not a replacement for the overall ranking.</p></div>
+        <div class="comparison-data"><div class="compare-row"><div><span class="model-dot orange"></span><strong>GPT-5.5</strong><small>non-thinking</small></div><div class="measure"><span>Success rate</span><strong>88.1%</strong></div><div class="effort-bar"><div style="width:80%"></div><span>0.80</span></div></div><div class="compare-row"><div><span class="model-dot slate"></span><strong>Claude Opus 4.6</strong></div><div class="measure"><span>Success rate</span><strong>88.1%</strong></div><div class="effort-bar slate-bar"><div style="width:69%"></div><span>0.69</span></div></div><p class="small muted compare-caption">Bars show mean Efficiency Utility among successful trials only (0–1). Source: published paper, Appendix E.</p></div>
+      </div>
+      <div class="findings"><div><span class="finding-num">01</span><h3>Success comes first</h3><p>Failed attempts receive zero efficiency utility. A short failure is not an efficient completion.</p></div><div><span class="finding-num">02</span><h3>Separate the two kinds of effort</h3><p>Track user-facing dialogue and backend tool calls against each task’s human reference.</p></div><div><span class="finding-num">03</span><h3>More calls can still be useful</h3><p>Verification and preference preservation can require extra tool use. Counts alone cannot capture its value.</p></div></div>
+    </div>
+  </section>
+
+  <section id="Method" class="section wrap">
+    <p class="section-kicker">HOW RIDEWAY WORKS</p><h2>Method</h2>
+    <p class="section-lead">Generate a conversation, check whether the task succeeds, then calibrate how much extra effort it takes.</p>
+    <figure class="pipeline"><img src="assets/rideway-pipeline-000.png" width="1672" height="941" alt="RideWay pipeline: trajectory generation with an agent, simulated user and stateful tools; success evaluation by three judges; efficiency calibration with human reference effort and blinded pairwise preferences." loading="lazy"><figcaption>Figure 1 from the published paper. Generation → success evaluation → efficiency calibration.</figcaption></figure>
+    <div class="method-columns"><div><span class="step">1</span><h3>Stateful service workflows</h3><p>A fixed GPT-4.1 simulated user interacts with the evaluated agent and a database-backed environment of 18 read and 8 write tools.</p></div><div><span class="step">2</span><h3>Human-audited success gate</h3><p>Hunyuan 3 Preview, Seed 2.0 Lite and Grok 4.3 each use a three-pass majority. At least two judges must pass a trajectory.</p></div><div><span class="step">3</span><h3>Preference-calibrated efficiency</h3><p>44 tasks and 320 blinded preference pairs calibrate the score. A task-disjoint split of 14 tasks supplies 80 held-out comparisons.</p></div></div>
+    <div class="formula-card"><div><span class="little-label">EFFICIENCY UTILITY</span><p class="formula">U(τ) = success(τ) · 0.8838<sup>e<sub>tool</sub></sup> · 0.7829<sup>e<sub>turn</sub></sup></p><p class="small muted">e<sub>tool</sub> = max(0, tool calls − human tool reference)<br>e<sub>turn</sub> = max(0, user-facing turns − human turn reference)</p></div><div class="formula-explainer"><h3>Relative to the task.<br>Gated by success.</h3><p>A successful trajectory at or below both reference counts scores 1. Failed trajectories score 0. The reported mean includes every attempt, including failures.</p><a href="https://github.com/didi/RideWay/blob/main/efficiency_utility_release/HOW_TO_REPRODUCE.md" target="_blank" rel="noopener noreferrer">Read the scoring protocol <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+
+  <section id="Leaderboard" class="section tinted">
+    <div class="wrap wide"><div class="section-head"><div><p class="section-kicker">THE PUBLISHED V1 RELEASE</p><h2><span aria-hidden="true">🏆</span> Leaderboard</h2></div><a class="outline-button" href="assets/leaderboard.csv" download>↓ Download CSV</a></div>
+      <p class="section-lead">24 non-thinking model configurations · 58 tasks · 3 attempts per task.<br>Success metrics cover the full 58-task suite. Efficiency Utility follows the paper’s 14-task independent validation protocol.</p>
+      <div class="table-controls"><label class="search"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="m12 12 5 5"/></svg><input id="model-search" type="search" placeholder="Search models or providers" aria-label="Search models or providers"></label><div class="sort-control"><label for="ranking-sort">Sort by</label><select id="ranking-sort"><option value="eu">Efficiency Utility ↓</option><option value="full58.avg">Average success · 58 tasks ↓</option><option value="full58.pass_at_3">Pass@3 · 58 tasks ↓</option><option value="full58.pass_3">Pass³ · 58 tasks ↓</option><option value="model">Model name A–Z</option></select></div><span id="model-count" class="small muted" aria-live="polite">24 models</span></div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Published leaderboard, scroll horizontally on small screens">
+        <table id="leaderboard-table"><caption class="sr-only">RideWay V1 results. Success columns cover all 58 tasks and are percentages. Efficiency Utility is a 0–1 mean on the independent 14-task validation set, with a 90% task-bootstrap interval. Default rank is by held-out EU.</caption><thead><tr><th rowspan="2" scope="col" class="rank-col">Rank</th><th rowspan="2" scope="col" class="model-col">Model</th><th colspan="3" scope="colgroup" class="group-full">Full suite <span>58 tasks</span></th><th colspan="2" scope="colgroup" class="group-eu">Efficiency <span>14-task validation set</span></th></tr><tr><th scope="col"><button data-sort="full58.avg" title="Sort by average success rate over all 174 attempts">Avg (%)</button></th><th scope="col"><button data-sort="full58.pass_at_3" title="At least one successful attempt out of three">Pass@3 (%)</button></th><th scope="col"><button data-sort="full58.pass_3" title="All three attempts successful">Pass³ (%)</button></th><th scope="col" class="eu-cell" aria-sort="descending"><button data-sort="eu">EU <span class="sort-arrow">↓</span></button></th><th scope="col">90% CI</th></tr></thead><tbody id="leaderboard-body"></tbody></table>
+        <p id="empty-state" class="empty-state" hidden>No matching models. Try another name or provider.</p>
+      </div>
+      <div class="table-legend"><p><strong>Avg</strong> Average success rate across individual attempts. <strong>Pass@3</strong> At least one of three attempts succeeds. <strong>Pass³</strong> All three attempts succeed. All three columns cover the full 58-task suite and are percentages; higher is better.</p><p><strong>EU</strong> Mean Efficiency Utility on the 14-task validation set, on a 0–1 scale. Failed attempts contribute zero. <strong>90% CI</strong> Task-level bootstrap interval from the released results. Adjacent ranks have overlapping intervals; ranks are point estimates.</p><p class="source-line">Source: published paper, Appendix E (Tables 11–12), and <a href="https://github.com/didi/RideWay/blob/main/efficiency_utility_release/data/RESULTS_leaderboard.md" target="_blank" rel="noopener noreferrer">released leaderboard</a>. Frozen to the paper release of 16 September 2026.</p></div>
+      <details class="protocol-details"><summary>How to read and reproduce these results <span aria-hidden="true">+</span></summary><div><p>The success metrics cover all 58 tasks. EU is reported on 14 independent validation tasks that were not used to fit the efficiency weights. These scopes differ: the full-suite average and EU are not a same-task decomposition. The released CSV includes validation-set success metrics for same-scope analysis. The full suite contains 44 calibration tasks and 14 task-disjoint validation tasks. Scores use the final three-judge majority panel, rather than a single evaluator.</p><p>EU predicts 59 of 75 directional held-out preferences correctly (78.7%). Its accuracy is 90.6% for pairs differing in excess turns and 50.0% for pure-tool pairs. It has not shown a statistically separable advantage over the full-coverage turn-first baseline. Extra calls beyond the human reference are not necessarily wasteful.</p><p><a href="https://github.com/didi/RideWay/blob/main/efficiency_utility_release/HOW_TO_REPRODUCE.md" target="_blank" rel="noopener noreferrer">Reproduction guide ↗</a> <span> · </span><a href="assets/leaderboard.json" download>Download data and provenance ↗</a></p></div></details>
+      <noscript><p>Enable JavaScript to search and sort the table, or <a href="assets/leaderboard.csv">download the complete CSV</a>.</p></noscript>
+    </div>
+  </section>
+
+  <section id="Dataset" class="section wrap">
+    <div class="section-head"><div><p class="section-kicker">TASKS, TRAJECTORIES & HUMAN PREFERENCES</p><h2>The RideWay dataset</h2></div><a class="outline-button" href="https://github.com/didi/RideWay/tree/main/efficiency_utility_release/data" target="_blank" rel="noopener noreferrer">Browse the release ↗</a></div>
+    <p class="section-lead">The released dataset is available in the GitHub repository, alongside the environment and reproduction scripts.</p>
+    <div class="dataset-grid"><a class="dataset-card" href="https://github.com/didi/RideWay/tree/main/data/eff/domains/ridehailing" target="_blank" rel="noopener noreferrer"><span class="dataset-icon" aria-hidden="true">↗</span><span class="little-label">BENCHMARK TASKS</span><strong>58</strong><h3>Chinese ride-hailing tasks</h3><p>44 scenario-derived calibration tasks + 14 long-horizon, task-disjoint held-out tasks, with rubrics and human reference counts.</p><span class="card-link">Explore task definitions ↗</span></a><a class="dataset-card" href="https://github.com/didi/RideWay/tree/main/efficiency_utility_release/data" target="_blank" rel="noopener noreferrer"><span class="dataset-icon" aria-hidden="true">⇄</span><span class="little-label">PREFERENCE CALIBRATION</span><strong>400</strong><h3>Human pairwise preferences</h3><p>320 calibration pairs + 80 held-out pairs, including successful trajectories, labels and manifest files.</p><span class="card-link">Explore preference data ↗</span></a><a class="dataset-card" href="https://github.com/didi/RideWay/blob/main/efficiency_utility_release/HOW_TO_REPRODUCE.md" target="_blank" rel="noopener noreferrer"><span class="dataset-icon" aria-hidden="true">✓</span><span class="little-label">REPRODUCIBILITY</span><strong>Open</strong><h3>Evaluation & analysis artifacts</h3><p>Listwise labels, agreement studies, judge audits, example trajectories, scoring scripts and precomputed results.</p><span class="card-link">Reproduce the results ↗</span></a></div>
+    <p class="dataset-note">All released interactions are synthetic benchmark fixtures in a simulated environment. The release does not contain production passenger or driver records. See the <a href="https://github.com/didi/RideWay/blob/main/DATA_CARD.md" target="_blank" rel="noopener noreferrer">data card</a> for provenance and intended use.</p>
+  </section>
+
+  <section id="Citation" class="section tinted"><div class="wrap citation-wrap"><div class="section-head"><div><p class="section-kicker">BUILD ON THIS WORK</p><h2>Citation</h2></div><button id="copy-citation" class="outline-button" type="button">Copy BibTeX</button></div><pre><code id="bibtex">@article{han2026rideway,
+  title={RideWay: Benchmarking Efficient Task Completion
+         for Tool-Using Language Agents},
+  author={Han, Qingnuan and Fang, Boli and Hou, Mingzhi
+          and Liu, Claire},
+  journal={arXiv preprint arXiv:2609.17985},
+  year={2026},
+  url={https://arxiv.org/abs/2609.17985}
+}</code></pre><span id="copy-status" class="small muted" aria-live="polite"></span></div></section>
+</main>
+<footer class="wrap footer"><div><a class="footer-name" href="#">RideWay</a><p>Benchmarking how agents get things done.</p></div><div class="footer-links"><a href="https://github.com/didi/RideWay" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="https://arxiv.org/abs/2609.17985" target="_blank" rel="noopener noreferrer">arXiv ↗</a><span>Didi Global · 2026</span></div></footer>
+</body>
+</html>
